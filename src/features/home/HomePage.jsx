@@ -167,6 +167,13 @@ const HomePage = () => {
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
+                    <div className="flex flex-col items-center mx-auto max-w-[900px] mt-28 border border-gray-200/80 rounded-3xl mb-28">
+                        <h1 className="text-6xl leading-tight text-black mb-3 text-center mt-10">Experience chatquartz in Action</h1>
+                        <p className="text-lg text-gray-600 px-6 text-center leading-relaxed mb-10">Discover how Chat Quartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
+                        <button className="justify-center items-center mx-auto mb-10 px-12 py-3 rounded-md bg-[#2B64FD] border border-[#2B64FD] hover:bg-white text-white hover:text-black text-lg font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer">Contact Sales</button>
+                    </div>
+                </RevealOnScroll>
+                <RevealOnScroll>
                     {/* Section 3: Future of Customer Support (Split Details) */}
                     <div className="flex flex-col items-center mt-20 mb-16">
                         <h1 className="text-5xl leading-tight text-black mb-16 text-center">Why chatquartz is the Future of Customer Support</h1>
@@ -183,8 +190,8 @@ const HomePage = () => {
                                 </div>
                             </div>
 
-                            <div className="hidden md:block w-px bg-gray-300 self-stretch my-2"></div>
-                            <div className="block md:hidden h-px w-4/5 bg-gray-300 my-4"></div>
+                            <div className="hidden md:block w-px bg-[#2B64FD] self-stretch my-2"></div>
+                            <div className="block md:hidden h-px w-4/5 bg-[#2B64FD] my-4"></div>
 
                             <div className="flex-1 flex flex-col justify-between gap-24 sm:gap-32 px-4 sm:px-8 py-2">
                                 <div className="flex flex-col items-center text-center">

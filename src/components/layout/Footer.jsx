@@ -1,4 +1,4 @@
-import RevealOnScroll from "../scroll/RevealOnScroll";
+
 const Footer = () => {
     return (
         <>
