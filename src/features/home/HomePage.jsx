@@ -65,16 +65,16 @@ const FAQSection = () => {
         return (
             <div
                 key={actualIndex}
-                className={`border transition-all duration-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md ${isOpen ? "bg-white border-[#2B64FD] ring-1 ring-[#2B64FD]/20 shadow-md" : "bg-white border-gray-200/80"}`}
+                className={`bg-white border transition-all duration-200 rounded-xl overflow-hidden hover:shadow-md ${isOpen ? "border-[#2B64FD] ring-1 ring-[#2B64FD]/20 shadow-md" : "border-gray-200/80 shadow-sm"}`}
             >
                 <button
                     onClick={() => toggleFAQ(actualIndex)}
-                    className="w-full flex items-center justify-between px-5 py-4 sm:px-6 sm:py-4 text-left font-bold transition-all duration-200 group focus:outline-none cursor-pointer"
+                    className="w-full flex items-center justify-between px-5 py-4 sm:px-6 text-left transition-all duration-200 group focus:outline-none cursor-pointer"
                 >
-                    <span className={`text-base sm:text-[1.05rem] font-bold leading-snug pr-4 transition-colors duration-200`}>
+                    <span className="text-base sm:text-[14px] font-bold leading-snug pr-4">
                         {item.question}
                     </span>
-                    <span className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold transition-all duration-200 select-none ${isOpen ? "bg-[#2B64FD] text-white rotate-360" : "bg-[#2B64FD]/10 text-[#2B64FD] group-hover:bg-[#2B64FD] group-hover:text-white"}`}>
+                    <span className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold transition-all duration-200 select-none ${isOpen ? "bg-[#2B64FD] text-white" : "bg-[#2B64FD]/10 text-[#2B64FD] group-hover:bg-[#2B64FD] group-hover:text-white"}`}>
                         {isOpen ? "−" : "+"}
                     </span>
                 </button>
@@ -83,7 +83,7 @@ const FAQSection = () => {
                     className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-60 opacity-100 border-t border-gray-100" : "max-h-0 opacity-0"
                         }`}
                 >
-                    <div className="px-5 py-4 sm:px-6 text-sm sm:text-[0.95rem] leading-relaxed text-gray-600 bg-[#F6F9FE]/70">
+                    <div className="px-5 py-4 sm:px-6 text-sm sm:text-[13px] leading-relaxed text-gray-600 bg-[#F6F9FE]/70">
                         {item.answer}
                     </div>
                 </div>
@@ -132,47 +132,51 @@ const HomePage = () => {
                         <p className="text-lg text-gray-600 max-w-3xl px-6 text-center leading-relaxed">
                             Check out why chatQuartz is the ultimate go-to solution for your business.
                         </p>
-                        <div className="cardholder grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-10 mb-20">
-                            <div className="card1 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-10 mb-20">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="boost.png" alt="boost.png" className="h-16 w-16 object-contain rounded-lg brightness-0 mb-6" />
-                                <h1 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">Boost Productivity with Smarter Support</h1>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">Reduce stress for your agents by automating responses to repetitive, low-value queries. Let your team focus on complex, high-priority issues that drive real impact.</p>
+                                <h1 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">Boost Productivity with Smarter Support</h1>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Reduce stress for your agents by automating responses to repetitive, low-value queries. Let your team focus on complex, high-priority issues that drive real impact.</p>
                             </div>
-                            <div className="card2 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="light.png" alt="light.png" className="h-16 w-16 object-contain rounded-lg brightness-0 mb-6" />
-                                <h1 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">Lighter Workloads for Your Team</h1>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">ChatQuartz AI chatbots handle an impressive 30% or more of customer support requests, freeing up valuable time and energy for your team to work on strategic tasks.</p>
+                                <h1 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">Lighter Workloads for Your Team</h1>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">ChatQuartz AI chatbots handle an impressive 30% or more of customer support requests, freeing up valuable time and energy for your team to work on strategic tasks.</p>
                             </div>
-                            <div className="card3 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="effortless.png" alt="effortless.png" className="h-16 w-16 object-contain rounded-lg brightness-0 mb-6" />
-                                <h1 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">Effortless Lead Qualification</h1>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">Capture and qualify leads in real time using natural, human-like conversations. ChatQuartz collects user details and preferences automatically, creating warm leads for your sales team.</p>
+                                <h1 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">Effortless Lead Qualification</h1>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Capture and qualify leads in real time using natural, human-like conversations. ChatQuartz collects user details and preferences automatically, creating warm leads for your sales team.</p>
                             </div>
-                            <div className="card4 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="24-hours.png" alt="24-hours.png" className="h-16 w-16 object-contain rounded-lg brightness-0 mb-6" />
-                                <h1 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">24/7 Customer Engagement</h1>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">Eliminate downtime by letting your chatbot manage queries around the clock. Your website stays active and responsive, ensuring customers always receive timely assistance—even outside of business hours.</p>
+                                <h1 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">24/7 Customer Engagement</h1>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Eliminate downtime by letting your chatbot manage queries around the clock. Your website stays active and responsive, ensuring customers always receive timely assistance—even outside of business hours.</p>
                             </div>
-                            <div className="card5 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="faster.png" alt="faster.png" className="h-16 w-16 object-contain rounded-lg brightness-0 mb-6" />
-                                <h1 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">Solve Problems Faster and Smarter</h1>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">Provide instant solutions to customer questions, enhancing satisfaction and building loyalty. With ChatQuartz, queries are resolved in seconds, elevating the user experience.</p>
+                                <h1 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">Solve Problems Faster and Smarter</h1>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Provide instant solutions to customer questions, enhancing satisfaction and building loyalty. With ChatQuartz, queries are resolved in seconds, elevating the user experience.</p>
                             </div>
-                            <div className="card6 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="conversion.png" alt="conversion.png" className="h-16 w-16 object-contain rounded-lg brightness-0 mb-6" />
-                                <h1 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">Drive Conversions with Every Interaction</h1>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">Capitalize on instant replies, seamless engagement, and professional communication to turn website visitors into loyal customers. Maximize your conversion rate with the power of AI-driven support.</p>
+                                <h1 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">Drive Conversions with Every Interaction</h1>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Capitalize on instant replies, seamless engagement, and professional communication to turn website visitors into loyal customers. Maximize your conversion rate with the power of AI-driven support.</p>
                             </div>
                         </div>
                     </div>
                 </RevealOnScroll>
+
+
                 <RevealOnScroll>
                     <div className="flex flex-col items-center mx-auto max-w-[900px] mt-28 border border-gray-200/80 rounded-3xl mb-28">
                         <h1 className="text-6xl leading-tight text-black mb-3 text-center mt-10">Experience chatquartz in Action</h1>
                         <p className="text-lg text-gray-600 px-6 text-center leading-relaxed mb-10">Discover how Chat Quartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
-                        <button className="justify-center items-center mx-auto mb-10 px-12 py-3 rounded-md bg-[#2B64FD] border border-[#2B64FD] hover:bg-white text-white hover:text-black text-lg font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer">Contact Sales</button>
+                        <button className="mb-10 px-12 py-3 rounded-md bg-[#2B64FD] border border-[#2B64FD] hover:bg-white text-white hover:text-black text-lg font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer">Contact Sales</button>
                     </div>
                 </RevealOnScroll>
+
+
                 <RevealOnScroll>
                     {/* Section 3: Future of Customer Support (Split Details) */}
                     <div className="flex flex-col items-center mt-20 mb-16">
@@ -224,21 +228,21 @@ const HomePage = () => {
                     <div className="flex flex-col items-center mt-38">
                         <h1 className="text-5xl leading-tight text-black mb-3 text-center">Get started with chatquartz in minutes</h1>
                         <p className="text-lg text-gray-600 leading-relaxed text-center">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
-                        <div className="cardholder grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-10 mb-20">
-                            <div className="card1 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-10 mb-20">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <h1 className="text-5xl font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">1</h1>
-                                <h2 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">Sync chatquartz with Your Data</h2>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">Automatically sync user details and plugin data, ensuring a smooth and streamlined setup process.</p>
+                                <h2 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">Sync chatquartz with Your Data</h2>
+                                <p className="text-[16px] text-gray-600 leading-relaxed mt-auto">Automatically sync user details and plugin data, ensuring a smooth and streamlined setup process.</p>
                             </div>
-                            <div className="card2 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <h1 className="text-5xl font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">2</h1>
-                                <h2 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">chatquartz Responds Using Your Content</h2>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">AI-driven chatbots handle customer queries with precision, leveraging your existing knowledge base.</p>
+                                <h2 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">chatquartz Responds Using Your Content</h2>
+                                <p className="text-[16px] text-gray-600 leading-relaxed mt-auto">AI-driven chatbots handle customer queries with precision, leveraging your existing knowledge base.</p>
                             </div>
-                            <div className="card3 flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <h1 className="text-5xl font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">3</h1>
-                                <h2 className="text-xl xl:text-[1.4rem] font-bold tracking-tight text-gray-900 mb-3">Track and Enhance Performance</h2>
-                                <p className="text-base text-gray-600 leading-relaxed flex-grow">Monitor chatbot interactions and refine responses by adding new insights for continuous improvement.</p>
+                                <h2 className="text-xl xl:text-[22px] font-bold tracking-tight text-gray-900 mb-3">Track and Enhance Performance</h2>
+                                <p className="text-[16px] text-gray-600 leading-relaxed mt-auto">Monitor chatbot interactions and refine responses by adding new insights for continuous improvement.</p>
                             </div>
                         </div>
                     </div>

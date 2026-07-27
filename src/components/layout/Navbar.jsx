@@ -6,8 +6,8 @@ const Navbar = () => {
 
                 {/* Left: Brand Logo Section */}
                 <div className="flex-1 flex items-center justify-start">
-                    <a href="#" className="flex items-center">
-                        <img src="logo.svg" alt="Logo" className="h-9 w-auto brightness-0 block" />
+                    <a href="/" className="flex items-center">
+                        <img src="/logo.svg" alt="Logo" className="h-9 w-auto brightness-0 block" />
                     </a>
                 </div>
 
