@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
     return (
         /* Main Navbar Header */
@@ -6,25 +8,25 @@ const Navbar = () => {
 
                 {/* Left: Brand Logo Section */}
                 <div className="flex-1 flex items-center justify-start">
-                    <a href="/" className="flex items-center">
+                    <Link href="/" className="flex items-center">
                         <img src="/logo.svg" alt="Logo" className="h-9 w-auto brightness-0 block" />
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Center: Navigation Menu Pills */}
                 <nav className="flex items-center px-4 py-1.5 rounded-full bg-white shadow-md border border-[#AAC8FD]/30">
                     <ul className="hidden md:flex items-center gap-1 text-sm font-medium text-gray-700">
                         <li>
-                            <a href="#" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Pricing</a>
+                            <Link href="#" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Pricing</Link>
                         </li>
                         <li>
-                            <a href="#" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Marketing</a>
+                            <Link href="#" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Marketing</Link>
                         </li>
                         <li>
-                            <a href="#" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Support</a>
+                            <Link href="#" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Support</Link>
                         </li>
                         <li>
-                            <a href="#" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Features</a>
+                            <Link href="/features" className="block px-4 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Features</Link>
                         </li>
                     </ul>
                 </nav>

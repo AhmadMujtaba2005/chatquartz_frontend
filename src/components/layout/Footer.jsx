@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -10,11 +11,11 @@ const Footer = () => {
 
                     {/* Brand Branding & Contact Info Column */}
                     <div className="space-y-3 max-w-xs">
-                        <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
-                            <a href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+                        <h2 className="text-[20px] font-extrabold tracking-tight text-gray-900">
+                            <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
                                 <img src="/logo.svg" alt="Logo" className="h-9 w-auto brightness-0 block" />
                                 <span>chatquartz</span>
-                            </a>
+                            </Link>
                         </h2>
                         <div className="text-sm text-gray-700 space-y-1 font-medium leading-relaxed">
                             <p>+1 (972) 729-9747</p>
@@ -29,10 +30,10 @@ const Footer = () => {
                         <div>
                             <h3 className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Company</h3>
                             <ul className="space-y-2.5 text-sm text-gray-700 font-medium">
-                                <li><a href="/privacy-policy" className="hover:text-[#2B64FD] transition-colors duration-200">Privacy Policy</a></li>
-                                <li><a href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Terms of Use</a></li>
-                                <li><a href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Why chatquartz?</a></li>
-                                <li><a href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Contact Us</a></li>
+                                <li><Link href="/privacy-policy" className="hover:text-[#2B64FD] transition-colors duration-200">Privacy Policy</Link></li>
+                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Terms of Use</Link></li>
+                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Why chatquartz?</Link></li>
+                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Contact Us</Link></li>
                             </ul>
                         </div>
 
@@ -40,10 +41,10 @@ const Footer = () => {
                         <div>
                             <h3 className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Product</h3>
                             <ul className="space-y-2.5 text-sm text-gray-700 font-medium">
-                                <li><a href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Features</a></li>
-                                <li><a href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Marketing</a></li>
-                                <li><a href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Support</a></li>
-                                <li><a href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Pricing</a></li>
+                                <li><Link href="/features" className="hover:text-[#2B64FD] transition-colors duration-200">Features</Link></li>
+                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Marketing</Link></li>
+                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Support</Link></li>
+                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Pricing</Link></li>
                             </ul>
                         </div>
                     </div>
