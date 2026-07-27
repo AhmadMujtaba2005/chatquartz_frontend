@@ -110,9 +110,9 @@ const HomePage = () => {
         <div>
             <SmoothScroll>
                 {/* Section 1: Hero Section & Navigation */}
-                <div className="w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF]">
+                <div className="w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
-                    <h1 className="text-[48px] leading-tight text-black mt-32 mb-8 text-center">
+                    <h1 className="text-[48px] leading-tight text-black mt-16 sm:mt-45 mb-8 text-center">
                         Skyrocket <br /> Your Growth with <br />
                         <span className="text-[#2B64FD] italic">AI-Powered</span>{" "}
                         <span className="font-bold">Chatbots</span>
@@ -128,7 +128,7 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 2: Features & Benefits Cards (Why ChatQuartz) */}
                     <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center">Your AI Support Partner for Business Growth</h1>
+                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Your AI Support Partner for Business Growth</h1>
                         <p className="text-[14px] text-gray-600 max-w-3xl px-6 text-center leading-relaxed">
                             Check out why chatQuartz is the ultimate go-to solution for your business.
                         </p>
@@ -169,10 +169,10 @@ const HomePage = () => {
 
 
                 <RevealOnScroll>
-                    <div className="flex flex-col items-center mx-auto max-w-[900px] mt-[120px] border border-gray-200/80 rounded-3xl">
-                        <h1 className="text-[40px] leading-tight text-black mb-5 text-center mt-10">Experience chatquartz in Action</h1>
-                        <p className="text-[14px] text-gray-600 px-6 text-center leading-relaxed mb-10">Discover how Chat Quartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
-                        <button className="mb-10 px-12 py-3 rounded-md bg-[#2B64FD] border border-[#2B64FD] hover:bg-white text-white hover:text-black text-lg font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer">Contact Sales</button>
+                    <div className="flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-[120px] px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-md hover:shadow-lg transition-all duration-300">
+                        <h1 className="text-[40px] leading-tight text-black mb-4 text-center tracking-tight bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience chatquartz in Action</h1>
+                        <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Discover how Chat Quartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
+                        <button className="px-12 py-3.5 rounded-xl bg-[#2B64FD] border border-[#2B64FD] hover:bg-white text-white hover:text-black text-lg font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer">Contact Sales</button>
                     </div>
                 </RevealOnScroll>
 
@@ -180,7 +180,7 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 3: Future of Customer Support (Split Details) */}
                     <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-16 text-center">Why chatquartz is the Future of Customer Support</h1>
+                        <h1 className="text-[40px] leading-tight text-black mb-16 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why chatquartz is the Future of Customer Support</h1>
                         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-6 md:gap-12 w-[94%] max-w-[1100px] mx-auto">
 
                             <div className="flex-1 flex flex-col justify-between gap-24 sm:gap-32 px-4 sm:px-8 py-24 sm:py-32">
@@ -217,16 +217,16 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 4: Effortless Human Takeover Section */}
                     <div className="flex flex-col items-center px-8 md:px-16 lg:px-24 mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center">Effortless Human Takeover: Keeping You in Control</h1>
+                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: Keeping You in Control</h1>
                         <p className="text-[14px] text-gray-600 leading-relaxed text-center">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
-                        <img src="chatsample.png" alt="chatsample.png" className="w-[70%] h-[300px] object-contain mt-10" />
+                        {/* <img src="chatsample.png" alt="chatsample.png" className="w-[70%] h-[300px] object-contain mt-10" /> */}
                         <button className="flex items-center justify-center px-12 py-3 rounded-md bg-white border border-[#2B64FD] hover:bg-[#2B64FD] text-black hover:text-white text-lg font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer mt-7">Learn more →</button>
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
                     {/* Section 5: Get Started in Minutes (3 Simple Steps) */}
                     <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center">Get started with chatquartz in minutes</h1>
+                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h1>
                         <p className="text-[14px] text-gray-600 leading-relaxed text-center">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-10">
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
@@ -250,7 +250,7 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 6: Frequently Asked Questions (FAQ) */}
                     <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center">Frequently Asked Questions</h1>
+                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Frequently Asked Questions</h1>
                         <FAQSection />
                     </div>
                 </RevealOnScroll>

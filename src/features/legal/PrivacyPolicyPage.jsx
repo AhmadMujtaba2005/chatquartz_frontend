@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
                 {/* Hero Section & Navigation */}
                 <div className="w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
-                    <h1 className="text-[40px] font-bold leading-tight text-black mt-28 mb-6 text-center tracking-tight">
+                    <h1 className="text-[40px] font-bold leading-tight text-black mt-16 sm:mt-24 mb-6 text-center tracking-tight">
                         Privacy Policy
                     </h1>
                     <div className="max-w-4xl px-6 mx-auto text-center space-y-5 text-[14px] text-gray-700 leading-relaxed font-medium">
@@ -293,21 +293,16 @@ export default function PrivacyPolicyPage() {
 
                     {/* Section 7: Contact Information */}
                     <RevealOnScroll>
-                        <section className="bg-gradient-to-br from-[#F6F9FE] to-white border border-[#2B64FD]/20 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
+                        <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block"></span>
-                                7. Contacting Our Privacy Team
+                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span>7. Contacting Our Privacy Team</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed mb-6">
                                 If you have questions, compliance inquiries, or specific feedback regarding this Privacy Policy or our data processing procedures, our dedicated support team is available to assist you:
                             </p>
-                            <div className="bg-white p-6 rounded-xl border border-gray-200/60 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-                                <div className="space-y-1.5 text-sm sm:text-base font-medium">
-                                    <p className="text-gray-600">Email: <a href="" className="text-[#2B64FD] underline font-semibold hover:opacity-80 transition-opacity">support@board.support</a></p>
-                                </div>
-                                <a href="" className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-[#2B64FD] border border-[#2B64FD] hover:bg-white text-white hover:text-black text-sm sm:text-base font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer whitespace-nowrap">
-                                    Send an Inquiry →
-                                </a>
+                            <div className="bg-[#F6F9FE] p-5 rounded-xl border border-[#2B64FD]/20 text-sm sm:text-base font-medium">
+                                <p className="text-gray-600">Email: <a href="mailto:support@board.support" className="text-[#2B64FD] underline font-semibold hover:opacity-80 transition-opacity">support@board.support</a></p>
                             </div>
                         </section>
                     </RevealOnScroll>

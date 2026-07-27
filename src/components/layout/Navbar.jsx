@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
     return (
         /* Main Navbar Header */
-        <header className="w-full p-7">
+        <header className="w-full p-6 sm:p-7">
             <div className="flex items-center justify-between">
 
                 {/* Left: Brand Logo Section */}

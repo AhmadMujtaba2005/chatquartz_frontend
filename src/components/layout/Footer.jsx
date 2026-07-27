@@ -21,6 +21,17 @@ const Footer = () => {
                             <p>+1 (972) 729-9747</p>
                             <p>sales@dataquartz.com</p>
                         </div>
+                        <div className="flex items-center gap-3.5 pt-1">
+                            <a href="#" className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-gray-200/60 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                <img src="/linkedin.png" alt="LinkedIn" className="w-8 h-8 object-contain block" />
+                            </a>
+                            <a href="#" className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-gray-200/60 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                <img src="/facebook.png" alt="Facebook" className="w-8 h-8 object-contain block" />
+                            </a>
+                            <a href="#" className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-gray-200/60 hover:shadow-md hover:scale-105 transition-all duration-200">
+                                <img src="/whatsapp.png" alt="WhatsApp" className="w-8 h-8 object-contain block" />
+                            </a>
+                        </div>
                     </div>
 
                     {/* Navigation Links (Company & Product Columns) */}
