@@ -28,15 +28,28 @@ const FeaturesPage = () => {
                 <RevealOnScroll>
                     <div className="mt-[120px]">
                         <h1 className="text-[40px] leading-tight mb-8 text-center tracking-tight px-6">Transforming Customer Experiences with chatquartz</h1>
-                        <img src="/featurepagemobile.png" alt="featurepagemobile" className="w-[280px] sm:w-[320px] h-auto mx-auto block mt-8 mb-20 object-contain drop-shadow-lg" />
+                        <img src="/featurepagemobile.svg" alt="featurepagemobile" className="w-[280px] sm:w-[320px] h-auto mx-auto block mt-8 mb-20 object-contain drop-shadow-lg" />
                     </div>
                 </RevealOnScroll>
 
                 <RevealOnScroll>
-                    <div className="flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-[120px] px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-sm hover:shadow transition-all duration-300">
-                        <h1 className="text-[40px] leading-tight text-black mb-4 text-center tracking-tight">Why Choose <span className="font-bold text-[#2B64FD] italic">chatquartz</span>!</h1>
-                        <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Experience AI you can trust, powered by industry leaders like OpenAI and Google’s Dialogflow. chatquartz delivers smart, flexible, and scalable conversations to elevate your customer service and marketing. Ready to simplify interactions & transform your business?</p>
-                        <button className="w-[150px] h-[45px] bg-[#2B64FD] border border-[#2B64FD] hover:bg-white hover:text-black rounded-xl flex items-center justify-center text-white font-semibold shadow-sm hover:shadow transition-all duration-200 cursor-pointer">Start for free</button>
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-[120px] px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-sm hover:shadow transition-all duration-300">
+                        {/* Decorative Footer CTA Background - positioned around outer edges at subtle opacity to avoid competing with headline text */}
+                        <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
+                            <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
+                        </div>
+                        <div className="absolute -bottom-24 -left-24 sm:-bottom-32 sm:-left-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-30 mix-blend-multiply rotate-180">
+                            <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
+                        </div>
+
+                        <div className="relative z-10 flex flex-col items-center">
+                            <h1 className="text-[40px] leading-tight text-black mb-4 text-center tracking-tight">Why Choose <span className="font-bold text-[#2B64FD] italic">chatquartz</span>!</h1>
+                            <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Experience AI you can trust, powered by industry leaders like OpenAI and Google’s Dialogflow. chatquartz delivers smart, flexible, and scalable conversations to elevate your customer service and marketing. Ready to simplify interactions & transform your business?</p>
+                            <button className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-xl bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                                <span>Start for free</span>
+                                <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
+                            </button>
+                        </div>
                     </div>
                 </RevealOnScroll>
 

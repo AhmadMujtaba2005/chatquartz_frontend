@@ -23,13 +23,13 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center gap-3.5 pt-1">
                             <a href="#" className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-gray-200/60 hover:shadow-md hover:scale-105 transition-all duration-200">
-                                <img src="/linkedin.png" alt="LinkedIn" className="w-8 h-8 object-contain block" />
+                                <img src="/linkedin.svg" alt="LinkedIn" className="w-8 h-8 object-contain block" />
                             </a>
                             <a href="#" className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-gray-200/60 hover:shadow-md hover:scale-105 transition-all duration-200">
-                                <img src="/facebook.png" alt="Facebook" className="w-8 h-8 object-contain block" />
+                                <img src="/facebook.svg" alt="Facebook" className="w-8 h-8 object-contain block" />
                             </a>
                             <a href="#" className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-gray-200/60 hover:shadow-md hover:scale-105 transition-all duration-200">
-                                <img src="/whatsapp.png" alt="WhatsApp" className="w-8 h-8 object-contain block" />
+                                <img src="/whatsapp.svg" alt="WhatsApp" className="w-8 h-8 object-contain block" />
                             </a>
                         </div>
                     </div>
