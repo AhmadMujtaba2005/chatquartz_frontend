@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
@@ -133,13 +134,13 @@ const HomePage = () => {
                             Engage more leads, deliver exceptional support, and skyrocket your revenue with our cutting-edge AI-powered chatbot solution. Transform your customer service into your biggest growth engine today!
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center items-center my-10 gap-5">
-                            <button className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <Link href="/demo" className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Try This</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
-                            </button>
-                            <button className="flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 backdrop-blur-sm text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            </Link>
+                            <Link href="/contactus" className="flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 backdrop-blur-sm text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Talk to an Expert</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -200,10 +201,10 @@ const HomePage = () => {
                         <div className="relative z-10 flex flex-col items-center">
                             <h1 className="text-[40px] leading-tight text-black mb-4 text-center tracking-tight bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-[#2B64FD]">chatquartz</span> in Action</h1>
                             <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Discover how chatquartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
-                            <button className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <Link href="/demo" className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Contact Sales</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </RevealOnScroll>
@@ -252,10 +253,10 @@ const HomePage = () => {
                         <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: Keeping You in Control</h1>
                         <p className="text-[14px] text-gray-600 leading-relaxed text-center">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
                         {/* <img src="/chatsample.svg" alt="chatsample" className="w-[70%] h-[300px] object-contain mt-10" /> */}
-                        <button className="flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
+                        <Link href="/features" className="flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
                             <span>Learn more</span>
                             <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
-                        </button>
+                        </Link>
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>

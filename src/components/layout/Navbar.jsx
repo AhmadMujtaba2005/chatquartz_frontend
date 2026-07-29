@@ -17,13 +17,13 @@ const Navbar = () => {
                 <nav className="flex items-center px-8 py-1.5 rounded-full bg-white shadow-md border border-[#AAC8FD]/30">
                     <ul className="hidden md:flex items-center gap-2 text-sm font-medium text-gray-700">
                         <li>
-                            <Link href="#" className="block px-6 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Pricing</Link>
+                            <Link href="/pricing" className="block px-6 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Pricing</Link>
                         </li>
                         <li>
-                            <Link href="#" className="block px-6 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Marketing</Link>
+                            <Link href="/marketing" className="block px-6 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Marketing</Link>
                         </li>
                         <li>
-                            <Link href="#" className="block px-6 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Support</Link>
+                            <Link href="/support" className="block px-6 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Support</Link>
                         </li>
                         <li>
                             <Link href="/features" className="block px-7 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">Features</Link>
@@ -33,10 +33,10 @@ const Navbar = () => {
 
                 {/* Right: Action Button Section */}
                 <div className="flex-1 flex items-center justify-end">
-                    <button className="group flex items-center justify-center px-8 py-3.5 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-sm font-semibold shadow-sm hover:shadow-lg hover:shadow-[#2B64FD]/25 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                    <Link href="/demo" className="group flex items-center justify-center px-8 py-3.5 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-sm font-semibold shadow-sm hover:shadow-lg hover:shadow-[#2B64FD]/25 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                         <span>Try Now</span>
                         <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2">→</span>
-                    </button>
+                    </Link>
                 </div>
 
             </div>

@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 
-const MarketingPage = () => {
+const ContactUsPage = () => {
     return (
         <div>
             <SmoothScroll>
@@ -25,4 +25,4 @@ const MarketingPage = () => {
     );
 };
 
-export default MarketingPage;
+export default ContactUsPage;

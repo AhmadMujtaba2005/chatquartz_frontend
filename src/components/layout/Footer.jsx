@@ -42,9 +42,9 @@ const Footer = () => {
                             <h3 className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Company</h3>
                             <ul className="space-y-2.5 text-sm text-gray-700 font-medium">
                                 <li><Link href="/privacy-policy" className="hover:text-[#2B64FD] transition-colors duration-200">Privacy Policy</Link></li>
-                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Terms of Use</Link></li>
-                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Why chatquartz?</Link></li>
-                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Contact Us</Link></li>
+                                <li><Link href="/terms-of-use" className="hover:text-[#2B64FD] transition-colors duration-200">Terms of Use</Link></li>
+                                <li><Link href="/" className="hover:text-[#2B64FD] transition-colors duration-200">Why chatquartz?</Link></li>
+                                <li><Link href="/contactus" className="hover:text-[#2B64FD] transition-colors duration-200">Contact Us</Link></li>
                             </ul>
                         </div>
 
@@ -53,9 +53,9 @@ const Footer = () => {
                             <h3 className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Product</h3>
                             <ul className="space-y-2.5 text-sm text-gray-700 font-medium">
                                 <li><Link href="/features" className="hover:text-[#2B64FD] transition-colors duration-200">Features</Link></li>
-                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Marketing</Link></li>
-                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Support</Link></li>
-                                <li><Link href="#" className="hover:text-[#2B64FD] transition-colors duration-200">Pricing</Link></li>
+                                <li><Link href="/marketing" className="hover:text-[#2B64FD] transition-colors duration-200">Marketing</Link></li>
+                                <li><Link href="/support" className="hover:text-[#2B64FD] transition-colors duration-200">Support</Link></li>
+                                <li><Link href="/pricing" className="hover:text-[#2B64FD] transition-colors duration-200">Pricing</Link></li>
                             </ul>
                         </div>
                     </div>
