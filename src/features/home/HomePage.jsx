@@ -111,10 +111,10 @@ const HomePage = () => {
         <div>
             <SmoothScroll>
                 {/* Section 1: Hero Section & Navigation */}
-                <div className="relative overflow-hidden w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
+                <div className="relative overflow-hidden w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20">
                     {/* Hero Background Shape - Right side behind/around headline text */}
                     <div
-                        className="absolute top-12 sm:top-20 md:top-16 right-[-10%] md:right-[-5%] w-[650px] md:w-[850px] lg:w-[1050px] pointer-events-none z-0 select-none opacity-95"
+                        className="absolute top-16 sm:top-20 md:top-16 right-[-30%] sm:right-[-10%] md:right-[-5%] w-[400px] sm:w-[650px] md:w-[850px] lg:w-[1050px] pointer-events-none z-0 select-none opacity-80 sm:opacity-95"
                         style={{
                             WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 55%, black 100%)",
                             maskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 55%, black 100%)"
@@ -125,20 +125,20 @@ const HomePage = () => {
 
                     <div className="relative z-10">
                         <Navbar />
-                        <h1 className="text-[48px] leading-tight text-black mt-16 sm:mt-45 mb-8 text-center">
+                        <h1 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] leading-tight text-black mt-10 sm:mt-16 md:mt-24 lg:mt-45 mb-6 sm:mb-8 text-center px-4">
                             Skyrocket <br /> Your Growth with <br />
                             <span className="text-[#2B64FD] italic">AI-Powered</span>{" "}
                             <span className="font-bold">Chatbots</span>
                         </h1>
-                        <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">
+                        <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">
                             Engage more leads, deliver exceptional support, and skyrocket your revenue with our cutting-edge AI-powered chatbot solution. Transform your customer service into your biggest growth engine today!
                         </p>
-                        <div className="flex flex-col sm:flex-row justify-center items-center my-10 gap-5">
-                            <Link href="/demo" className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                        <div className="flex flex-col sm:flex-row justify-center items-center my-8 sm:my-10 gap-4 sm:gap-5 px-6">
+                            <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Try This</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                             </Link>
-                            <Link href="/contactus" className="flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 backdrop-blur-sm text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <Link href="/contactus" className="flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 backdrop-blur-sm text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Talk to an Expert</span>
                             </Link>
                         </div>
@@ -147,12 +147,12 @@ const HomePage = () => {
                 </div>
                 <RevealOnScroll>
                     {/* Section 2: Features & Benefits Cards (Why ChatQuartz) */}
-                    <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Your AI Support Partner for Business Growth</h1>
-                        <p className="text-[14px] text-gray-600 max-w-3xl px-6 text-center leading-relaxed">
+                    <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
+                        <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Your AI Support Partner for Business Growth</h1>
+                        <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 sm:px-6 text-center leading-relaxed">
                             Check out why chatQuartz is the ultimate go-to solution for your business.
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-8 sm:mt-10">
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="/boost.png" alt="boost" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Boost Productivity with Smarter Support</h2>
@@ -189,19 +189,19 @@ const HomePage = () => {
 
 
                 <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-[120px] px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-md hover:shadow-lg transition-all duration-300">
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] px-5 py-10 sm:p-14 border border-gray-200/80 rounded-2xl sm:rounded-3xl bg-white shadow-md hover:shadow-lg transition-all duration-300">
                         {/* Decorative Footer CTA Background - positioned around outer edges at subtle opacity to avoid competing with headline text */}
-                        <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[350px] sm:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
+                        <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>
-                        <div className="absolute -bottom-24 -left-24 sm:-bottom-32 sm:-left-32 w-[350px] sm:w-[480px] pointer-events-none z-0 select-none opacity-30 mix-blend-multiply rotate-180">
+                        <div className="absolute -bottom-24 -left-24 sm:-bottom-32 sm:-left-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-30 mix-blend-multiply rotate-180">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h1 className="text-[40px] leading-tight text-black mb-4 text-center tracking-tight bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-[#2B64FD]">chatquartz</span> in Action</h1>
-                            <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Discover how chatquartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
-                            <Link href="/demo" className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 text-center tracking-tight bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-[#2B64FD]">chatquartz</span> in Action</h1>
+                            <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-6 sm:mb-8">Discover how chatquartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
+                            <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Contact Sales</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                             </Link>
@@ -212,36 +212,36 @@ const HomePage = () => {
 
                 <RevealOnScroll>
                     {/* Section 3: Future of Customer Support (Split Details) */}
-                    <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-16 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why chatquartz is the Future of Customer Support</h1>
+                    <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
+                        <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-8 sm:mb-12 md:mb-16 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why chatquartz is the Future of Customer Support</h1>
                         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-6 md:gap-12 w-[94%] max-w-[1100px] mx-auto">
 
-                            <div className="flex-1 flex flex-col justify-between gap-24 sm:gap-32 px-4 sm:px-8 py-24 sm:py-32">
+                            <div className="flex-1 flex flex-col justify-between gap-10 sm:gap-16 md:gap-24 lg:gap-32 px-4 sm:px-8 py-6 sm:py-12 md:py-24 lg:py-32">
                                 <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[20px] font-bold mb-3 text-gray-900">Intelligent Automation At Scale</h5>
-                                    <p className="text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Powered by advanced AI, ChatQuartz autonomously handles unlimited queries while seamlessly escalating complex issues to human agents. This balance of efficiency and human touch sets a new standard in customer support.</p>
+                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Intelligent Automation At Scale</h5>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Powered by advanced AI, ChatQuartz autonomously handles unlimited queries while seamlessly escalating complex issues to human agents. This balance of efficiency and human touch sets a new standard in customer support.</p>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[20px] font-bold mb-3 text-gray-900">Analytics That Drive Success</h5>
-                                    <p className="text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Stay ahead with real-time performance tracking. Monitor chatbot interactions, identify gaps, and improve responses continuously to ensure your support operations remain cutting-edge.</p>
+                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Analytics That Drive Success</h5>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Stay ahead with real-time performance tracking. Monitor chatbot interactions, identify gaps, and improve responses continuously to ensure your support operations remain cutting-edge.</p>
                                 </div>
                             </div>
 
                             <div className="hidden md:block w-px bg-[#2B64FD] self-stretch my-2"></div>
                             <div className="block md:hidden h-px w-4/5 bg-[#2B64FD] my-4"></div>
 
-                            <div className="flex-1 flex flex-col justify-between gap-24 sm:gap-32 px-4 sm:px-8 py-2">
+                            <div className="flex-1 flex flex-col justify-between gap-10 sm:gap-16 md:gap-24 lg:gap-32 px-4 sm:px-8 py-2">
                                 <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[20px] font-bold mb-3 text-gray-900">A Multilingual Marvel</h5>
-                                    <p className="text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Break barriers and engage a global audience with automatic translations in 19+ languages. With ChatQuartz, you're no longer confined by language limitations.</p>
+                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">A Multilingual Marvel</h5>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Break barriers and engage a global audience with automatic translations in 19+ languages. With ChatQuartz, you're no longer confined by language limitations.</p>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[20px] font-bold mb-3 text-gray-900">Your Data, Your Strength</h5>
-                                    <p className="text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Turn your business's knowledge into a powerhouse. By syncing with your database or uploading documents, ChatQuartz transforms your content into actionable AI insights.</p>
+                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Your Data, Your Strength</h5>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Turn your business's knowledge into a powerhouse. By syncing with your database or uploading documents, ChatQuartz transforms your content into actionable AI insights.</p>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[20px] font-bold mb-3 text-gray-900">Effortless Integration Across Platforms</h5>
-                                    <p className="text-[14px] text-gray-600 leading-relaxed max-w-[460px]">From WordPress and WooCommerce to CRMs and email platforms, ChatQuartz fits seamlessly into your existing ecosystem, making implementation hassle-free.</p>
+                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Effortless Integration Across Platforms</h5>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">From WordPress and WooCommerce to CRMs and email platforms, ChatQuartz fits seamlessly into your existing ecosystem, making implementation hassle-free.</p>
                                 </div>
                             </div>
                         </div>
@@ -249,11 +249,11 @@ const HomePage = () => {
                 </RevealOnScroll>
                 <RevealOnScroll>
                     {/* Section 4: Effortless Human Takeover Section */}
-                    <div className="flex flex-col items-center px-8 md:px-16 lg:px-24 mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: Keeping You in Control</h1>
-                        <p className="text-[14px] text-gray-600 leading-relaxed text-center">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
+                    <div className="flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-24 mt-16 sm:mt-24 md:mt-[120px]">
+                        <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: Keeping You in Control</h1>
+                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
                         {/* <img src="/chatsample.svg" alt="chatsample" className="w-[70%] h-[300px] object-contain mt-10" /> */}
-                        <Link href="/features" className="flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
+                        <Link href="/features" className="flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
                             <span>Learn more</span>
                             <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                         </Link>
@@ -261,38 +261,38 @@ const HomePage = () => {
                 </RevealOnScroll>
                 <RevealOnScroll>
                     {/* Section 5: Get Started in Minutes (3 Simple Steps) */}
-                    <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h1>
-                        <p className="text-[14px] text-gray-600 leading-relaxed text-center">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-10">
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
-                                <h1 className="text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">1</h1>
-                                <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Sync chatquartz with Your Data</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Automatically sync user details and plugin data, ensuring a smooth and streamlined setup process.</p>
+                    <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
+                        <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h1>
+                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-8 sm:mt-10">
+                            <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                                <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">1</h1>
+                                <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Sync chatquartz with Your Data</h2>
+                                <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Automatically sync user details and plugin data, ensuring a smooth and streamlined setup process.</p>
                             </div>
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
-                                <h1 className="text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">2</h1>
-                                <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">chatquartz Responds Using Your Content</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">AI-driven chatbots handle customer queries with precision, leveraging your existing knowledge base.</p>
+                            <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                                <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">2</h1>
+                                <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">chatquartz Responds Using Your Content</h2>
+                                <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">AI-driven chatbots handle customer queries with precision, leveraging your existing knowledge base.</p>
                             </div>
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
-                                <h1 className="text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">3</h1>
-                                <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Track and Enhance Performance</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Monitor chatbot interactions and refine responses by adding new insights for continuous improvement.</p>
+                            <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                                <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">3</h1>
+                                <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Track and Enhance Performance</h2>
+                                <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Monitor chatbot interactions and refine responses by adding new insights for continuous improvement.</p>
                             </div>
                         </div>
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
                     {/* Section 6: Frequently Asked Questions (FAQ) */}
-                    <div className="flex flex-col items-center mt-[120px]">
-                        <h1 className="text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Frequently Asked Questions</h1>
+                    <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
+                        <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Frequently Asked Questions</h1>
                         <FAQSection />
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
                     {/* Section 7: Footer Section */}
-                    <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-[120px]">
+                    <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-16 sm:mt-24 md:mt-[120px]">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
                         </div>
