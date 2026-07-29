@@ -33,7 +33,7 @@ const Navbar = () => {
 
                 {/* Right: Action Button Section */}
                 <div className="flex-1 flex items-center justify-end">
-                    <button className="group flex items-center justify-center px-8 py-3.5 rounded-xl bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-sm font-semibold shadow-sm hover:shadow-lg hover:shadow-[#2B64FD]/25 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                    <button className="group flex items-center justify-center px-8 py-3.5 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-sm font-semibold shadow-sm hover:shadow-lg hover:shadow-[#2B64FD]/25 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                         <span>Try Now</span>
                         <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2">→</span>
                     </button>
