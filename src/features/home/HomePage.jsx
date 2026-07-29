@@ -142,14 +142,7 @@ const HomePage = () => {
                             </button>
                         </div>
                     </div>
-                    {/* <div className="relative inline-block">
-                        <img src="/typing.png" alt="" className="w-60 h-auto" />
-                        <div className="absolute inset-0 flex items-center justify-center gap-2">
-                            <span className="w-2 h-2 bg-blue-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
-                            <span className="w-2 h-2 bg-blue-600 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
-                            <span className="w-2 h-2 bg-blue-800 rounded-full animate-bounce"></span>
-                        </div>
-                    </div> */}
+
                 </div>
                 <RevealOnScroll>
                     {/* Section 2: Features & Benefits Cards (Why ChatQuartz) */}
