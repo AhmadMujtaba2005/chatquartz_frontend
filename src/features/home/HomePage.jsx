@@ -131,7 +131,7 @@ const HomePage = () => {
                             <span className="font-bold">Chatbots</span>
                         </h1>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">
-                            Engage more leads, deliver exceptional support, and skyrocket your revenue with our cutting-edge AI-powered chatbot solution. Transform your customer service into your biggest growth engine today!
+                            Boost leads, automate support, and increase revenue with AI-powered chatbots.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center items-center my-8 sm:my-10 gap-4 sm:gap-5 px-6">
                             <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
@@ -156,32 +156,32 @@ const HomePage = () => {
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="/boost.png" alt="boost" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Boost Productivity with Smarter Support</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Reduce stress for your agents by automating responses to repetitive, low-value queries. Let your team focus on complex, high-priority issues that drive real impact.</p>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Automate repetitive queries so your team only handles what actually needs a human.</p>
                             </div>
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="/light.png" alt="light" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Lighter Workloads for Your Team</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">ChatQuartz AI chatbots handle an impressive 30% or more of customer support requests, freeing up valuable time and energy for your team to work on strategic tasks.</p>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">chatquartz resolve 30%+ of support requests — no added headcount.</p>
                             </div>
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="/effortless.png" alt="effortless" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Effortless Lead Qualification</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Capture and qualify leads in real time using natural, human-like conversations. ChatQuartz collects user details and preferences automatically, creating warm leads for your sales team.</p>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Every conversation captures lead details automatically, no forms required.</p>
                             </div>
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="/24-hours.png" alt="24-hours" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">24/7 Customer Engagement</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Eliminate downtime by letting your chatbot manage queries around the clock. Your website stays active and responsive, ensuring customers always receive timely assistance—even outside of business hours.</p>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Always-on support means no customer waits until business hours.</p>
                             </div>
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="/faster.png" alt="faster" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Solve Problems Faster and Smarter</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Provide instant solutions to customer questions, enhancing satisfaction and building loyalty. With ChatQuartz, queries are resolved in seconds, elevating the user experience.</p>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Faster answers build the trust that turns visitors into buyers.</p>
                             </div>
                             <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                                 <img src="/conversion.png" alt="conversion" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Drive Conversions with Every Interaction</h2>
-                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Capitalize on instant replies, seamless engagement, and professional communication to turn website visitors into loyal customers. Maximize your conversion rate with the power of AI-driven support.</p>
+                                <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Instant, professional replies that turn visitors into loyal customers!</p>
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@ const HomePage = () => {
 
                         <div className="relative z-10 flex flex-col items-center">
                             <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 text-center tracking-tight bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-[#2B64FD]">chatquartz</span> in Action</h1>
-                            <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-6 sm:mb-8">Discover how chatquartz transforms customer interactions with AI-driven precision. Try our live demo and see seamless support in action today!</p>
+                            <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-6 sm:mb-8">See ChatQuartz handle a real conversation — no signup required!</p>
                             <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Contact Sales</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
