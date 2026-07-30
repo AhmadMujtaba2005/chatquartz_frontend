@@ -219,11 +219,11 @@ const HomePage = () => {
                             <div className="flex-1 flex flex-col justify-between gap-10 sm:gap-16 md:gap-24 lg:gap-32 px-4 sm:px-8 py-6 sm:py-12 md:py-24 lg:py-32">
                                 <div className="flex flex-col items-center text-center">
                                     <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Intelligent Automation At Scale</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Powered by advanced AI, ChatQuartz autonomously handles unlimited queries while seamlessly escalating complex issues to human agents. This balance of efficiency and human touch sets a new standard in customer support.</p>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Handles unlimited queries autonomously, escalating complex issues to your team when needed.</p>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
                                     <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Analytics That Drive Success</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Stay ahead with real-time performance tracking. Monitor chatbot interactions, identify gaps, and improve responses continuously to ensure your support operations remain cutting-edge.</p>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Real-time performance tracking to spot gaps and continuously improve responses.</p>
                                 </div>
                             </div>
 
@@ -233,15 +233,15 @@ const HomePage = () => {
                             <div className="flex-1 flex flex-col justify-between gap-10 sm:gap-16 md:gap-24 lg:gap-32 px-4 sm:px-8 py-2">
                                 <div className="flex flex-col items-center text-center">
                                     <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">A Multilingual Marvel</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Break barriers and engage a global audience with automatic translations in 19+ languages. With ChatQuartz, you're no longer confined by language limitations.</p>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Auto-translated conversations in 19+ languages — no barriers, no limits.</p>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
                                     <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Your Data, Your Strength</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Turn your business's knowledge into a powerhouse. By syncing with your database or uploading documents, ChatQuartz transforms your content into actionable AI insights.</p>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Sync your database or documents to turn your content into AI-driven insights.</p>
                                 </div>
                                 <div className="flex flex-col items-center text-center">
                                     <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Effortless Integration Across Platforms</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">From WordPress and WooCommerce to CRMs and email platforms, ChatQuartz fits seamlessly into your existing ecosystem, making implementation hassle-free.</p>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Fits seamlessly into WordPress, WooCommerce, CRMs, and email — no hassle.</p>
                                 </div>
                             </div>
                         </div>
