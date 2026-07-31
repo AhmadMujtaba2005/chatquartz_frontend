@@ -43,7 +43,7 @@ const Footer = () => {
                             <ul className="space-y-2.5 text-sm text-gray-700 font-medium">
                                 <li><Link href="/privacy-policy" className="hover:text-[#2B64FD] transition-colors duration-200">Privacy Policy</Link></li>
                                 <li><Link href="/terms-of-use" className="hover:text-[#2B64FD] transition-colors duration-200">Terms of Use</Link></li>
-                                <li><Link href="/" className="hover:text-[#2B64FD] transition-colors duration-200">Why chatquartz?</Link></li>
+                                <li><Link href="/features" className="hover:text-[#2B64FD] transition-colors duration-200">Why chatquartz?</Link></li>
                                 <li><Link href="/contactus" className="hover:text-[#2B64FD] transition-colors duration-200">Contact Us</Link></li>
                             </ul>
                         </div>
