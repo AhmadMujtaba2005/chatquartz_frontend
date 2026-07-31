@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         /* Main Navbar Header */
         <header className="w-full px-4 py-4 sm:px-6 sm:py-6 md:px-9 md:py-9">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between relative">
 
                 {/* Left: Brand Logo Section */}
                 <div className="flex-shrink-0 flex items-center justify-start">
@@ -26,7 +26,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Center: Navigation Menu Pills — Desktop only */}
-                <nav className="hidden md:flex items-center px-8 py-1.5 rounded-full bg-white shadow-md border border-[#AAC8FD]/30">
+                <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center px-8 py-1.5 rounded-full bg-white shadow-md border border-[#AAC8FD]/30">
                     <ul className="flex items-center gap-2 text-sm font-medium text-gray-700">
                         {navLinks.map((link) => (
                             <li key={link.href}>
