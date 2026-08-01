@@ -127,7 +127,7 @@ const HomePage = () => {
                         <Navbar />
                         <h1 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] leading-tight text-black mt-10 sm:mt-16 md:mt-24 lg:mt-45 mb-6 sm:mb-8 text-center px-4">
                             Skyrocket <br /> Your Growth with <br />
-                            <span className="text-[#2B64FD] italic">AI-Powered</span>{" "}
+                            <span className="text-[#2B64FD] italic font-bold">AI-Powered </span>
                             <span className="font-bold">Chatbots</span>
                         </h1>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
@@ -15,7 +16,7 @@ const FeaturesPage = () => {
                             Unleash the Power of
                         </p>
                         <h1 className="text-[48px] text-[#2B64FD] font-bold leading-tight mb-6 text-center tracking-tight">
-                            <span className="italic">AI-Driven </span> <span className="text-[48px] text-black font-bold">Chatbots</span>
+                            <span className="italic">AI-Driven </span> <span className="text-[48px] text-black">Chatbots</span>
                         </h1>
 
                         <div className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-40">
@@ -26,14 +27,14 @@ const FeaturesPage = () => {
                     </div>
                 </div>
                 <RevealOnScroll>
-                    <div className="mt-[120px]">
-                        <h1 className="text-[40px] leading-tight mb-8 text-center tracking-tight px-6">Transforming Customer Experiences with chatquartz</h1>
+                    <div className="mt-16 sm:mt-24 mb-20">
+                        <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Transforming Customer Experiences with chatquartz</h1>
                         <img src="/featurepagemobile.svg" alt="featurepagemobile" className="w-[280px] sm:w-[320px] h-auto mx-auto block mt-8 mb-20 object-contain drop-shadow-lg" />
                     </div>
                 </RevealOnScroll>
 
                 <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-[120px] px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-sm hover:shadow transition-all duration-300">
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 mb-20 px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-sm hover:shadow transition-all duration-300">
                         {/* Decorative Footer CTA Background - positioned around outer edges at subtle opacity to avoid competing with headline text */}
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
@@ -43,12 +44,12 @@ const FeaturesPage = () => {
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h1 className="text-[40px] leading-tight text-black mb-4 text-center tracking-tight">Why Choose <span className="font-bold text-[#2B64FD] italic">chatquartz</span>!</h1>
+                            <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 text-center tracking-tight bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why Choose <span className="text-[#2B64FD] italic">chatquartz</span>!</h1>
                             <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Experience AI you can trust, powered by industry leaders like OpenAI and Google’s Dialogflow. chatquartz delivers smart, flexible, and scalable conversations to elevate your customer service and marketing. Ready to simplify interactions & transform your business?</p>
-                            <button className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <Link href="/demo" className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Start for free</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </RevealOnScroll>

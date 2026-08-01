@@ -13,20 +13,20 @@ const PricingPage = () => {
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
                         <p className="text-[20px] text-center text-black mb-2 mt-[190px]">Pricing</p>
-                        <h1 className="text-[48px] font-bold leading-tight mb-6 text-center tracking-tight">Sample <span className="font-bold text-[#2B64FD] italic">Pricing </span>For Every Business</h1>
+                        <h1 className="text-[48px] leading-tight mb-6 text-center tracking-tight">Sample <span className="font-bold text-[#2B64FD] italic">Pricing </span>For Every Business</h1>
                         <div>
                             <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-100">Discover an affordable, innovative messaging platform tailored for support, marketing, and sales. With a one-time payment model, you can avoid monthly fees and enjoy lifetime benefits.</p>
                         </div>
                     </div>
                 </div>
                 <RevealOnScroll>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1200px] mx-auto w-[94%] mt-12 mb-20">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 mb-20">
                         {/* Starter Plan */}
                         <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 flex flex-col transition-all duration-300 hover:border-[#2B64FD]/40">
                             <h2 className="text-[24px] font-bold mb-1 text-gray-900">Starter Plan</h2>
                             <p className="text-[14px] text-gray-600 mb-6">Get started with AI-powered conversations</p>
                             <div className="text-[36px] font-bold text-[#2B64FD] mb-8">$9<span className="text-[18px] text-gray-500 font-medium">/month</span></div>
-                            
+
                             <div className="mb-4 text-[14px] font-semibold text-gray-900">Features:</div>
                             <ul className="list-disc pl-5 text-[14px] text-gray-600 space-y-3 mb-12 flex-grow marker:text-[#2B64FD]">
                                 <li>1 user seat</li>
@@ -35,7 +35,7 @@ const PricingPage = () => {
                                 <li>Basic analytics dashboard</li>
                                 <li>WordPress & WooCommerce integration</li>
                             </ul>
-                            
+
                             <div className="bg-gray-50/80 -mx-8 -mb-8 p-8 rounded-b-3xl border-t border-gray-100 mt-auto">
                                 <div className="text-[15px] font-semibold mb-2 text-gray-900">Best for:</div>
                                 <p className="text-[13px] text-gray-600 leading-relaxed">Individuals, startups, and small businesses looking to quickly launch AI chat on their website.</p>
@@ -48,7 +48,7 @@ const PricingPage = () => {
                             <h2 className="text-[24px] font-bold mb-1 text-gray-900">Professional Plan</h2>
                             <p className="text-[14px] text-gray-600 mb-6">Scale your conversations and automate growth</p>
                             <div className="text-[36px] font-bold text-[#2B64FD] mb-8">$15<span className="text-[18px] text-gray-500 font-medium">/month</span></div>
-                            
+
                             <div className="mb-4 text-[14px] font-semibold text-gray-900">Features:</div>
                             <ul className="list-disc pl-5 text-[14px] text-gray-600 space-y-3 mb-12 flex-grow marker:text-[#2B64FD]">
                                 <li>Up to 5 user seats</li>
@@ -59,7 +59,7 @@ const PricingPage = () => {
                                 <li>CRM Integrations (HubSpot, Mailchimp, etc.)</li>
                                 <li>Enhanced customization for chat design & behavior</li>
                             </ul>
-                            
+
                             <div className="bg-blue-50/40 -mx-8 -mb-8 p-8 rounded-b-[22px] border-t border-[#2B64FD]/10 mt-auto">
                                 <div className="text-[15px] font-semibold mb-2 text-gray-900">Best for:</div>
                                 <p className="text-[13px] text-gray-600 leading-relaxed">Growing businesses that want to automate customer engagement, capture more leads, and manage conversations across channels.</p>
@@ -71,7 +71,7 @@ const PricingPage = () => {
                             <h2 className="text-[24px] font-bold mb-1 text-gray-900">Enterprise Plan</h2>
                             <p className="text-[14px] text-gray-600 mb-6">Fully customized AI for your business at scale</p>
                             <div className="text-[32px] font-bold text-[#2B64FD] mb-8 mt-1">Custom Pricing</div>
-                            
+
                             <div className="mb-4 text-[14px] font-semibold text-gray-900">Everything in Professional, plus:</div>
                             <ul className="list-disc pl-5 text-[14px] text-gray-600 space-y-3 mb-12 flex-grow marker:text-[#2B64FD]">
                                 <li>Unlimited user seats</li>
@@ -82,7 +82,7 @@ const PricingPage = () => {
                                 <li>Tailored onboarding, training, and priority support</li>
                                 <li>Custom AI workflows & enterprise-grade automation</li>
                             </ul>
-                            
+
                             <div className="bg-gray-50/80 -mx-8 -mb-8 p-8 rounded-b-3xl border-t border-gray-100 mt-auto">
                                 <div className="text-[15px] font-semibold mb-2 text-gray-900">Best for:</div>
                                 <p className="text-[13px] text-gray-600 leading-relaxed">Large teams and enterprises that need full customization, deep integrations, and scalable AI infrastructure.</p>

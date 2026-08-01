@@ -13,7 +13,7 @@ const SupportPage = () => {
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
                         <p className="text-[20px] text-center text-black mb-2 mt-[190px]">Support</p>
-                        <h1 className="text-[48px] font-bold leading-tight mb-6 text-center tracking-tight">Elevate Your <span className="font-bold text-[#2B64FD] italic">Support </span>With Advanced Tools   </h1>
+                        <h1 className="text-[48px] leading-tight mb-6 text-center tracking-tight">Elevate Your <span className="font-bold text-[#2B64FD] italic">Support </span>With Advanced Tools   </h1>
                         <div>
                             <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-100">Live chat not only adds a personal touch but also provides real-time support, enhancing the customer experience and creating a powerful marketing tool. Each interaction fosters greater customer engagement, drives sales, and boosts revenue.</p>
                         </div>
@@ -21,7 +21,7 @@ const SupportPage = () => {
                 </div>
 
                 <RevealOnScroll>
-                    <div className="max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 flex flex-col gap-6 md:gap-8 mb-8">
+                    <div className="max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 flex flex-col gap-6 md:gap-8 mb-20">
                         {/* Row 1 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                             <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 md:p-10 flex flex-col transition-all duration-300 hover:border-[#2B64FD]/40">
@@ -105,7 +105,7 @@ const SupportPage = () => {
 
                         {/* Row 4 */}
                         <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 md:p-12 flex flex-col transition-all duration-300 hover:border-[#2B64FD]/40 text-center md:text-left">
-                            <h3 className="text-[28px] font-bold mb-4 text-gray-900">Smart Agent Routing</h3>
+                            <h3 className="text-[22px] font-bold mb-3 text-gray-900">Smart Agent Routing</h3>
                             <p className="text-[15px] text-gray-600 leading-relaxed max-w-4xl mx-auto md:mx-0">
                                 Collect valuable insights through user reviews and internal agent notes for seamless collaboration. Offer uninterrupted support with custom offline banners and integrated ticketing systems. Optimize response times using real-time queue updates, equitable routing, or user-preferred agent selection. Elevate your customer support experience with features built for satisfaction and success.
                             </p>

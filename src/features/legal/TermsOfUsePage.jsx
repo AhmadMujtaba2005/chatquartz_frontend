@@ -16,7 +16,7 @@ const TermsOfUsePage = () => {
                     </div>
                 </div>
 
-                <div className="max-w-[800px] mx-auto w-[90%] mt-12 mb-20 text-gray-700 leading-relaxed text-[15px]">
+                <div className="max-w-[800px] mx-auto w-[90%] mt-16 sm:mt-24 mb-20 text-gray-700 leading-relaxed text-[15px]">
                     <section className="mb-10">
                         <h2 className="text-[22px] font-bold text-gray-900 mb-4">1. Terms of Service</h2>
                         <p className="mb-4">These Terms of Service are a contract between you and Support Board (referred to in these Terms of Service as “website”, “Support Board”, “us”, “we” or “our”), the provider of the Support Board website and the services accessible from the Support Board websites and domains (which are collectively referred to in these Terms of Service as “Support Board”). The Support Board websites and domains are cloud.board.support, board.support, all subdomain of board.support, and all other websites and domains owned or operated by Support Board.</p>
@@ -89,7 +89,7 @@ const TermsOfUsePage = () => {
                         <h2 className="text-[22px] font-bold text-gray-900 mb-4">9. Termination by User</h2>
                         <p className="mb-3">You have the right to terminate your subscription to Support Board under different conditions depending on whether your subscription was made on a monthly or annual basis.</p>
                         <p className="mb-3">Monthly subscription: if the fees for the use of Support Board are paid on a monthly basis, the termination will become effective from the first day following the monthly period during which the termination was notified. For example, in the case of a subscription taken out on April 10 and termination notified on May 15, the termination will become effective on June 10.</p>
-                        <p className="mb-3">Annual subscription: if the fees for the use of Support Board are paid on an annual basis, the termination will become effective from the first day following the relevant annual period.<br/>For example, in the case of a subscription taken out on January 1, 2021 and termination notified on August 15, 2021, termination will become effective on January 1, 2022.</p>
+                        <p className="mb-3">Annual subscription: if the fees for the use of Support Board are paid on an annual basis, the termination will become effective from the first day following the relevant annual period.<br />For example, in the case of a subscription taken out on January 1, 2021 and termination notified on August 15, 2021, termination will become effective on January 1, 2022.</p>
                         <p className="mb-3">Access to Support Board and the License remains in effect until the effective date of termination. As the adherence to the Terms is made for a fixed period, on a monthly or annual basis, no refund of the fees for the use of Support Board, whether paid on an annual or monthly basis, shall be granted.</p>
                         <p className="mb-3">You are not entitled to invoke your own breach of the Terms, and in particular the inaccuracy of one or more of your statements, to request early termination of the Support Board services.</p>
                         <p className="mb-3">You can terminate a subscription by clicking the button “Cancel subscription” in the “Membership” section of the <a href="https://cloud.board.support/account?tab=membership" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#2B64FD] hover:underline">Support Board account page</a>.</p>
@@ -130,7 +130,7 @@ const TermsOfUsePage = () => {
                         <h2 className="text-[22px] font-bold text-gray-900 mb-4">12. Who do I contact if I have any questions?</h2>
                         <p className="mb-4">If you have any questions or comments about this Privacy Policy or feel that we are not abiding by the terms of this Privacy Policy, please contact us by post or email:</p>
                         <p><span className="font-bold">By email:</span><br />
-                        <a href="mailto:support@board.support" className="text-[#2B64FD] hover:underline font-medium">support@board.support</a></p>
+                            <a href="mailto:support@board.support" className="text-[#2B64FD] hover:underline font-medium">support@board.support</a></p>
                     </section>
                 </div>
 

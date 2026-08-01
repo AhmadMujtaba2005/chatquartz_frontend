@@ -21,7 +21,7 @@ const ContactUsPage = () => {
                 </div>
 
                 <RevealOnScroll>
-                    <div className="mt-16 mb-24 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
+                    <div className="mt-16 sm:mt-24 mb-20 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
                         <div className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-6 sm:p-10 border border-gray-100">
                             <form action="" method="post" className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

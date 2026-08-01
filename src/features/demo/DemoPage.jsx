@@ -15,14 +15,14 @@ const DemoPage = () => {
 
                 <div className="mt-16 sm:mt-24">
                     <p className="text-[20px] text-center text-black mb-2 mt-[190px]">Demo</p>
-                    <h1 className="text-[48px] font-bold leading-tight mb-6 text-center tracking-tight">Experience <span className="italic text-[#2B64FD]">chatquartz</span> in Action</h1>
+                    <h1 className="text-[48px] leading-tight mb-6 text-center tracking-tight">Experience <span className="italic text-[#2B64FD] font-bold">chatquartz</span> in Action</h1>
                     <div>
                         <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-100">Contact us to explore powerful features and experience seamless customer interactions—quick, easy, and hassle-free.</p>
                     </div>
                 </div>
 
                 <RevealOnScroll>
-                    <div className="mt-16 mb-24 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
+                    <div className="mt-16 sm:mt-24 mb-20 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
                         <div className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-6 sm:p-10 border border-gray-100">
                             <form action="" method="post" className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
