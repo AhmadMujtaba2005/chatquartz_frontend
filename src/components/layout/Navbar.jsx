@@ -2,15 +2,17 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const navLinks = [
         { href: "/pricing", label: "Pricing" },
         { href: "/marketing", label: "Marketing" },
-        { href: "/support", label: "Support" },
         { href: "/features", label: "Features" },
+        { href: "/support", label: "Support" },
     ];
 
     return (
@@ -26,11 +28,27 @@ const Navbar = () => {
                 </div>
 
                 {/* Center: Navigation Menu Pills — Desktop only */}
-                <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center px-8 py-1.5 rounded-full bg-white shadow-md border border-[#AAC8FD]/30">
-                    <ul className="flex items-center gap-2 text-sm font-medium text-gray-700">
-                        {navLinks.map((link) => (
-                            <li key={link.href}>
-                                <Link href={link.href} className="block px-6 py-1.5 rounded-full hover:bg-[#2B64FD] hover:text-white hover:shadow-sm transition-all duration-300 ease-out">{link.label}</Link>
+                <nav className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center p-0 rounded-full bg-white shadow-md border border-[#AAC8FD]/30 overflow-hidden">
+                    <ul 
+                        className="flex items-center justify-center m-0 p-0 h-full text-sm font-medium text-gray-700"
+                        onMouseLeave={() => setHoveredIndex(null)}
+                    >
+                        {navLinks.map((link, idx) => (
+                            <li key={link.href} className="relative h-full flex items-center m-0 p-0">
+                                <Link 
+                                    href={link.href}
+                                    onMouseEnter={() => setHoveredIndex(idx)}
+                                    className={`relative z-20 flex items-center justify-center text-center px-6 py-[10px] rounded-full transition-colors duration-200 ease-out ${hoveredIndex === idx ? 'text-white' : 'hover:text-gray-900'}`}
+                                >
+                                    {link.label}
+                                </Link>
+                                {hoveredIndex === idx && (
+                                    <motion.div
+                                        layoutId="nav-hover-pill"
+                                        className="absolute inset-0 bg-[#2B64FD] rounded-full z-10"
+                                        transition={{ type: "spring", stiffness: 450, damping: 35 }}
+                                    />
+                                )}
                             </li>
                         ))}
                     </ul>
