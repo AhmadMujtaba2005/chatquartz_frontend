@@ -19,10 +19,19 @@ const FeaturesPage = () => {
                             <span className="italic">AI-Driven </span> <span className="text-[48px] text-black">Chatbots</span>
                         </h1>
 
-                        <div className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-40">
-                            <p>
-                                AI-powered chatbots built with OpenAI and Dialogflow — fast, precise, and ready in minutes.
-                            </p>
+                        <div className="mx-auto max-w-[600px] mb-40 px-4">
+                            <div className="relative rounded-[32px] border border-[#AAC8FD]/50 bg-white/60 backdrop-blur-md p-8 sm:p-10 flex flex-col items-center text-center gap-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.1)] transition-all duration-500 overflow-hidden group cursor-default">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="relative z-10 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+                                    <span className="text-[14px] font-bold tracking-widest uppercase text-gray-400">Built on</span>
+                                    <span className="text-[20px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-700">OpenAI</span>
+                                    <span className="text-gray-300 font-light text-[24px]">×</span>
+                                    <span className="text-[20px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-700">Dialogflow</span>
+                                </div>
+                                <p className="relative z-10 text-[15px] text-gray-600 max-w-md leading-relaxed">
+                                    Enterprise-grade AI infrastructure from the two names powering conversational AI at scale — not a black-box model you have to trust blindly.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

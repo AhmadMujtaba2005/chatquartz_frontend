@@ -1,4 +1,26 @@
 import Link from "next/link";
+import { HelpCircle, FileText, Mail, ShieldCheck, Tag, BarChart3, Settings, Star } from "lucide-react";
+
+const footerGroups = [
+  {
+    title: "Company",
+    links: [
+      { label: "Privacy Policy", href: "/privacy-policy", icon: ShieldCheck },
+      { label: "Terms of Use", href: "/terms-of-use", icon: FileText },
+      { label: "Why chatquartz?", href: "/features", icon: Star },
+      { label: "Contact Us", href: "/contactus", icon: Mail },
+    ],
+  },
+  {
+    title: "Product",
+    links: [
+      { label: "Features", href: "/features", icon: Settings },
+      { label: "Marketing", href: "/marketing", icon: BarChart3 },
+      { label: "Support", href: "/support", icon: HelpCircle },
+      { label: "Pricing", href: "/pricing", icon: Tag },
+    ],
+  },
+];
 
 const Footer = () => {
     return (
@@ -35,29 +57,26 @@ const Footer = () => {
                     </div>
 
                     {/* Navigation Links (Company & Product Columns) */}
-                    <div className="flex flex-row sm:flex-row gap-8 sm:gap-12 md:gap-24">
-
-                        {/* Company Column */}
-                        <div>
-                            <h3 className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Company</h3>
-                            <ul className="space-y-2.5 text-sm text-gray-700 font-medium">
-                                <li><Link href="/privacy-policy" className="hover:text-[#2B64FD] transition-colors duration-200">Privacy Policy</Link></li>
-                                <li><Link href="/terms-of-use" className="hover:text-[#2B64FD] transition-colors duration-200">Terms of Use</Link></li>
-                                <li><Link href="/features" className="hover:text-[#2B64FD] transition-colors duration-200">Why chatquartz?</Link></li>
-                                <li><Link href="/contactus" className="hover:text-[#2B64FD] transition-colors duration-200">Contact Us</Link></li>
-                            </ul>
-                        </div>
-
-                        {/* Product Column */}
-                        <div>
-                            <h3 className="text-sm font-bold text-gray-900 mb-4 tracking-wider uppercase">Product</h3>
-                            <ul className="space-y-2.5 text-sm text-gray-700 font-medium">
-                                <li><Link href="/features" className="hover:text-[#2B64FD] transition-colors duration-200">Features</Link></li>
-                                <li><Link href="/marketing" className="hover:text-[#2B64FD] transition-colors duration-200">Marketing</Link></li>
-                                <li><Link href="/support" className="hover:text-[#2B64FD] transition-colors duration-200">Support</Link></li>
-                                <li><Link href="/pricing" className="hover:text-[#2B64FD] transition-colors duration-200">Pricing</Link></li>
-                            </ul>
-                        </div>
+                    <div className="flex flex-row sm:flex-row gap-12 md:gap-24">
+                        {footerGroups.map((group) => (
+                            <div key={group.title}>
+                                <h3 className="text-[13px] font-extrabold text-gray-900 mb-6 tracking-[0.15em] uppercase">
+                                    {group.title}
+                                </h3>
+                                <ul className="space-y-4">
+                                    {group.links.map(({ label, href, icon: Icon }) => (
+                                        <li key={label}>
+                                            <Link href={href} className="flex items-center gap-3 text-[15px] text-gray-600 font-medium hover:text-[#2B64FD] transition-all duration-200 group">
+                                                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm border border-gray-100 group-hover:border-[#2B64FD]/30 group-hover:bg-[#2B64FD]/5 group-hover:shadow-md transition-all duration-300">
+                                                    <Icon className="h-4 w-4 text-gray-400 group-hover:text-[#2B64FD] transition-colors duration-200" />
+                                                </span>
+                                                {label}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
