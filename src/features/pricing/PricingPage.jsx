@@ -9,13 +9,13 @@ const PricingPage = () => {
     return (
         <div>
             <SmoothScroll>
-                <div className="w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF]">
+                <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
                         <p className="text-[20px] text-center text-black mb-2 mt-[190px]">Pricing</p>
                         <h1 className="text-[48px] leading-tight mb-6 text-center tracking-tight">Sample <span className="font-bold text-[#2B64FD] italic">Pricing </span>For Every Business</h1>
                         <div>
-                            <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-100">Discover an affordable, innovative messaging platform tailored for support, marketing, and sales. With a one-time payment model, you can avoid monthly fees and enjoy lifetime benefits.</p>
+                            <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-100">An affordable messaging platform for support, marketing, and sales — one-time payment, no monthly fees, lifetime access.</p>
                         </div>
                     </div>
                 </div>

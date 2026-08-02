@@ -9,7 +9,7 @@ const DemoPage = () => {
     return (
         <div>
             <SmoothScroll>
-                <div className="w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF]">
+                <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                 </div>
 

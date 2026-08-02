@@ -15,7 +15,7 @@ const MarketingPage = () => {
     return (
         <div>
             <SmoothScroll>
-                <div className="w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF]">
+                <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
                         <p className="text-[20px] text-center text-black mb-2 mt-[190px]">Marketing Strategy</p>
@@ -88,20 +88,20 @@ const MarketingPage = () => {
                 <RevealOnScroll className="w-full flex flex-col items-center mt-16 sm:mt-24 mb-20 px-4">
                     <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Real-Time Connections</h1>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1200px] mx-auto w-[94%] text-center px-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-22 max-w-[1200px] mx-auto w-[94%] mt-8 text-center px-4">
                         <div className="flex flex-col items-center">
                             <h3 className="text-[20px] font-bold text-gray-900 mb-3 tracking-tight">Proactive Chat</h3>
-                            <p className="text-[15px] text-gray-600 leading-relaxed">Actively invite users to chat in real-time, using an admin dashboard to target and engage online visitors.</p>
+                            <p className="text-[15px] text-gray-600 leading-relaxed">Actively Invite online visitors to chat in real-time, right from your admin dashboard.</p>
                         </div>
 
                         <div className="flex flex-col items-center">
                             <h3 className="text-[20px] font-bold text-gray-900 mb-3 tracking-tight">Multi-User Direct Messaging</h3>
-                            <p className="text-[15px] text-gray-600 leading-relaxed">Enable simultaneous real-time interactions with multiple users via chat, email, or text, all with personalized touches.</p>
+                            <p className="text-[15px] text-gray-600 leading-relaxed">Handle multiple conversations at once — chat, email, or text — with a personal touch.</p>
                         </div>
 
                         <div className="flex flex-col items-center">
                             <h3 className="text-[20px] font-bold text-gray-900 mb-3 tracking-tight">Booking System Integration</h3>
-                            <p className="text-[15px] text-gray-600 leading-relaxed">Seamlessly schedule meetings using the Calendly integration, allowing users to book appointments directly from the chat widget.</p>
+                            <p className="text-[15px] text-gray-600 leading-relaxed">Let visitors book meetings directly from the chat widget via Calendly integration.</p>
                         </div>
                     </div>
                 </RevealOnScroll>

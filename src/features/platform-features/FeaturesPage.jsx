@@ -9,7 +9,7 @@ const FeaturesPage = () => {
         <div>
             <SmoothScroll>
                 {/* Hero Section & Navigation */}
-                <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
+                <div className="w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
                         <p className="text-[20px] text-center text-black mb-2 mt-[190px]">
@@ -21,13 +21,13 @@ const FeaturesPage = () => {
 
                         <div className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-40">
                             <p>
-                                Supercharge your customer interactions with state-of-the-art AI-powered chatbots built using OpenAI and Dialogflow. Designed for speed, precision, and automation, our chatbots deliver unparalleled user satisfaction within minutes of setup.
+                                AI-powered chatbots built with OpenAI and Dialogflow — fast, precise, and ready in minutes.
                             </p>
                         </div>
                     </div>
                 </div>
                 <RevealOnScroll>
-                    <div className="mt-16 sm:mt-24 mb-20">
+                    <div className="mt-16 sm:mt-36 mb-20">
                         <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Transforming Customer Experiences with chatquartz</h1>
                         <img src="/featurepagemobile.svg" alt="featurepagemobile" className="w-[280px] sm:w-[320px] h-auto mx-auto block mt-8 mb-20 object-contain drop-shadow-lg" />
                     </div>

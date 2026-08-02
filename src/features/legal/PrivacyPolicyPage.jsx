@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
         <div>
             <SmoothScroll>
                 {/* Hero Section & Navigation */}
-                <div className="w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
+                <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <h1 className="text-[40px] font-bold leading-tight text-black mt-16 sm:mt-24 mb-6 text-center tracking-tight">
                         Privacy Policy
