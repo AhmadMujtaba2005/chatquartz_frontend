@@ -9,6 +9,7 @@ const ContactUsPage = () => {
     return (
         <div>
             <SmoothScroll>
+                {/* Section 1: Hero Section */}
                 <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
@@ -20,8 +21,9 @@ const ContactUsPage = () => {
                     </div>
                 </div>
 
+                {/* Section 2: Contact Form */}
                 <RevealOnScroll>
-                    <div className="mt-16 sm:mt-24 mb-20 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
+                    <div className="mt-16 sm:mt-24 md:mt-[120px] mb-20 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
                         <div className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-6 sm:p-10 border border-gray-100">
                             <form action="" method="post" className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -62,6 +64,7 @@ const ContactUsPage = () => {
                     </div>
                 </RevealOnScroll>
 
+                {/* Section 3: Footer */}
                 <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">

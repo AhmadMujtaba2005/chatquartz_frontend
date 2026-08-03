@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
     return (
         <div>
             <SmoothScroll>
-                {/* Hero Section & Navigation */}
+                {/* Section 1: Hero Section */}
                 <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <h1 className="text-[40px] font-bold leading-tight text-black mt-16 sm:mt-24 mb-6 text-center tracking-tight">
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
                     </div>
                 </div>
 
-                {/* Policy Content Sections */}
+                {/* Section 2: Policy Content */}
                 <div className="w-[92%] max-w-[960px] mx-auto my-8 mb-24 space-y-8 text-gray-700">
 
                     <RevealOnScroll>
@@ -308,7 +308,7 @@ export default function PrivacyPolicyPage() {
                     </RevealOnScroll>
                 </div>
 
-                {/* Footer Section with Matching Gradient */}
+                {/* Section 3: Footer */}
                 <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">

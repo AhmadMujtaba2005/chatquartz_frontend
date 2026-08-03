@@ -8,7 +8,7 @@ const FeaturesPage = () => {
     return (
         <div>
             <SmoothScroll>
-                {/* Hero Section & Navigation */}
+                {/* Section 1: Hero Section */}
                 <div className="w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
@@ -35,16 +35,17 @@ const FeaturesPage = () => {
                         </div>
                     </div>
                 </div>
+                {/* Section 2: Mobile Feature Showcase */}
                 <RevealOnScroll>
-                    <div className="mt-16 sm:mt-36 mb-20">
+                    <div className="mt-16 sm:mt-24 md:mt-[120px] mb-20">
                         <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Transforming Customer Experiences with chatquartz</h1>
                         <img src="/featurepagemobile.svg" alt="featurepagemobile" className="w-[280px] sm:w-[320px] h-auto mx-auto block mt-8 mb-20 object-contain drop-shadow-lg" />
                     </div>
                 </RevealOnScroll>
 
+                {/* Section 3: CTA Section */}
                 <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 mb-20 px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-sm hover:shadow transition-all duration-300">
-                        {/* Decorative Footer CTA Background - positioned around outer edges at subtle opacity to avoid competing with headline text */}
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-sm hover:shadow transition-all duration-300">
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>
@@ -63,7 +64,7 @@ const FeaturesPage = () => {
                     </div>
                 </RevealOnScroll>
 
-                {/* Footer Section with Matching Gradient */}
+                {/* Section 4: Footer */}
                 <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">

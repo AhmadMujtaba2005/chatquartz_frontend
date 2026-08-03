@@ -1,10 +1,18 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 const RevealOnScroll = ({ children, className = "" }) => {
     return (
-        <div className={`popup-element ${className}`}>
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className={className}
+        >
             {children}
-        </div>
+        </motion.div>
     );
 };
 

@@ -15,6 +15,7 @@ const MarketingPage = () => {
     return (
         <div>
             <SmoothScroll>
+                {/* Section 1: Hero Section */}
                 <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
@@ -25,6 +26,7 @@ const MarketingPage = () => {
                         </div>
                     </div>
                 </div>
+                {/* Section 2: Mockups Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[950px] mx-auto mt-8 sm:mt-10">
                     <RevealOnScroll>
                         <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
@@ -63,7 +65,8 @@ const MarketingPage = () => {
                         </div>
                     </RevealOnScroll>
                 </div>
-                <div className="flex flex-col items-center mt-16 sm:mt-24 mb-20 px-4">
+                {/* Section 3: Advanced Marketing Automations & Integrations */}
+                <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] mb-20 px-4">
                     <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Advanced Marketing Automations</h1>
                     <RevealOnScroll className="w-full flex justify-center">
                         <FeatureShowcase />
@@ -85,7 +88,8 @@ const MarketingPage = () => {
                         </div>
                     </RevealOnScroll>
                 </div>
-                <RevealOnScroll className="w-full flex flex-col items-center mt-16 sm:mt-24 mb-20 px-4">
+                {/* Section 4: Real-Time Connections */}
+                <RevealOnScroll className="w-full flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] mb-20 px-4">
                     <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Real-Time Connections</h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-22 max-w-[1200px] mx-auto w-[94%] mt-8 text-center px-4">
@@ -105,9 +109,9 @@ const MarketingPage = () => {
                         </div>
                     </div>
                 </RevealOnScroll>
+                {/* Section 5: CTA Section */}
                 <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 mb-20 px-5 py-10 sm:p-14 border border-gray-200/80 rounded-2xl sm:rounded-3xl bg-white shadow-md hover:shadow-lg transition-all duration-300">
-                        {/* Decorative Footer CTA Background - positioned around outer edges at subtle opacity to avoid competing with headline text */}
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-5 py-10 sm:p-14 border border-gray-200/80 rounded-2xl sm:rounded-3xl bg-white shadow-md hover:shadow-lg transition-all duration-300">
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>
@@ -124,6 +128,7 @@ const MarketingPage = () => {
                         </div>
                     </div>
                 </RevealOnScroll>
+                {/* Section 6: Footer */}
                 <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">

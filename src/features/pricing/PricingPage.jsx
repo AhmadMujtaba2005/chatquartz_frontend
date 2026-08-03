@@ -9,6 +9,7 @@ const PricingPage = () => {
     return (
         <div>
             <SmoothScroll>
+                {/* Section 1: Hero Section */}
                 <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
@@ -19,8 +20,9 @@ const PricingPage = () => {
                         </div>
                     </div>
                 </div>
+                {/* Section 2: Pricing Cards */}
                 <RevealOnScroll>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 mb-20">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 md:mt-[120px] mb-20">
                         {/* Starter Plan */}
                         <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 flex flex-col transition-all duration-300 hover:border-[#2B64FD]/40">
                             <h2 className="text-[24px] font-bold mb-1 text-gray-900">Starter Plan</h2>
@@ -90,6 +92,7 @@ const PricingPage = () => {
                         </div>
                     </div>
                 </RevealOnScroll>
+                {/* Section 3: Footer */}
                 <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">

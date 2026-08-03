@@ -9,6 +9,7 @@ const TermsOfUsePage = () => {
     return (
         <div>
             <SmoothScroll>
+                {/* Section 1: Hero Section */}
                 <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
@@ -16,6 +17,7 @@ const TermsOfUsePage = () => {
                     </div>
                 </div>
 
+                {/* Section 2: Terms of Use Content */}
                 <div className="max-w-[800px] mx-auto w-[90%] mt-16 sm:mt-24 mb-20 text-gray-700 leading-relaxed text-[15px]">
                     <section className="mb-10">
                         <h2 className="text-[22px] font-bold text-gray-900 mb-4">1. Terms of Service</h2>
@@ -134,6 +136,7 @@ const TermsOfUsePage = () => {
                     </section>
                 </div>
 
+                {/* Section 3: Footer */}
                 <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">

@@ -112,7 +112,6 @@ const HomePage = () => {
             <SmoothScroll>
                 {/* Section 1: Hero Section & Navigation */}
                 <div className="relative overflow-hidden w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20">
-                    {/* Hero Background Shape - Right side behind/around headline text */}
                     <div
                         className="absolute top-16 sm:top-20 md:top-16 right-[-30%] sm:right-[-10%] md:right-[-5%] w-[400px] sm:w-[650px] md:w-[850px] lg:w-[1050px] pointer-events-none z-0 select-none opacity-80 sm:opacity-95"
                         style={{
@@ -189,8 +188,8 @@ const HomePage = () => {
 
 
                 <RevealOnScroll>
+                    {/* Section 3: Mid-Page CTA Section */}
                     <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] px-5 py-10 sm:p-14 border border-gray-200/80 rounded-2xl sm:rounded-3xl bg-white shadow-md hover:shadow-lg transition-all duration-300">
-                        {/* Decorative Footer CTA Background - positioned around outer edges at subtle opacity to avoid competing with headline text */}
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>
@@ -211,7 +210,7 @@ const HomePage = () => {
 
 
                 <RevealOnScroll>
-                    {/* Section 3: Future of Customer Support (Split Details) */}
+                    {/* Section 4: Future of Customer Support */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
                         <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-8 sm:mb-12 md:mb-16 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why chatquartz is the Future of Customer Support</h1>
                         <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-6 md:gap-12 w-[94%] max-w-[1100px] mx-auto">
@@ -248,11 +247,10 @@ const HomePage = () => {
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                    {/* Section 4: Effortless Human Takeover Section */}
+                    {/* Section 5: Effortless Human Takeover */}
                     <div className="flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-24 mt-16 sm:mt-24 md:mt-[120px]">
                         <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: Keeping You in Control</h1>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
-                        {/* <img src="/chatsample.svg" alt="chatsample" className="w-[70%] h-[300px] object-contain mt-10" /> */}
                         <Link href="/features" className="flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
                             <span>Learn more</span>
                             <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
@@ -260,38 +258,70 @@ const HomePage = () => {
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                    {/* Section 5: Get Started in Minutes (3 Simple Steps) */}
+                    {/* Section 6: Get Started in Minutes */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
                         <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h1>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-8 sm:mt-10">
-                            <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
-                                <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">1</h1>
-                                <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Sync chatquartz with Your Data</h2>
-                                <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Automatically sync user details and plugin data, ensuring a smooth and streamlined setup process.</p>
+                            <div
+                                className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl border border-[#AAC8FD]/30 shadow-sm hover:shadow-[0_15px_40px_rgba(43,100,253,0.12)] transition-all duration-500 ease-out cursor-pointer overflow-hidden hover:-translate-y-2 group"
+                                style={{
+                                    backgroundImage: "url('/images/wave-bg-1.png')",
+                                    backgroundSize: "300% 100%",
+                                    backgroundPosition: "0% center"
+                                }}
+                            >
+                                <div className="absolute inset-0 bg-white/85 z-0 transition-colors duration-500 group-hover:bg-white/60"></div>
+                                <div className="relative z-10 flex flex-col h-full">
+                                    <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] leading-none mb-3">1</h1>
+                                    <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Sync chatquartz with Your Data</h2>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Automatically sync user details and plugin data, ensuring a smooth and streamlined setup process.</p>
+                                </div>
                             </div>
-                            <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
-                                <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">2</h1>
-                                <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">chatquartz Responds Using Your Content</h2>
-                                <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">AI-driven chatbots handle customer queries with precision, leveraging your existing knowledge base.</p>
+
+                            <div
+                                className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl border border-[#AAC8FD]/30 shadow-sm hover:shadow-[0_15px_40px_rgba(43,100,253,0.12)] transition-all duration-500 ease-out cursor-pointer overflow-hidden hover:-translate-y-2 group"
+                                style={{
+                                    backgroundImage: "url('/images/wave-bg-1.png')",
+                                    backgroundSize: "300% 100%",
+                                    backgroundPosition: "50% center"
+                                }}
+                            >
+                                <div className="absolute inset-0 bg-white/85 z-0 transition-colors duration-500 group-hover:bg-white/60"></div>
+                                <div className="relative z-10 flex flex-col h-full">
+                                    <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] leading-none mb-3">2</h1>
+                                    <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">chatquartz Responds Using Your Content</h2>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">AI-driven chatbots handle customer queries with precision, leveraging your existing knowledge base.</p>
+                                </div>
                             </div>
-                            <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
-                                <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] mb-3">3</h1>
-                                <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Track and Enhance Performance</h2>
-                                <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Monitor chatbot interactions and refine responses by adding new insights for continuous improvement.</p>
+
+                            <div
+                                className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl border border-[#AAC8FD]/30 shadow-sm hover:shadow-[0_15px_40px_rgba(43,100,253,0.12)] transition-all duration-500 ease-out cursor-pointer overflow-hidden hover:-translate-y-2 group"
+                                style={{
+                                    backgroundImage: "url('/images/wave-bg-1.png')",
+                                    backgroundSize: "300% 100%",
+                                    backgroundPosition: "100% center"
+                                }}
+                            >
+                                <div className="absolute inset-0 bg-white/85 z-0 transition-colors duration-500 group-hover:bg-white/60"></div>
+                                <div className="relative z-10 flex flex-col h-full">
+                                    <h1 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] leading-none mb-3">3</h1>
+                                    <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Track and Enhance Performance</h2>
+                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Monitor chatbot interactions and refine responses by adding new insights for continuous improvement.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                    {/* Section 6: Frequently Asked Questions (FAQ) */}
+                    {/* Section 7: Frequently Asked Questions */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
                         <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Frequently Asked Questions</h1>
                         <FAQSection />
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                    {/* Section 7: Footer Section */}
+                    {/* Section 8: Footer */}
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-16 sm:mt-24 md:mt-[120px]">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />

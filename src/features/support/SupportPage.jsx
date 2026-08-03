@@ -9,6 +9,7 @@ const SupportPage = () => {
     return (
         <div>
             <SmoothScroll>
+                {/* Section 1: Hero Section */}
                 <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
                     <Navbar />
                     <div className="mt-16 sm:mt-24">
@@ -20,9 +21,9 @@ const SupportPage = () => {
                     </div>
                 </div>
 
+                {/* Section 2: Support Features */}
                 <RevealOnScroll>
-                    <div className="max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 flex flex-col gap-6 md:gap-8 mb-20">
-                        {/* Row 1 */}
+                    <div className="max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 md:mt-[120px] flex flex-col gap-6 md:gap-8 mb-20">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                             <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 md:p-10 flex flex-col transition-all duration-300 hover:border-[#2B64FD]/40">
                                 <h3 className="text-[22px] font-bold mb-3 text-gray-900">Unified Conversation Management</h3>
@@ -58,7 +59,6 @@ const SupportPage = () => {
                             </div>
                         </div>
 
-                        {/* Row 2 */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                             <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 md:p-10 flex flex-col transition-all duration-300 hover:border-[#2B64FD]/40">
                                 <h3 className="text-[22px] font-bold mb-3 text-gray-900">Streamlined Messaging Tools</h3>
@@ -90,7 +90,6 @@ const SupportPage = () => {
                             </div>
                         </div>
 
-                        {/* Row 3 */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                             <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 flex items-center justify-center text-center transition-all duration-300 hover:border-[#2B64FD]/40 min-h-[140px]">
                                 <h3 className="text-[18px] font-bold text-gray-900">Omni-Channel Connectivity</h3>
@@ -103,7 +102,6 @@ const SupportPage = () => {
                             </div>
                         </div>
 
-                        {/* Row 4 */}
                         <div className="bg-white rounded-3xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 p-8 md:p-12 flex flex-col transition-all duration-300 hover:border-[#2B64FD]/40 text-center md:text-left">
                             <h3 className="text-[22px] font-bold mb-3 text-gray-900">Smart Agent Routing</h3>
                             <p className="text-[15px] text-gray-600 leading-relaxed max-w-4xl mx-auto md:mx-0">
@@ -111,7 +109,8 @@ const SupportPage = () => {
                             </p>
                         </div>
                     </div>
-                </RevealOnScroll>                <RevealOnScroll>
+                </RevealOnScroll>                {/* Section 3: Footer */}
+                <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
