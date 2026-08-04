@@ -1,7 +1,7 @@
 import DemoPage from "@/features/demo/DemoPage";
 
 export const metadata = {
-    title: "Demo - ChatQuartz",
+    title: "Demo",
     description: "Try chatquartz live and experience AI-powered chatbot support in action",
 };
 

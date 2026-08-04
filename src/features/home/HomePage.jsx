@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import { useState } from "react";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
+import FutureShowcase from "@/components/features/FutureShowcase";
 
 const faqData = [
     {
@@ -213,37 +214,7 @@ const HomePage = () => {
                     {/* Section 4: Future of Customer Support */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
                         <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-8 sm:mb-12 md:mb-16 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why chatquartz is the Future of Customer Support</h1>
-                        <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-6 md:gap-12 w-[94%] max-w-[1100px] mx-auto">
-
-                            <div className="flex-1 flex flex-col justify-between gap-10 sm:gap-16 md:gap-24 lg:gap-32 px-4 sm:px-8 py-6 sm:py-12 md:py-24 lg:py-32">
-                                <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Intelligent Automation At Scale</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Handles unlimited queries autonomously, escalating complex issues to your team when needed.</p>
-                                </div>
-                                <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Analytics That Drive Success</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Real-time performance tracking to spot gaps and continuously improve responses.</p>
-                                </div>
-                            </div>
-
-                            <div className="hidden md:block w-px bg-[#2B64FD] self-stretch my-2"></div>
-                            <div className="block md:hidden h-px w-4/5 bg-[#2B64FD] my-4"></div>
-
-                            <div className="flex-1 flex flex-col justify-between gap-10 sm:gap-16 md:gap-24 lg:gap-32 px-4 sm:px-8 py-2">
-                                <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">A Multilingual Marvel</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Auto-translated conversations in 19+ languages — no barriers, no limits.</p>
-                                </div>
-                                <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Your Data, Your Strength</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Sync your database or documents to turn your content into AI-driven insights.</p>
-                                </div>
-                                <div className="flex flex-col items-center text-center">
-                                    <h5 className="text-[17px] sm:text-[18px] md:text-[20px] font-bold mb-3 text-gray-900">Effortless Integration Across Platforms</h5>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed max-w-[460px]">Fits seamlessly into WordPress, WooCommerce, CRMs, and email — no hassle.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <FutureShowcase />
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>

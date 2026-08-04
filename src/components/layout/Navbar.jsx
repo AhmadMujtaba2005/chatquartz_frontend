@@ -16,18 +16,18 @@ const Navbar = () => {
     ];
 
     return (
-        /* Main Navbar Header */
         <header className="w-full px-4 py-4 sm:px-6 sm:py-6 md:px-9 md:py-9">
+            {/* Main Navbar Header */}
             <div className="flex items-center justify-between relative">
 
-                {/* Left: Brand Logo Section */}
+                {/* Brand Logo Section */}
                 <div className="flex-shrink-0 flex items-center justify-start">
                     <Link href="/" className="flex items-center">
                         <img src="/logo.svg" alt="Logo" className="h-8 sm:h-10 w-auto brightness-0 block" />
                     </Link>
                 </div>
 
-                {/* Center: Navigation Menu Pills — Desktop only */}
+                {/* Navigation Menu Pills */}
                 <nav className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center p-0 rounded-full bg-white shadow-md border border-[#AAC8FD]/30 overflow-hidden">
                     <ul 
                         className="flex items-center justify-center m-0 p-0 h-full text-sm font-medium text-gray-700"
@@ -54,15 +54,15 @@ const Navbar = () => {
                     </ul>
                 </nav>
 
-                {/* Right: Action Button (Desktop) + Hamburger (Mobile) */}
+                {/* Action Button & Hamburger */}
                 <div className="flex items-center gap-3">
-                    {/* CTA — hidden on small screens to save space, visible on sm+ */}
+                    {/* Desktop CTA */}
                     <Link href="/demo" className="hidden sm:flex group items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-sm font-semibold shadow-sm hover:shadow-lg hover:shadow-[#2B64FD]/25 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                         <span>Try Now</span>
                         <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2">→</span>
                     </Link>
 
-                    {/* Hamburger button — visible only on mobile */}
+                    {/* Hamburger Button */}
                     <button
                         onClick={() => setMobileOpen(!mobileOpen)}
                         className="md:hidden flex flex-col items-center justify-center w-10 h-10 rounded-xl bg-white/80 border border-gray-200/60 shadow-sm cursor-pointer"
