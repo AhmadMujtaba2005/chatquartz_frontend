@@ -11,14 +11,14 @@ const DemoPage = () => {
                 {/* Section 1: Hero Section */}
                 <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
                     <div className="relative z-10">
-                        <p className="text-[20px] text-center text-black mb-2 mt-10 sm:mt-16 md:mt-24 lg:mt-45">
+                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3 mt-10 sm:mt-16 md:mt-24 lg:mt-45">
                             Demo
                         </p>
-                        <h1 className="text-[48px] leading-tight mb-6 text-center tracking-tight">
+                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
                             Experience <span className="italic text-[#2B64FD] font-bold">chatquartz</span> in Action
                         </h1>
-                        <div className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">
-                            <p>
+                        <div className="max-w-3xl mx-auto px-6">
+                            <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed">
                                 Contact us to explore powerful features and experience seamless customer interactions—quick, easy, and hassle-free.
                             </p>
                         </div>

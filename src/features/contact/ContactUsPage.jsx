@@ -11,10 +11,10 @@ const ContactUsPage = () => {
                 {/* Section 1: Hero Section */}
                 <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
                     <div className="relative z-10">
-                        <p className="text-[20px] text-center text-black mb-2 mt-10 sm:mt-16 md:mt-24 lg:mt-45">Contact Us</p>
-                        <h1 className="text-[48px] font-bold leading-tight mb-6 text-center tracking-tight">We’d Love to Hear from You!</h1>
-                        <div>
-                            <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">Whether you have a question, need support, or just want to say hello, we’re here for you. Have a specific request? Use the form below, and we’ll get back to you as soon as possible.</p>
+                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3 mt-10 sm:mt-16 md:mt-24 lg:mt-45">Contact Us</p>
+                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] font-bold mb-6 text-center tracking-tight text-gray-900">We'd Love to Hear from You!</h1>
+                        <div className="max-w-3xl mx-auto px-6">
+                            <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed">Whether you have a question, need support, or just want to say hello, we're here for you. Have a specific request? Use the form below, and we'll get back to you as soon as possible.</p>
                         </div>
                     </div>
                 </div>
