@@ -19,12 +19,12 @@ const MarketingPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] min-h-screen flex flex-col pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
                     <PageBackground variant="marketing" />
                     <div className="relative z-10 flex-grow flex flex-col items-center">
                         <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3 mt-12 sm:mt-16 md:mt-24 lg:mt-48">Marketing Strategy</p>
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
-                            Made Easy with <span className="font-bold text-[#2B64FD] italic">Live Chat</span>
+                            Made Easy with <span className="font-bold text-brand-primary italic">Live Chat</span>
                         </h1>
                         <div className="max-w-3xl mx-auto px-6">
                             <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed">
@@ -36,8 +36,8 @@ const MarketingPage = () => {
                 {/* Section 2: Mockups Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[950px] mx-auto mt-16 sm:mt-24 md:mt-[120px]">
                     <RevealOnScroll>
-                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-[#AAC8FD]/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-[#2B64FD]/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-brand-secondary/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div className="relative z-10 w-full"><PopupMockup /></div>
                             <h2 className="relative z-10 text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3 mt-4">
                                 Pop-up Messages
@@ -46,8 +46,8 @@ const MarketingPage = () => {
                         </div>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-[#AAC8FD]/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-[#2B64FD]/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-brand-secondary/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div className="relative z-10 w-full"><WelcomeMockup /></div>
                             <h2 className="relative z-10 text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3 mt-4">
                                 Welcome Messages
@@ -56,8 +56,8 @@ const MarketingPage = () => {
                         </div>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-[#AAC8FD]/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-[#2B64FD]/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-brand-secondary/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div className="relative z-10 w-full"><FollowUpMockup /></div>
                             <h2 className="relative z-10 text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3 mt-4">
                                 Follow-up Messages
@@ -66,8 +66,8 @@ const MarketingPage = () => {
                         </div>
                     </RevealOnScroll>
                     <RevealOnScroll>
-                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-[#AAC8FD]/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-[#2B64FD]/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-brand-secondary/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div className="relative z-10 w-full"><SubscribeMockup /></div>
                             <h2 className="relative z-10 text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3 mt-4">
                                 Subscribe Messages
@@ -78,17 +78,17 @@ const MarketingPage = () => {
                 </div>
                 {/* Section 3: Advanced Marketing Automations & Integrations */}
                 <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] mb-20 px-4">
-                    <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Advanced Marketing Automations</h1>
+                    <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Advanced Marketing Automations</h2>
                     <RevealOnScroll className="w-full flex justify-center">
                         <FeatureShowcase />
                     </RevealOnScroll>
                     <RevealOnScroll className="w-full mt-12 md:mt-16">
                         <div className="flex flex-col items-center justify-center gap-6">
-                            <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Streamlined Integrations</h1>
+                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Streamlined Integrations</h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto w-[94%] mt-10">
                             {/* Card 1: Social Share */}
-                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-[#2B64FD]/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
+                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-brand-primary/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 via-transparent to-pink-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 <div className="relative z-10 flex flex-col items-center gap-3 mb-6 mt-4">
                                     <div className="flex gap-3">
@@ -126,7 +126,7 @@ const MarketingPage = () => {
                             </div>
 
                             {/* Card 3: Newsletter Subscriptions */}
-                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-[#2B64FD]/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
+                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-brand-primary/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-50/50 via-transparent to-purple-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 <div className="relative z-10 flex flex-col items-center gap-3 mb-6 mt-4">
                                     <div className="flex gap-3">
@@ -141,7 +141,7 @@ const MarketingPage = () => {
                                         </div>
                                     </div>
                                     <div className="flex gap-3">
-                                        <div className="w-14 h-14 bg-[#2B64FD] rounded-2xl shadow-[0_2px_12px_rgba(43,100,253,0.25)] flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(43,100,253,0.4)] transition-all duration-300 delay-150">
+                                        <div className="w-14 h-14 bg-brand-primary rounded-2xl shadow-[0_2px_12px_rgba(43,100,253,0.25)] flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(43,100,253,0.4)] transition-all duration-300 delay-150">
                                             <Sparkles className="text-white w-6 h-6" />
                                         </div>
                                         <div className="w-14 h-14 bg-white rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(14,165,233,0.25)] transition-all duration-300 delay-200">
@@ -156,15 +156,15 @@ const MarketingPage = () => {
                 </div>
                 {/* Section 4: Real-Time Connections */}
                 <RevealOnScroll className="w-full flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] mb-20 px-4">
-                    <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Real-Time Connections</h1>
+                    <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Real-Time Connections</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1200px] mx-auto w-[94%] mt-12 text-center px-4 relative">
                         {/* Shared Gradient Definition */}
                         <svg width="0" height="0" className="absolute">
                             <defs>
                                 <linearGradient id="theme-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop stopColor="#2B64FD" offset="0%" />
-                                    <stop stopColor="#AAC8FD" offset="100%" />
+                                    <stop stopColor="var(--color-brand-primary)" offset="0%" />
+                                    <stop stopColor="var(--color-brand-secondary)" offset="100%" />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -209,8 +209,8 @@ const MarketingPage = () => {
                 </RevealOnScroll>
                 {/* Section 5: CTA Section */}
                 <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-5 py-12 sm:p-16 border border-[#AAC8FD]/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-[#2B64FD]/40 transition-all duration-500 group">
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-5 py-12 sm:p-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
+                        <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>
@@ -219,8 +219,8 @@ const MarketingPage = () => {
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience the Power of <span className="italic text-[#2B64FD]">Marketing</span> with Live Chat!</h1>
-                            <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience the Power of <span className="italic text-brand-primary">Marketing</span> with Live Chat!</h2>
+                            <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Start for free</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                             </Link>
@@ -229,7 +229,7 @@ const MarketingPage = () => {
                 </RevealOnScroll>
                 {/* Section 6: Footer */}
                 <RevealOnScroll>
-                    <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
+                    <div className="w-full bg-gradient-to-t from-brand-secondary to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
                         </div>

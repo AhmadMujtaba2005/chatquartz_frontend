@@ -1,4 +1,4 @@
-export default function FollowUpMockup() {
+const FollowUpMockup = () => {
   return (
     <div className="relative w-[280px] mx-auto rounded-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 overflow-hidden mb-8 mt-4 flex flex-col">
       <div className="bg-[#111827] px-4 py-3 flex items-center gap-2">
@@ -14,11 +14,13 @@ export default function FollowUpMockup() {
             className="flex-1 bg-transparent text-[12px] outline-none text-gray-800 placeholder-gray-400"
             disabled
           />
-          <button className="bg-[#2B64FD] text-white p-1.5 rounded-md shadow-sm flex items-center justify-center">
+          <button className="bg-brand-primary text-white p-1.5 rounded-md shadow-sm flex items-center justify-center">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
           </button>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default FollowUpMockup;

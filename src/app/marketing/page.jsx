@@ -5,6 +5,8 @@ export const metadata = {
     description: "Leverage AI-powered chatbots to supercharge your marketing outreach and drive conversions",
 };
 
-export default function Page() {
+const Page = () => {
     return <MarketingPage />;
-}
+};
+
+export default Page;

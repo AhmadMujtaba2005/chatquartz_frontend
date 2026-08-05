@@ -6,6 +6,8 @@ export const metadata = {
     description: "Explore the powerful features of chatquartz and discover how it can transform your customer support and engagement",
 };
 
-export default function Page() {
+const Page = () => {
     return <FeaturesPage />;
-}
+};
+
+export default Page;

@@ -5,6 +5,8 @@ export const metadata = {
     description: "Read the chatquartz terms of use and conditions for using our services",
 };
 
-export default function Page() {
+const Page = () => {
     return <TermsOfUsePage />;
-}
+};
+
+export default Page;

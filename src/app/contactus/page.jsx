@@ -5,6 +5,8 @@ export const metadata = {
     description: "Get in touch with the chatquartz team for questions, support, or partnership inquiries",
 };
 
-export default function Page() {
+const Page = () => {
     return <ContactUsPage />;
-}
+};
+
+export default Page;

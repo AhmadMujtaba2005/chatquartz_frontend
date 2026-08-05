@@ -3,34 +3,34 @@ import Navbar from "@/components/layout/Navbar";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 
-export default function PrivacyPolicyPage() {
+const PrivacyPolicyPage = () => {
     return (
         <div>
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
                     <div className="relative z-10">
                         <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-black mt-6 sm:mt-8 mb-6 text-center tracking-tight">
                             Privacy Policy
                         </h1>
                         <div className="max-w-4xl px-6 mx-auto text-center space-y-5 text-[14px] text-gray-700 leading-relaxed font-medium">
-                        <p>
-                            This Privacy Policy explains what information we collect about you and why, what we do with that information, how we share it, and how we handle the personal information created, inputted, submitted, posted, transmitted, stored or displayed by you, your Agents and End-Users when accessing and using our Services.
-                        </p>
-                        <p>
-                            {"For the purposes of this Policy, our “Services” refer to the main plugin “Support Board” and to any other “App” like Slack App or Artificial Intelligence app, “our Website” refers to "}
-                            <a href="https://board.support/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">https://board.support/</a>
-                            {" and sub-domains, and “we”, “us”, “our” refer to our company SCHIOCCO LTD."}
-                        </p>
-                        <p>
-                            We encourage you to periodically review this page for the latest information on our privacy practices. Your continued use of our Services or Websites constitutes your agreement to be bound by such changes to this Policy. Your only remedy, if you do not accept the terms of this Policy, is to discontinue use of our Service and our Website.
-                        </p>
-                        <p>
-                            This Policy explains the what, how and why of the personal information that we collect when you visit our Websites or when you use our Services. The personal information collected and used by Support Board, and its subsidiaries and affiliates, is limited to the purpose for which our subscribers engage any member of Support Board and other purposes expressly described in this Policy.
-                        </p>
+                            <p>
+                                This Privacy Policy explains what information we collect about you and why, what we do with that information, how we share it, and how we handle the personal information created, inputted, submitted, posted, transmitted, stored or displayed by you, your Agents and End-Users when accessing and using our Services.
+                            </p>
+                            <p>
+                                {"For the purposes of this Policy, our “Services” refer to the main plugin “Support Board” and to any other “App” like Slack App or Artificial Intelligence app, “our Website” refers to "}
+                                <a href="https://board.support/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">https://board.support/</a>
+                                {" and sub-domains, and “we”, “us”, “our” refer to our company SCHIOCCO LTD."}
+                            </p>
+                            <p>
+                                We encourage you to periodically review this page for the latest information on our privacy practices. Your continued use of our Services or Websites constitutes your agreement to be bound by such changes to this Policy. Your only remedy, if you do not accept the terms of this Policy, is to discontinue use of our Service and our Website.
+                            </p>
+                            <p>
+                                This Policy explains the what, how and why of the personal information that we collect when you visit our Websites or when you use our Services. The personal information collected and used by Support Board, and its subsidiaries and affiliates, is limited to the purpose for which our subscribers engage any member of Support Board and other purposes expressly described in this Policy.
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 {/* Section 2: Policy Content */}
@@ -39,11 +39,11 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>What this policy covers:</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
-                                The website that link to this Policy, including: <a href="https://board.support/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">https://board.support/</a>. The Services to which you have subscribed or registered or purchased.
+                                The website that link to this Policy, including: <a href="https://board.support/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">https://board.support/</a>. The Services to which you have subscribed or registered or purchased.
                             </p>
                         </section>
                     </RevealOnScroll>
@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>What do we mean by personal information?</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -63,11 +63,11 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Personal information that you provide to us or that we collect</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
-                                By buying the Support Board plugin you provide to <a href="https://envato.com" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">Envato</a> personal information, more details <a href="https://www.envato.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">here</a>. We do not currently process or share any of your personal data.
+                                By buying the Support Board plugin you provide to <a href="https://envato.com" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">Envato</a> personal information, more details <a href="https://www.envato.com/privacy/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">here</a>. We do not currently process or share any of your personal data.
                             </p>
                         </section>
                     </RevealOnScroll>
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Conversations - PHP and WP versions</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Conversations - Cloud version</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Users - PHP and WP versions</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -111,7 +111,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Users - Cloud version</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Other information - PHP and WP versions</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -135,7 +135,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Other information - Cloud version</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -147,11 +147,11 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Slack</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
-                                When you synchronize Support Board with <a href="https://slack.com/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">Slack</a> we collect the following personal information: team_id, channel_id, access_token, your website url, Envato purchase code, Slack email, Slack name, Slack profile picture of your Slack team members. These data are sent to us only one time, when you sync Slack. By voluntarily providing us with Account Information, you hereby represent that you are the owner of such personal information or are otherwise authorized to provide it to us. All Service Data is subject to our technical safeguards as more fully subscribed in our Terms of Service. By using Slack with Support Board, your Slack messages, attachments and any other content sent from Slack, are sent to our server and routed back to your website. No data are stored in our server. If you don't want to share any data with us, please contact us <a href="https://board.support/docs/support" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">here</a> and we will send you a tutorial to configure Support Board in order to use your own Slack integration. By using Slack you provide to Slack personal information, more details <a href="https://slack.com/intl/en-cl/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">here</a>. By buying the License for our Slack App you provide to us your email, name and to <a href="https://gumroad.com/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">Gumroad</a> personal information, more details <a href="https://gumroad.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">here</a>.
+                                When you synchronize Support Board with <a href="https://slack.com/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">Slack</a> we collect the following personal information: team_id, channel_id, access_token, your website url, Envato purchase code, Slack email, Slack name, Slack profile picture of your Slack team members. These data are sent to us only one time, when you sync Slack. By voluntarily providing us with Account Information, you hereby represent that you are the owner of such personal information or are otherwise authorized to provide it to us. All Service Data is subject to our technical safeguards as more fully subscribed in our Terms of Service. By using Slack with Support Board, your Slack messages, attachments and any other content sent from Slack, are sent to our server and routed back to your website. No data are stored in our server. If you don't want to share any data with us, please contact us <a href="https://board.support/docs/support" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">here</a> and we will send you a tutorial to configure Support Board in order to use your own Slack integration. By using Slack you provide to Slack personal information, more details <a href="https://slack.com/intl/en-cl/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">here</a>. By buying the License for our Slack App you provide to us your email, name and to <a href="https://gumroad.com/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">Gumroad</a> personal information, more details <a href="https://gumroad.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">here</a>.
                             </p>
                         </section>
                     </RevealOnScroll>
@@ -159,11 +159,11 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Dialogflow and Google</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
-                                When you synchronize Support Board with <a href="https://dialogflow.com/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline"> Dialogflow</a> to use the Diaogflow Bot, or Google services like language translation, we collect the following personal information: refresh token, Envato purchase code, email, picture, locale, profile picture. By voluntarily providing us with Account Information, you hereby represent that you are the owner of such personal information or are otherwise authorized to provide it to us. All Service Data is subject to our technical safeguards as more fully subscribed in our Terms of Service. By using Dialogflow with Support Board only the Refresh Token(an alphanumeric string) is sent to our server. No other data are sent or stored in our server. If you don't want to share or send any data with us, please contact us <a href="https://board.support/docs/support" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">here</a> and we will send you a tutorial to configure Support Board in order to use your own Dialogflow integration. By using Dialogflow you provide to Dialogflow personal information, more details <a href="https://dialogflow.com/terms" className="text-[#2B64FD] font-semibold hover:underline">here</a>. By buying the License for our Artificial Intelligence app you provide to us your email, name and to <a href="https://gumroad.com/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">Gumroad</a> personal information, more details <a href="https://gumroad.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">here</a>.
+                                When you synchronize Support Board with <a href="https://dialogflow.com/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline"> Dialogflow</a> to use the Diaogflow Bot, or Google services like language translation, we collect the following personal information: refresh token, Envato purchase code, email, picture, locale, profile picture. By voluntarily providing us with Account Information, you hereby represent that you are the owner of such personal information or are otherwise authorized to provide it to us. All Service Data is subject to our technical safeguards as more fully subscribed in our Terms of Service. By using Dialogflow with Support Board only the Refresh Token(an alphanumeric string) is sent to our server. No other data are sent or stored in our server. If you don't want to share or send any data with us, please contact us <a href="https://board.support/docs/support" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">here</a> and we will send you a tutorial to configure Support Board in order to use your own Dialogflow integration. By using Dialogflow you provide to Dialogflow personal information, more details <a href="https://dialogflow.com/terms" className="text-brand-primary font-semibold hover:underline">here</a>. By buying the License for our Artificial Intelligence app you provide to us your email, name and to <a href="https://gumroad.com/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">Gumroad</a> personal information, more details <a href="https://gumroad.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">here</a>.
                             </p>
                         </section>
                     </RevealOnScroll>
@@ -171,11 +171,11 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Messenger</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
-                                When you synchronize Support Board with Facebook <a href="https://www.messenger.com/" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">Messenger</a> we collect the following personal information: page token, page ID, Envato purchase code. By voluntarily providing us with Account Information, you hereby represent that you are the owner of such personal information or are otherwise authorized to provide it to us. All Service Data is subject to our technical safeguards as more fully subscribed in our Terms of Service. By using Facebook Messenger with Support Board, your Facebook Messenger messages, attachments and any other message type sent from Messenger, are sent to our server and routed back to your website. No data are stored in our server. If you don't want to share any data with us, please contact us here and we will send you a tutorial to configure Support Board in order to use your own Facebook Messenger integration. By using Facebook Messenger you provide to Facebook personal information, more details here.
+                                When you synchronize Support Board with Facebook <a href="https://www.messenger.com/" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">Messenger</a> we collect the following personal information: page token, page ID, Envato purchase code. By voluntarily providing us with Account Information, you hereby represent that you are the owner of such personal information or are otherwise authorized to provide it to us. All Service Data is subject to our technical safeguards as more fully subscribed in our Terms of Service. By using Facebook Messenger with Support Board, your Facebook Messenger messages, attachments and any other message type sent from Messenger, are sent to our server and routed back to your website. No data are stored in our server. If you don't want to share any data with us, please contact us here and we will send you a tutorial to configure Support Board in order to use your own Facebook Messenger integration. By using Facebook Messenger you provide to Facebook personal information, more details here.
                             </p>
                         </section>
                     </RevealOnScroll>
@@ -183,7 +183,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Other apps and integrations</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -195,7 +195,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Data retention policy</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -207,7 +207,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Data archival/removal policy</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -219,7 +219,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Data storage</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -231,11 +231,11 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Cookies / Tracking Technologies from your use of our website</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
-                                We do not currently use tracking cookies. Our website may use cookies in the future for a variety of purposes. These cookies may provide us with information, including personal information, other information about devices and networks you utilize to access our Websites and Services, and information regarding your interactions with and in our website. For detailed information about the use of cookies in the website (including information about how you can control cookies), please read and review our <a href="https://board.support/cookie" target="_blank" rel="noopener noreferrer" className="text-[#2B64FD] font-semibold hover:underline">Cookie Policy</a>. Tags and scripts may be used in our websites or in emails. These assist us in delivering cookies, counting visits to our website, understanding usage and campaign effectiveness and determining whether an email has been opened and acted upon. We may receive reports based on the use of these technologies by our service providers on an individual and aggregated basis. We use Local Storage Objects (LSOs) such as HTML5 to store content information and preferences. Various browsers may offer their own management tools for removing HTML5 LSOs. Third parties with whom we partner to provide certain features on our website or to display advertising based upon your Web browsing activity use LSOs such as HTML5 and Flash to collect and store information.
+                                We do not currently use tracking cookies. Our website may use cookies in the future for a variety of purposes. These cookies may provide us with information, including personal information, other information about devices and networks you utilize to access our Websites and Services, and information regarding your interactions with and in our website. For detailed information about the use of cookies in the website (including information about how you can control cookies), please read and review our <a href="https://board.support/cookie" target="_blank" rel="noopener noreferrer" className="text-brand-primary font-semibold hover:underline">Cookie Policy</a>. Tags and scripts may be used in our websites or in emails. These assist us in delivering cookies, counting visits to our website, understanding usage and campaign effectiveness and determining whether an email has been opened and acted upon. We may receive reports based on the use of these technologies by our service providers on an individual and aggregated basis. We use Local Storage Objects (LSOs) such as HTML5 to store content information and preferences. Various browsers may offer their own management tools for removing HTML5 LSOs. Third parties with whom we partner to provide certain features on our website or to display advertising based upon your Web browsing activity use LSOs such as HTML5 and Flash to collect and store information.
                             </p>
                         </section>
                     </RevealOnScroll>
@@ -243,7 +243,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Log files from your use of our website</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -255,7 +255,7 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>Analytics Information from your use of our website</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed">
@@ -267,14 +267,14 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>How we use personal information</span>
                             </h2>
                             <div className="space-y-4 text-[14px] leading-relaxed">
                                 <p>
                                     We use the personal information that we collect for a variety of purposes including to:
                                 </p>
-                                <p className="bg-[#F6F9FE] p-4 rounded-xl border border-[#2B64FD]/20">
+                                <p className="bg-[#F6F9FE] p-4 rounded-xl border border-brand-primary/20">
                                     We do not currently use any personal information apart from your email address, we only use it for sending you subscription notifications.
                                 </p>
                                 <ul className="space-y-3 list-disc pl-5 pt-2">
@@ -295,14 +295,14 @@ export default function PrivacyPolicyPage() {
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
-                                <span className="w-3 h-3 rounded-full bg-[#2B64FD] inline-block flex-shrink-0"></span>
+                                <span className="w-3 h-3 rounded-full bg-brand-primary inline-block flex-shrink-0"></span>
                                 <span>7. Contacting Our Privacy Team</span>
                             </h2>
                             <p className="text-[14px] leading-relaxed mb-6">
                                 If you have questions, compliance inquiries, or specific feedback regarding this Privacy Policy or our data processing procedures, our dedicated support team is available to assist you:
                             </p>
-                            <div className="bg-[#F6F9FE] p-5 rounded-xl border border-[#2B64FD]/20 text-sm sm:text-base font-medium">
-                                <p className="text-gray-600">Email: <a href="mailto:support@board.support" className="text-[#2B64FD] underline font-semibold hover:opacity-80 transition-opacity">support@board.support</a></p>
+                            <div className="bg-[#F6F9FE] p-5 rounded-xl border border-brand-primary/20 text-sm sm:text-base font-medium">
+                                <p className="text-gray-600">Email: <a href="mailto:support@board.support" className="text-brand-primary underline font-semibold hover:opacity-80 transition-opacity">support@board.support</a></p>
                             </div>
                         </section>
                     </RevealOnScroll>
@@ -310,7 +310,7 @@ export default function PrivacyPolicyPage() {
 
                 {/* Section 3: Footer */}
                 <RevealOnScroll>
-                    <div className="w-full bg-gradient-to-t from-[#AAC8FD] to-[#FFFFFF] mt-24">
+                    <div className="w-full bg-gradient-to-t from-brand-secondary to-[#FFFFFF] mt-24">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
                         </div>
@@ -319,4 +319,6 @@ export default function PrivacyPolicyPage() {
             </SmoothScroll>
         </div>
     );
-}
+};
+
+export default PrivacyPolicyPage;

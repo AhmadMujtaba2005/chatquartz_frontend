@@ -1,8 +1,8 @@
-export default function PopupMockup() {
+const PopupMockup = () => {
   return (
     <div className="relative w-[280px] mx-auto rounded-xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100 p-4 mb-8 mt-4">
       <div className="flex items-start gap-3">
-        <div className="h-8 w-8 flex-shrink-0 rounded-full bg-[#2B64FD]/10 flex items-center justify-center text-xs font-semibold text-[#2B64FD]">
+        <div className="h-8 w-8 flex-shrink-0 rounded-full bg-brand-primary/10 flex items-center justify-center text-xs font-semibold text-brand-primary">
           CG
         </div>
         <div className="flex-1 mt-0.5">
@@ -12,9 +12,11 @@ export default function PopupMockup() {
           </p>
         </div>
       </div>
-      <div className="absolute -bottom-2 -right-2 h-7 w-7 rounded-full bg-[#2B64FD] flex items-center justify-center text-white shadow-md text-[11px] font-bold border-2 border-white">
+      <div className="absolute -bottom-2 -right-2 h-7 w-7 rounded-full bg-brand-primary flex items-center justify-center text-white shadow-md text-[11px] font-bold border-2 border-white">
         2
       </div>
     </div>
   );
-}
+};
+
+export default PopupMockup;

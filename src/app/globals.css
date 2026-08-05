@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #2B64FD;
+  --color-brand-secondary: #AAC8FD;
+  --color-brand-primary-hover: #1E56F0;
+}
+
 @keyframes fillProgress {
   0% {
     height: 0%;

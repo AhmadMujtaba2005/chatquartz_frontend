@@ -5,6 +5,8 @@ export const metadata = {
     description: "Get help and find answers at the chatquartz support center",
 };
 
-export default function Page() {
+const Page = () => {
     return <SupportPage />;
-}
+};
+
+export default Page;

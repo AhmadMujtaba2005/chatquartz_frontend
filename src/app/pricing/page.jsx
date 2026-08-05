@@ -5,6 +5,8 @@ export const metadata = {
     description: "Explore chatquartz pricing plans designed for teams of all sizes with flexible and transparent options",
 };
 
-export default function Page() {
+const Page = () => {
     return <PricingPage />;
-}
+};
+
+export default Page;

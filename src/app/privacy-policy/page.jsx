@@ -4,6 +4,8 @@ export const metadata = {
     description: "Learn how ChatQuartz collects, uses, stores, and protects your personal information.",
 };
 
-export default function Page() {
+const Page = () => {
     return <PrivacyPolicyPage />;
-}
+};
+
+export default Page;

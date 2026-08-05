@@ -18,7 +18,7 @@ function ScrollReset() {
     return null;
 }
 
-export default function SmoothScroll({ children }) {
+const SmoothScroll = ({ children }) => {
     return (
         <ReactLenis
             root
@@ -32,4 +32,6 @@ export default function SmoothScroll({ children }) {
             {children}
         </ReactLenis>
     );
-}
+};
+
+export default SmoothScroll;

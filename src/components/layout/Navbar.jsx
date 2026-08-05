@@ -10,14 +10,18 @@ const Navbar = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > 20);
-        window.addEventListener("scroll", handleScroll);
-        handleScroll();
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     useLenis(({ scroll }) => setScrolled(scroll > 20));
+
+    useEffect(() => {
+        if (mobileOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [mobileOpen]);
 
     const navLinks = [
         { href: "/pricing", label: "Pricing" },
@@ -32,7 +36,7 @@ const Navbar = () => {
             <header className="sticky top-0 z-50 h-0 w-full">
                 <nav
                     className={`mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
-                        ? "translate-y-4 border-black/5 bg-[linear-gradient(160deg,rgba(255,255,255,0.98)_0%,rgba(248,251,255,0.97)_60%,rgba(255,255,255,0.98)_100%)] backdrop-blur-[32px] backdrop-saturate-200 backdrop-brightness-105 shadow-[0_8px_32px_rgba(43,100,253,0.06),0_2px_8px_rgba(0,0,0,0.04)]"
+                        ? "translate-y-4 border-white/20 bg-white/30 backdrop-blur-[32px] backdrop-saturate-200 shadow-[0_8px_32px_rgba(43,100,253,0.1)]"
                         : "translate-y-0 border-transparent bg-transparent shadow-none"
                         }`}
                 >
@@ -48,7 +52,7 @@ const Navbar = () => {
                         </Link>
 
                         {/* Center Nav Links */}
-                        <nav className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                             <ul
                                 className="flex items-center gap-1 m-0 p-0"
                                 onMouseLeave={() => setHoveredIndex(null)}
@@ -59,7 +63,7 @@ const Navbar = () => {
                                         {hoveredIndex === idx && (
                                             <motion.div
                                                 layoutId="nav-indicator"
-                                                className="absolute bottom-0 left-4 right-4 h-[2px] rounded-t-md bg-[#2B64FD]"
+                                                className="absolute bottom-0 left-4 right-4 h-[2px] rounded-t-md bg-brand-primary"
                                                 style={{ boxShadow: "0 -2px 8px rgba(43,100,253,0.4)" }}
                                                 transition={{ type: "spring", stiffness: 500, damping: 35 }}
                                             />
@@ -67,7 +71,7 @@ const Navbar = () => {
                                         <Link
                                             href={link.href}
                                             onMouseEnter={() => setHoveredIndex(idx)}
-                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-[#2B64FD]" : "text-gray-600 hover:text-gray-900"
+                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-brand-primary" : "text-gray-600 hover:text-gray-900"
                                                 }`}
                                         >
                                             {link.label}
@@ -75,12 +79,12 @@ const Navbar = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </nav>
+                        </div>
 
                         {/* Right: CTA + Hamburger */}
                         <div className="flex items-center gap-2.5">
                             {/* CTA */}
-                            <div className="relative hidden sm:flex group items-center justify-center p-[2px] rounded-full overflow-hidden bg-[#2B64FD] shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out cursor-pointer">
+                            <div className="relative hidden sm:flex group items-center justify-center p-[2px] rounded-full overflow-hidden bg-brand-primary shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out cursor-pointer">
                                 {/* Blurred rotating glow (comet tail) */}
                                 <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
@@ -91,7 +95,7 @@ const Navbar = () => {
                                 </div>
                                 <Link
                                     href="/demo"
-                                    className="relative z-10 flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-full bg-[#2B64FD] group-hover:bg-[#1E56F0] text-white text-sm font-semibold transition-all duration-300 ease-out w-full"
+                                    className="relative z-10 flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-full bg-brand-primary group-hover:bg-brand-primary-hover text-white text-sm font-semibold transition-all duration-300 ease-out w-full"
                                 >
                                     <span className="relative z-10">Try Now</span>
                                     <span className="relative z-10 inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2">→</span>
@@ -131,7 +135,7 @@ const Navbar = () => {
                                 className="md:hidden mt-3"
                             >
                                 <nav
-                                    className="rounded-2xl p-3 bg-white/95 backdrop-blur-xl border border-black/5 shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
+                                    className="rounded-2xl p-3 bg-white/30 backdrop-blur-[32px] backdrop-saturate-200 border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
                                 >
                                     <ul className="flex flex-col gap-0.5">
                                         {navLinks.map((link) => (
@@ -147,7 +151,7 @@ const Navbar = () => {
                                         ))}
                                     </ul>
                                     <div className="mt-2 pt-2 border-t border-black/6">
-                                        <div className="relative group flex items-center justify-center w-full p-[2px] rounded-xl overflow-hidden bg-[linear-gradient(135deg,#3B74FE_0%,#2B64FD_100%)] shadow-[0_4px_16px_rgba(43,100,253,0.3)] transition-all duration-300">
+                                        <div className="relative group flex items-center justify-center w-full p-[2px] rounded-xl overflow-hidden bg-[linear-gradient(135deg,#3B74FE_0%,var(--color-brand-primary)_100%)] shadow-[0_4px_16px_rgba(43,100,253,0.3)] transition-all duration-300">
                                             <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                                                 <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
                                             </div>
@@ -157,7 +161,7 @@ const Navbar = () => {
                                             <Link
                                                 href="/demo"
                                                 onClick={() => setMobileOpen(false)}
-                                                className="relative z-10 flex w-full items-center justify-center gap-2 px-6 py-3 rounded-xl text-[15px] font-semibold text-white transition-all duration-200 bg-[linear-gradient(135deg,#3B74FE_0%,#2B64FD_100%)]"
+                                                className="relative z-10 flex w-full items-center justify-center gap-2 px-6 py-3 rounded-xl text-[15px] font-semibold text-white transition-all duration-200 bg-[linear-gradient(135deg,#3B74FE_0%,var(--color-brand-primary)_100%)]"
                                             >
                                                 Try Now →
                                             </Link>

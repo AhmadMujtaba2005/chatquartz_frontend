@@ -72,9 +72,9 @@ const Footer = () => {
                                 <ul className="space-y-4">
                                     {group.links.map(({ label, href, icon: Icon }) => (
                                         <li key={label}>
-                                            <Link href={href} className="flex items-center gap-3 text-[15px] text-gray-600 font-medium hover:text-[#2B64FD] transition-all duration-200 group">
-                                                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm border border-gray-100 group-hover:border-[#2B64FD]/30 group-hover:bg-[#2B64FD]/5 group-hover:shadow-md transition-all duration-300">
-                                                    <Icon className="h-4 w-4 text-gray-400 group-hover:text-[#2B64FD] transition-colors duration-200" />
+                                            <Link href={href} className="flex items-center gap-3 text-[15px] text-gray-600 font-medium hover:text-brand-primary transition-all duration-200 group">
+                                                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-sm border border-gray-100 group-hover:border-brand-primary/30 group-hover:bg-brand-primary/5 group-hover:shadow-md transition-all duration-300">
+                                                    <Icon className="h-4 w-4 text-gray-400 group-hover:text-brand-primary transition-colors duration-200" />
                                                 </span>
                                                 {label}
                                             </Link>

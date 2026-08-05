@@ -5,6 +5,8 @@ export const metadata = {
     description: "Try chatquartz live and experience AI-powered chatbot support in action",
 };
 
-export default function Page() {
+const Page = () => {
     return <DemoPage />;
-}
+};
+
+export default Page;

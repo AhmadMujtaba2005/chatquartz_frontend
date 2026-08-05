@@ -36,7 +36,7 @@ const features = [
   }
 ];
 
-export default function FutureShowcase() {
+const FutureShowcase = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const containerRef = useRef(null);
@@ -60,7 +60,7 @@ export default function FutureShowcase() {
           const isActive = activeIndex === idx && isInView;
           return (
             <div
-              key={idx}
+              key={feature.title}
               className="grid grid-cols-[3px_1fr] gap-6 cursor-pointer group"
               onClick={() => setActiveIndex(idx)}
             >
@@ -68,7 +68,7 @@ export default function FutureShowcase() {
               <div className="relative w-full h-full min-h-[40px] bg-gray-200 rounded-full overflow-hidden">
                 {isActive && (
                   <div
-                    className="absolute top-0 left-0 w-full bg-[#2B64FD] group-hover/container:[animation-play-state:paused]"
+                    className="absolute top-0 left-0 w-full bg-brand-primary group-hover/container:[animation-play-state:paused]"
                     style={{
                       animation: `fillProgress ${feature.duration}s linear forwards`
                     }}
@@ -79,7 +79,7 @@ export default function FutureShowcase() {
 
               {/* Content Column */}
               <div className="flex flex-col justify-center py-1">
-                <h5 className={`text-[17px] sm:text-[18px] md:text-[20px] transition-colors duration-300 ${isActive ? 'text-[#2B64FD] font-bold' : 'text-gray-400 font-medium group-hover:text-gray-600'}`}>
+                <h5 className={`text-[17px] sm:text-[18px] md:text-[20px] transition-colors duration-300 ${isActive ? 'text-brand-primary font-bold' : 'text-gray-400 font-medium group-hover:text-gray-600'}`}>
                   {feature.title}
                 </h5>
                 <div
@@ -112,4 +112,6 @@ export default function FutureShowcase() {
       </div>
     </div>
   );
-}
+};
+
+export default FutureShowcase;

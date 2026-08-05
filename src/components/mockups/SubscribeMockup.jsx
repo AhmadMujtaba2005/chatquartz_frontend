@@ -1,11 +1,11 @@
-export default function SubscribeMockup() {
+const SubscribeMockup = () => {
   return (
     <div className="relative w-[280px] mx-auto mb-14 mt-5 flex flex-col gap-3">
 
       {/* Selected Row */}
-      <div className="bg-white rounded-xl shadow-[0_8px_20px_rgba(43,100,253,0.12)] border border-[#2B64FD]/30 p-3 flex items-center gap-3 relative overflow-hidden">
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#2B64FD]"></div>
-        <div className="h-8 w-8 flex-shrink-0 rounded-full bg-[#2B64FD]/5 flex items-center justify-center text-[11px] font-bold text-[#2B64FD] ml-1">
+      <div className="bg-white rounded-xl shadow-[0_8px_20px_rgba(43,100,253,0.12)] border border-brand-primary/30 p-3 flex items-center gap-3 relative overflow-hidden">
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-brand-primary"></div>
+        <div className="h-8 w-8 flex-shrink-0 rounded-full bg-brand-primary/5 flex items-center justify-center text-[11px] font-bold text-brand-primary ml-1">
           SJ
         </div>
         <div className="flex-1 min-w-0 flex flex-col justify-center">
@@ -30,4 +30,6 @@ export default function SubscribeMockup() {
 
     </div>
   );
-}
+};
+
+export default SubscribeMockup;

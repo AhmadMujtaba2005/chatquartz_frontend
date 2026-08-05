@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-export default function PageBackground({ variant = "network" }) {
+const PageBackground = ({ variant = "network" }) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -266,4 +266,6 @@ export default function PageBackground({ variant = "network" }) {
       style={{ zIndex: 0 }}
     />
   );
-}
+};
+
+export default PageBackground;

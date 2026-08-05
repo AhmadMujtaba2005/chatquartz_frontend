@@ -61,7 +61,7 @@ const HomePageFAQ = () => {
         return (
             <div
                 key={actualIndex}
-                className={`bg-white border transition-all duration-200 rounded-xl overflow-hidden hover:shadow-md ${isOpen ? "border-[#2B64FD] ring-1 ring-[#2B64FD]/20 shadow-md" : "border-gray-200/80 shadow-sm"}`}
+                className={`bg-white border transition-all duration-200 rounded-xl overflow-hidden hover:shadow-md ${isOpen ? "border-brand-primary ring-1 ring-brand-primary/20 shadow-md" : "border-gray-200/80 shadow-sm"}`}
             >
                 <button
                     onClick={() => toggleFAQ(actualIndex)}
@@ -70,7 +70,7 @@ const HomePageFAQ = () => {
                     <span className="text-base sm:text-[14px] font-bold leading-snug pr-4">
                         {item.question}
                     </span>
-                    <span className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold transition-all duration-200 select-none ${isOpen ? "bg-[#2B64FD] text-white" : "bg-[#2B64FD]/10 text-[#2B64FD] group-hover:bg-[#2B64FD] group-hover:text-white"}`}>
+                    <span className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold transition-all duration-200 select-none ${isOpen ? "bg-brand-primary text-white" : "bg-brand-primary/10 text-brand-primary group-hover:bg-brand-primary group-hover:text-white"}`}>
                         {isOpen ? "−" : "+"}
                     </span>
                 </button>
