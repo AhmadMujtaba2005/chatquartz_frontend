@@ -1,12 +1,28 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useLenis } from 'lenis/react';
 
 const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Check on mount
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    // Also use Lenis scroll to guarantee detection
+    useLenis(({ scroll }) => {
+        setScrolled(scroll > 20);
+    });
 
     const navLinks = [
         { href: "/pricing", label: "Pricing" },
@@ -16,7 +32,8 @@ const Navbar = () => {
     ];
 
     return (
-        <header className="w-full px-4 py-4 sm:px-6 sm:py-6 md:px-9 md:py-9">
+        <>
+        <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out px-4 sm:px-6 md:px-9 ${scrolled ? "bg-white/80 backdrop-blur-md border-b border-gray-200/50 shadow-sm py-3 sm:py-4" : "bg-transparent py-4 sm:py-6 md:py-9"}`}>
             {/* Main Navbar Header */}
             <div className="flex items-center justify-between relative">
 
@@ -103,6 +120,9 @@ const Navbar = () => {
                 </nav>
             </div>
         </header>
+        {/* Placeholder to prevent layout shift */}
+        <div className="h-[64px] sm:h-[88px] md:h-[112px] w-full shrink-0 flex-none" aria-hidden="true" />
+        </>
     );
 };
 
