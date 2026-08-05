@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
+import PageBackground from "@/components/PageBackground";
 
 const FeaturesPage = () => {
     return (
@@ -10,13 +11,14 @@ const FeaturesPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
-                    <div className="relative z-10">
-                        <p className="text-[20px] text-center text-black mb-2 mt-10 sm:mt-16 md:mt-24 lg:mt-45">
+                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] min-h-screen flex flex-col pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                    <PageBackground variant="network" />
+                    <div className="relative z-10 flex flex-col items-center">
+                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3 mt-12 sm:mt-16 md:mt-24 lg:mt-48">
                             Unleash the Power of
                         </p>
-                        <h1 className="text-[48px] text-[#2B64FD] font-bold leading-tight mb-6 text-center tracking-tight">
-                            <span className="italic">AI-Driven </span> <span className="text-[48px] text-black">Chatbots</span>
+                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
+                            <span className="font-bold text-[#2B64FD] italic">AI-Driven</span> Chatbots
                         </h1>
 
                         <div className="mx-auto max-w-[600px] mb-40 px-4">
@@ -45,7 +47,8 @@ const FeaturesPage = () => {
 
                 {/* Section 3: CTA Section */}
                 <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-6 py-12 sm:p-14 border border-gray-200/80 rounded-3xl bg-white shadow-sm hover:shadow transition-all duration-300">
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-6 py-12 sm:p-16 border border-[#AAC8FD]/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-[#2B64FD]/40 transition-all duration-500 group">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>

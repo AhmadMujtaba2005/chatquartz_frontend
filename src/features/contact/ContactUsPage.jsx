@@ -22,8 +22,9 @@ const ContactUsPage = () => {
                 {/* Section 2: Contact Form */}
                 <RevealOnScroll>
                     <div className="mt-16 sm:mt-24 md:mt-[120px] mb-20 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
-                        <div className="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-6 sm:p-10 border border-gray-100">
-                            <form action="" method="post" className="space-y-6">
+                        <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 p-6 sm:p-10 border border-[#AAC8FD]/50 transition-all duration-500 hover:border-[#2B64FD]/40 group overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                            <form action="" method="post" className="relative z-10 space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="flex flex-col">
                                         <label htmlFor="name" className="text-sm font-semibold text-gray-700 mb-2 ml-1">Name</label>

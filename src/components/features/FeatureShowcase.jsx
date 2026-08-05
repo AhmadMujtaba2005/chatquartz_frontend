@@ -43,10 +43,10 @@ export default function FeatureShowcase() {
   const Icon = features[active].icon;
 
   return (
-    <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] max-w-[750px] mx-auto w-[98%] mt-10 mb-12 border border-gray-200/80 bg-white">
+    <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] max-w-[950px] mx-auto w-[98%] mt-10 mb-12 border border-gray-200/80 bg-white">
 
       {/* ── Left sidebar ── */}
-      <div className="md:w-[240px] md:shrink-0 bg-gray-50/50 px-2 py-4 border-b md:border-b-0 md:border-r border-gray-100 flex flex-col justify-center gap-2">
+      <div className="md:w-[280px] md:shrink-0 bg-gray-50/50 px-2 py-4 border-b md:border-b-0 md:border-r border-gray-100 flex flex-col justify-center gap-2">
         {features.map((f, i) => (
           <button
             key={f.label}
@@ -63,14 +63,14 @@ export default function FeatureShowcase() {
               />
             )}
             <div className="flex items-center justify-between mb-1">
-              <span className={`text-[11px] font-bold tracking-widest ${active === i ? "text-[#2B64FD]" : "text-gray-400"}`}>
+              <span className={`text-[12px] font-bold tracking-widest ${active === i ? "text-[#2B64FD]" : "text-gray-400"}`}>
                 {f.tag}
               </span>
-              <span className={`text-[13px] font-mono font-bold ${active === i ? "text-[#2B64FD]/50" : "text-gray-300"}`}>
+              <span className={`text-[14px] font-mono font-bold ${active === i ? "text-[#2B64FD]/50" : "text-gray-300"}`}>
                 0{i + 1}
               </span>
             </div>
-            <p className={`text-[16px] font-bold leading-snug ${active === i ? "text-gray-900" : "text-gray-500"}`}>
+            <p className={`text-[18px] font-bold leading-snug ${active === i ? "text-gray-900" : "text-gray-500"}`}>
               {f.label}
             </p>
           </button>
@@ -89,15 +89,15 @@ export default function FeatureShowcase() {
         <div className="invisible select-none pointer-events-none px-12 py-8">
           <div className="flex items-center gap-4 mb-4">
             <div className="p-3 rounded-2xl shrink-0 w-[46px] h-[46px]" />
-            <h3 className="text-[24px] font-bold leading-tight">Automations &amp; Triggers</h3>
+            <h3 className="text-[28px] font-bold leading-tight">Automations &amp; Triggers</h3>
           </div>
-          <p className="text-[15px] leading-relaxed mb-4 max-w-2xl">
+          <p className="text-[17px] leading-relaxed mb-4 max-w-2xl">
             Personalize every customer journey automatically.
           </p>
-          <ul className="space-y-2.5">
-            <li className="flex items-start gap-3 text-[15px]"><span className="h-5 w-5 shrink-0" /><span>13+ condition types for full customization</span></li>
-            <li className="flex items-start gap-3 text-[15px]"><span className="h-5 w-5 shrink-0" /><span>Auto-schedule email &amp; SMS campaigns</span></li>
-            <li className="flex items-start gap-3 text-[15px]"><span className="h-5 w-5 shrink-0" /><span>Trigger responses based on user behavior</span></li>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3 text-[16px]"><span className="h-5 w-5 shrink-0" /><span>13+ condition types for full customization</span></li>
+            <li className="flex items-start gap-3 text-[16px]"><span className="h-5 w-5 shrink-0" /><span>Auto-schedule email &amp; SMS campaigns</span></li>
+            <li className="flex items-start gap-3 text-[16px]"><span className="h-5 w-5 shrink-0" /><span>Trigger responses based on user behavior</span></li>
           </ul>
         </div>
 
@@ -115,16 +115,16 @@ export default function FeatureShowcase() {
               <div className="p-2.5 bg-white rounded-2xl shadow-sm border border-[#2B64FD]/10 shrink-0">
                 <Icon className="h-6 w-6 text-[#2B64FD]" />
               </div>
-              <h3 className="text-[24px] font-bold tracking-tight text-gray-900 leading-tight">
+              <h3 className="text-[28px] font-bold tracking-tight text-gray-900 leading-tight">
                 {features[active].headline}
               </h3>
             </div>
-            <p className="text-gray-600 text-[15px] leading-relaxed mb-4 max-w-2xl">
+            <p className="text-gray-600 text-[17px] leading-relaxed mb-4 max-w-2xl">
               {features[active].description}
             </p>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               {features[active].points.map((p) => (
-                <li key={p} className="flex items-start gap-3 text-[15px] text-gray-700">
+                <li key={p} className="flex items-start gap-3 text-[16px] text-gray-700">
                   <div className="flex items-center justify-center h-5 w-5 rounded-full bg-[#2B64FD]/10 shrink-0 mt-0.5 border border-[#2B64FD]/20">
                     <span className="h-1.5 w-1.5 rounded-full bg-[#2B64FD]" />
                   </div>

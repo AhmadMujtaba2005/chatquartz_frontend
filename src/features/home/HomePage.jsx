@@ -24,15 +24,17 @@ const HomePage = () => {
                         <img src="/hero-bg.png" alt="Hero Background Shape" className="w-full h-auto object-contain mix-blend-multiply" />
                     </div>
 
-                    <div className="relative z-10">
-                        <h1 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] leading-tight text-black mt-10 sm:mt-16 md:mt-24 lg:mt-45 mb-6 sm:mb-8 text-center px-4">
+                    <div className="relative z-10 flex flex-col items-center">
+                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] text-gray-900 mt-12 sm:mt-16 md:mt-24 lg:mt-48 mb-6 text-center tracking-tight px-4">
                             Skyrocket <br /> Your Growth with <br />
                             <span className="text-[#2B64FD] italic font-bold">AI-Powered </span>
                             <span className="font-bold">Chatbots</span>
                         </h1>
-                        <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">
-                            Boost leads, automate support, and increase revenue with AI-powered chatbots.
-                        </p>
+                        <div className="max-w-3xl mx-auto px-6">
+                            <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed">
+                                Boost leads, automate support, and increase revenue with AI-powered chatbots.
+                            </p>
+                        </div>
                         <div className="flex flex-col sm:flex-row justify-center items-center my-8 sm:my-10 gap-4 sm:gap-5 px-6">
                             {/* Enhanced Rotating border wrapper for "Try This" */}
                             <div className="relative group flex items-center justify-center w-full sm:w-auto p-[2px] rounded-full overflow-hidden bg-[#2B64FD] shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out">
@@ -66,32 +68,38 @@ const HomePage = () => {
                             Check out why chatQuartz is the ultimate go-to solution for your business.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-8 sm:mt-10">
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-[#AAC8FD]/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-[#2B64FD]/40 group overflow-hidden cursor-pointer">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <img src="/boost.png" alt="boost" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Boost Productivity with Smarter Support</h2>
                                 <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Automate repetitive queries so your team only handles what actually needs a human.</p>
                             </div>
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-[#AAC8FD]/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-[#2B64FD]/40 group overflow-hidden cursor-pointer">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <img src="/light.png" alt="light" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Lighter Workloads for Your Team</h2>
                                 <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">chatquartz resolve 30%+ of support requests — no added headcount.</p>
                             </div>
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-[#AAC8FD]/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-[#2B64FD]/40 group overflow-hidden cursor-pointer">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <img src="/effortless.png" alt="effortless" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Effortless Lead Qualification</h2>
                                 <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Every conversation captures lead details automatically, no forms required.</p>
                             </div>
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-[#AAC8FD]/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-[#2B64FD]/40 group overflow-hidden cursor-pointer">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <img src="/24-hours.png" alt="24-hours" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">24/7 Customer Engagement</h2>
                                 <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Always-on support means no customer waits until business hours.</p>
                             </div>
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-[#AAC8FD]/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-[#2B64FD]/40 group overflow-hidden cursor-pointer">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <img src="/faster.png" alt="faster" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Solve Problems Faster and Smarter</h2>
                                 <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Faster answers build the trust that turns visitors into buyers.</p>
                             </div>
-                            <div className="flex flex-col h-full p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
+                            <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-[#AAC8FD]/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-[#2B64FD]/40 group overflow-hidden cursor-pointer">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <img src="/conversion.png" alt="conversion" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
                                 <h2 className="text-[18px] font-bold tracking-tight text-gray-900 mb-3">Drive Conversions with Every Interaction</h2>
                                 <p className="text-[14px] text-gray-600 leading-relaxed mt-auto">Instant, professional replies that turn visitors into loyal customers!</p>
@@ -103,7 +111,8 @@ const HomePage = () => {
 
                 <RevealOnScroll>
                     {/* Section 3: Mid-Page CTA Section */}
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] px-5 py-10 sm:p-14 border border-gray-200/80 rounded-2xl sm:rounded-3xl bg-white shadow-md hover:shadow-lg transition-all duration-300">
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] px-5 py-12 sm:p-16 border border-[#AAC8FD]/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-[#2B64FD]/40 transition-all duration-500 group">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#AAC8FD]/10 via-transparent to-[#2B64FD]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
                         </div>

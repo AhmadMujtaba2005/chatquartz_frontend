@@ -1,7 +1,7 @@
 export default function SubscribeMockup() {
   return (
-    <div className="relative w-[280px] mx-auto mb-8 mt-4 flex flex-col gap-3">
-      
+    <div className="relative w-[280px] mx-auto mb-14 mt-5 flex flex-col gap-3">
+
       {/* Selected Row */}
       <div className="bg-white rounded-xl shadow-[0_8px_20px_rgba(43,100,253,0.12)] border border-[#2B64FD]/30 p-3 flex items-center gap-3 relative overflow-hidden">
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#2B64FD]"></div>
@@ -16,7 +16,7 @@ export default function SubscribeMockup() {
           SUBSCRIBED
         </div>
       </div>
-      
+
       {/* Unselected Row */}
       <div className="bg-white/60 rounded-xl border border-gray-100 p-3 flex items-center gap-3 opacity-60">
         <div className="h-8 w-8 flex-shrink-0 rounded-full bg-gray-100 flex items-center justify-center text-[11px] font-bold text-gray-400 ml-1">
