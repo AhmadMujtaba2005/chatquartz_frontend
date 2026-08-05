@@ -7,13 +7,14 @@ export default function PrivacyPolicyPage() {
     return (
         <div>
             <SmoothScroll>
+                <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
-                    <Navbar />
-                    <h1 className="text-[40px] font-bold leading-tight text-black mt-16 sm:mt-24 mb-6 text-center tracking-tight">
-                        Privacy Policy
-                    </h1>
-                    <div className="max-w-4xl px-6 mx-auto text-center space-y-5 text-[14px] text-gray-700 leading-relaxed font-medium">
+                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                    <div className="relative z-10">
+                        <h1 className="text-[40px] font-bold leading-tight text-black mt-10 sm:mt-16 md:mt-24 lg:mt-45 mb-6 text-center tracking-tight">
+                            Privacy Policy
+                        </h1>
+                        <div className="max-w-4xl px-6 mx-auto text-center space-y-5 text-[14px] text-gray-700 leading-relaxed font-medium">
                         <p>
                             This Privacy Policy explains what information we collect about you and why, what we do with that information, how we share it, and how we handle the personal information created, inputted, submitted, posted, transmitted, stored or displayed by you, your Agents and End-Users when accessing and using our Services.
                         </p>
@@ -29,6 +30,7 @@ export default function PrivacyPolicyPage() {
                             This Policy explains the what, how and why of the personal information that we collect when you visit our Websites or when you use our Services. The personal information collected and used by Support Board, and its subsidiaries and affiliates, is limited to the purpose for which our subscribers engage any member of Support Board and other purposes expressly described in this Policy.
                         </p>
                     </div>
+                </div>
                 </div>
 
                 {/* Section 2: Policy Content */}

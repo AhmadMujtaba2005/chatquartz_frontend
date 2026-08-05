@@ -14,19 +14,19 @@ const MarketingPage = () => {
     return (
         <div>
             <SmoothScroll>
+                <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="w-full min-h-[60vh] bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-20">
-                    <Navbar />
-                    <div className="mt-16 sm:mt-24">
-                        <p className="text-[20px] text-center text-black mb-2 mt-[190px]">Marketing Strategy</p>
+                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                    <div className="relative z-10">
+                        <p className="text-[20px] text-center text-black mb-2 mt-10 sm:mt-16 md:mt-24 lg:mt-45">Marketing Strategy</p>
                         <h1 className="text-[48px] leading-tight mb-6 text-center tracking-tight">Made Easy with <span className="font-bold text-[#2B64FD] italic">Live Chat</span></h1>
                         <div>
-                            <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-100">Live chat adds a personal touch, driving deeper engagement, more sales, and higher revenue.</p>
+                            <p className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">Live chat adds a personal touch, driving deeper engagement, more sales, and higher revenue.</p>
                         </div>
                     </div>
                 </div>
                 {/* Section 2: Mockups Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[950px] mx-auto mt-8 sm:mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[950px] mx-auto mt-16 sm:mt-24 md:mt-[120px]">
                     <RevealOnScroll>
                         <div className="flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl bg-white border border-gray-200/80 shadow-sm hover:shadow-md transition-all duration-200 ease-in-out cursor-pointer">
                             <PopupMockup />

@@ -29,7 +29,7 @@ const Footer = () => {
             <footer className="w-full px-4 sm:px-6 py-10 sm:py-14 flex flex-col items-center gap-8 sm:gap-12">
 
                 {/* Top Section: Brand Details & Navigation Columns */}
-                <div className="w-full max-w-[1100px] flex flex-col md:flex-row items-start justify-between gap-8 sm:gap-10 px-2 sm:px-4 md:px-6">
+                <div className="w-full max-w-7xl flex flex-col md:flex-row items-start justify-between gap-8 sm:gap-10 px-2 sm:px-4 md:px-6">
 
                     {/* Brand Branding & Contact Info Column */}
                     <div className="space-y-3 max-w-xs">
@@ -81,7 +81,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section: Copyright Notice */}
-                <div className="w-full max-w-[1100px] px-2 sm:px-4 md:px-6 pt-6 border-t border-gray-400/30 flex items-center justify-center sm:justify-between text-[11px] sm:text-xs md:text-sm text-gray-600 font-medium text-center sm:text-left">
+                <div className="w-full max-w-7xl px-2 sm:px-4 md:px-6 pt-6 border-t border-gray-400/30 flex items-center justify-center sm:justify-between text-[11px] sm:text-xs md:text-sm text-gray-600 font-medium text-center sm:text-left">
                     <p>Copyright © 2024, chatquartz is a trademark of dataquartz. Please review Privacy Policy and Terms of Use.</p>
                 </div>
             </footer>

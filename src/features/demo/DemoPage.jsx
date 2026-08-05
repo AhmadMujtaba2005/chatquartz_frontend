@@ -7,17 +7,17 @@ const DemoPage = () => {
     return (
         <div>
             <SmoothScroll>
+                <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="w-full min-h-screen bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20">
-                    <Navbar />
-                    <div className="mt-16 sm:mt-24">
-                        <p className="text-[20px] text-center text-black mb-2 mt-[190px]">
+                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                    <div className="relative z-10">
+                        <p className="text-[20px] text-center text-black mb-2 mt-10 sm:mt-16 md:mt-24 lg:mt-45">
                             Demo
                         </p>
                         <h1 className="text-[48px] leading-tight mb-6 text-center tracking-tight">
                             Experience <span className="italic text-[#2B64FD] font-bold">chatquartz</span> in Action
                         </h1>
-                        <div className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed mb-40">
+                        <div className="text-[14px] text-gray-600 max-w-3xl px-6 mx-auto text-center leading-relaxed">
                             <p>
                                 Contact us to explore powerful features and experience seamless customer interactions—quick, easy, and hassle-free.
                             </p>
