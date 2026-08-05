@@ -1,5 +1,7 @@
 import Link from "next/link";
-
+import { FaFacebook, FaXTwitter, FaLinkedin, FaInstagram, FaThreads } from "react-icons/fa6";
+import { SiMailchimp } from "react-icons/si";
+import { Mail, RefreshCcw, Sparkles, LayoutGrid } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
@@ -74,15 +76,70 @@ const MarketingPage = () => {
                         <div className="flex flex-col items-center justify-center gap-6">
                             <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Streamlined Integrations</h1>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1200px] mx-auto w-[94%] mt-10">
-                            <div className="bg-white rounded-2xl border border-gray-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 flex items-center justify-center text-center font-semibold text-gray-900 h-32 hover:border-[#2B64FD]/30 transition-colors">
-                                Social Share
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto w-[94%] mt-10">
+                            {/* Card 1: Social Share */}
+                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-[#2B64FD]/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 via-transparent to-pink-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="relative z-10 flex flex-col items-center gap-3 mb-6 mt-4">
+                                    <div className="flex gap-3">
+                                        <div className="w-14 h-14 bg-white rounded-2xl shadow-[0_2px_12px_rgba(24,119,242,0.15)] border border-blue-50 flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(24,119,242,0.25)] transition-all duration-300">
+                                            <FaFacebook className="text-[#1877F2] text-2xl" />
+                                        </div>
+                                        <div className="w-14 h-14 bg-white rounded-2xl shadow-[0_2px_12px_rgba(29,161,242,0.15)] border border-sky-50 flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(29,161,242,0.25)] transition-all duration-300 delay-75">
+                                            <FaXTwitter className="text-black text-2xl" />
+                                        </div>
+                                        <div className="w-14 h-14 bg-white rounded-2xl shadow-[0_2px_12px_rgba(225,48,108,0.15)] border border-pink-50 flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(225,48,108,0.25)] transition-all duration-300 delay-100">
+                                            <FaInstagram className="text-[#E1306C] text-2xl" />
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <div className="w-14 h-14 bg-white rounded-2xl shadow-[0_2px_12px_rgba(10,102,194,0.15)] border border-blue-50 flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(10,102,194,0.25)] transition-all duration-300 delay-150">
+                                            <FaLinkedin className="text-[#0A66C2] text-2xl" />
+                                        </div>
+                                        <div className="w-14 h-14 bg-white rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.1)] border border-gray-50 flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(0,0,0,0.18)] transition-all duration-300 delay-200">
+                                            <FaThreads className="text-black text-2xl" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 className="relative z-10 font-bold text-gray-900 text-lg">Social Share</h3>
                             </div>
-                            <div className="bg-white rounded-2xl border border-gray-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 flex items-center justify-center text-center font-semibold text-gray-900 h-32 hover:border-[#2B64FD]/30 transition-colors">
-                                WooCommerce Integration
+
+                            {/* Card 2: WooCommerce Integration */}
+                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-[#7C3AED]/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 via-transparent to-pink-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="relative z-10 flex flex-col items-center mb-6 mt-4">
+                                    <div className="w-28 h-28 bg-[#7C3AED] rounded-3xl shadow-[0_4px_24px_rgba(124,58,237,0.3)] flex items-center justify-center group-hover:shadow-[0_8px_32px_rgba(124,58,237,0.45)] group-hover:scale-105 transition-all duration-500">
+                                        <span className="text-white font-extrabold text-3xl tracking-tight">Woo</span>
+                                    </div>
+                                </div>
+                                <h3 className="relative z-10 font-bold text-gray-900 text-lg">WooCommerce Integration</h3>
                             </div>
-                            <div className="bg-white rounded-2xl border border-gray-200/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 flex items-center justify-center text-center font-semibold text-gray-900 h-32 hover:border-[#2B64FD]/30 transition-colors">
-                                Newsletter Subscriptions
+
+                            {/* Card 3: Newsletter Subscriptions */}
+                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-[#2B64FD]/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
+                                <div className="absolute inset-0 bg-gradient-to-br from-yellow-50/50 via-transparent to-purple-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="relative z-10 flex flex-col items-center gap-3 mb-6 mt-4">
+                                    <div className="flex gap-3">
+                                        <div className="w-14 h-14 bg-[#FFE01B] rounded-2xl shadow-[0_2px_12px_rgba(255,224,27,0.3)] flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(255,224,27,0.45)] transition-all duration-300">
+                                            <SiMailchimp className="text-black text-2xl" />
+                                        </div>
+                                        <div className="w-14 h-14 bg-[#1E1E2F] rounded-2xl shadow-[0_2px_12px_rgba(30,30,47,0.2)] flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(30,30,47,0.35)] transition-all duration-300 delay-75">
+                                            <RefreshCcw className="text-white w-6 h-6" />
+                                        </div>
+                                        <div className="w-14 h-14 bg-[#6B46C1] rounded-2xl shadow-[0_2px_12px_rgba(107,70,193,0.25)] flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(107,70,193,0.4)] transition-all duration-300 delay-100">
+                                            <Mail className="text-white w-6 h-6" />
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-3">
+                                        <div className="w-14 h-14 bg-[#2B64FD] rounded-2xl shadow-[0_2px_12px_rgba(43,100,253,0.25)] flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(43,100,253,0.4)] transition-all duration-300 delay-150">
+                                            <Sparkles className="text-white w-6 h-6" />
+                                        </div>
+                                        <div className="w-14 h-14 bg-white rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center group-hover:shadow-[0_4px_20px_rgba(14,165,233,0.25)] transition-all duration-300 delay-200">
+                                            <LayoutGrid className="text-[#0ea5e9] w-6 h-6" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 className="relative z-10 font-bold text-gray-900 text-lg">Newsletter Subscriptions</h3>
                             </div>
                         </div>
                     </RevealOnScroll>

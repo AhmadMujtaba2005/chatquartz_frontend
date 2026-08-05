@@ -55,7 +55,7 @@ const FeaturesPage = () => {
 
                         <div className="relative z-10 flex flex-col items-center">
                             <h1 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 text-center tracking-tight bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why Choose <span className="text-[#2B64FD] italic">chatquartz</span>!</h1>
-                            <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Experience AI you can trust, powered by industry leaders like OpenAI and Google’s Dialogflow. chatquartz delivers smart, flexible, and scalable conversations to elevate your customer service and marketing. Ready to simplify interactions & transform your business?</p>
+                            <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Trusted AI, powered by OpenAI and Google's Dialogflow — smart, scalable conversations that simplify support and marketing.</p>
                             <Link href="/demo" className="group flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-[#2B64FD]/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Start for free</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>

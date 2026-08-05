@@ -9,14 +9,14 @@ const TermsOfUsePage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-8 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
                     <div className="relative z-10">
-                        <h1 className="text-[48px] font-bold leading-tight mb-6 mt-10 sm:mt-16 md:mt-24 lg:mt-45 text-center tracking-tight">Terms Of Use</h1>
+                        <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-black mt-6 sm:mt-8 mb-4 text-center tracking-tight">Terms Of Use</h1>
                     </div>
                 </div>
 
                 {/* Section 2: Terms of Use Content */}
-                <div className="max-w-[800px] mx-auto w-[90%] mt-16 sm:mt-24 mb-20 text-gray-700 leading-relaxed text-[15px]">
+                <div className="max-w-[800px] mx-auto w-[90%] mt-4 sm:mt-8 mb-20 text-gray-700 leading-relaxed text-[15px]">
                     <section className="mb-10">
                         <h2 className="text-[22px] font-bold text-gray-900 mb-4">1. Terms of Service</h2>
                         <p className="mb-4">These Terms of Service are a contract between you and Support Board (referred to in these Terms of Service as “website”, “Support Board”, “us”, “we” or “our”), the provider of the Support Board website and the services accessible from the Support Board websites and domains (which are collectively referred to in these Terms of Service as “Support Board”). The Support Board websites and domains are cloud.board.support, board.support, all subdomain of board.support, and all other websites and domains owned or operated by Support Board.</p>

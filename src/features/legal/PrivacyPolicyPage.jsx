@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
                 {/* Section 1: Hero Section */}
                 <div className="relative w-full bg-gradient-to-b from-[#AAC8FD] to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
                     <div className="relative z-10">
-                        <h1 className="text-[40px] font-bold leading-tight text-black mt-10 sm:mt-16 md:mt-24 lg:mt-45 mb-6 text-center tracking-tight">
+                        <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-black mt-6 sm:mt-8 mb-6 text-center tracking-tight">
                             Privacy Policy
                         </h1>
                         <div className="max-w-4xl px-6 mx-auto text-center space-y-5 text-[14px] text-gray-700 leading-relaxed font-medium">

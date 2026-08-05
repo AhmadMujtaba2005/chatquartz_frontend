@@ -31,26 +31,19 @@ const Navbar = () => {
             {/* h-0: header takes no space — fixes backdrop-filter compositing over animated elements */}
             <header className="sticky top-0 z-50 h-0 w-full">
                 <nav
-                    className={`mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${
-                        scrolled
-                            ? "translate-y-4 border-black/5"
-                            : "translate-y-0 border-transparent"
-                    }`}
-                    style={scrolled ? {
-                        background: "linear-gradient(160deg, rgba(255,255,255,0.92) 0%, rgba(248,251,255,0.88) 60%, rgba(255,255,255,0.92) 100%)",
-                        backdropFilter: "blur(32px) saturate(200%) brightness(1.06)",
-                        WebkitBackdropFilter: "blur(32px) saturate(200%) brightness(1.06)",
-                        boxShadow: "0 8px 32px rgba(43,100,253,0.06), 0 2px 8px rgba(0,0,0,0.04)",
-                    } : {}}
+                    className={`mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
+                        ? "translate-y-4 border-black/5 bg-[linear-gradient(160deg,rgba(255,255,255,0.98)_0%,rgba(248,251,255,0.97)_60%,rgba(255,255,255,0.98)_100%)] backdrop-blur-[32px] backdrop-saturate-200 backdrop-brightness-105 shadow-[0_8px_32px_rgba(43,100,253,0.06),0_2px_8px_rgba(0,0,0,0.04)]"
+                        : "translate-y-0 border-transparent bg-transparent shadow-none"
+                        }`}
                 >
                     <div className="flex items-center justify-between relative">
 
                         {/* Logo */}
-                        <Link href="/" className="flex-shrink-0 flex items-center group">
+                        <Link href="/" className="flex-shrink-0 flex items-center">
                             <img
                                 src="/logo.svg"
                                 alt="ChatQuartz Logo"
-                                className="h-8 sm:h-9 w-auto brightness-0 block transition-opacity duration-200 group-hover:opacity-70"
+                                className="h-8 sm:h-9 w-auto brightness-0 block"
                             />
                         </Link>
 
@@ -74,9 +67,8 @@ const Navbar = () => {
                                         <Link
                                             href={link.href}
                                             onMouseEnter={() => setHoveredIndex(idx)}
-                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${
-                                                hoveredIndex === idx ? "text-[#2B64FD]" : "text-gray-600 hover:text-gray-900"
-                                            }`}
+                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-[#2B64FD]" : "text-gray-600 hover:text-gray-900"
+                                                }`}
                                         >
                                             {link.label}
                                         </Link>
@@ -88,22 +80,28 @@ const Navbar = () => {
                         {/* Right: CTA + Hamburger */}
                         <div className="flex items-center gap-2.5">
                             {/* CTA */}
-                            <Link
-                                href="/demo"
-                                className="relative hidden sm:flex group items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-full bg-[#2B64FD] hover:bg-[#1E56F0] text-white text-sm font-semibold shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out cursor-pointer"
-                            >
-                                {/* Soft breathing glow behind the button on hover */}
-                                <div className="absolute inset-0 rounded-full bg-[#2B64FD] blur-md opacity-0 group-hover:opacity-40 group-hover:animate-pulse transition-opacity duration-300" />
-                                
-                                <span className="relative z-10">Try Now</span>
-                                <span className="relative z-10 inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2">→</span>
-                            </Link>
+                            <div className="relative hidden sm:flex group items-center justify-center p-[2px] rounded-full overflow-hidden bg-[#2B64FD] shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out cursor-pointer">
+                                {/* Blurred rotating glow (comet tail) */}
+                                <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                                    <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
+                                </div>
+                                {/* Sharp rotating core (comet head) */}
+                                <div className="absolute inset-0 flex items-center justify-center opacity-100">
+                                    <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
+                                </div>
+                                <Link
+                                    href="/demo"
+                                    className="relative z-10 flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-full bg-[#2B64FD] group-hover:bg-[#1E56F0] text-white text-sm font-semibold transition-all duration-300 ease-out w-full"
+                                >
+                                    <span className="relative z-10">Try Now</span>
+                                    <span className="relative z-10 inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2">→</span>
+                                </Link>
+                            </div>
 
                             {/* Hamburger */}
                             <button
                                 onClick={() => setMobileOpen(!mobileOpen)}
-                                className="md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-black/6"
-                                style={{ border: "1px solid rgba(0,0,0,0.09)", background: "rgba(0,0,0,0.03)" }}
+                                className="md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-black/10 border border-black/10 bg-black/5"
                                 aria-label="Toggle navigation menu"
                             >
                                 <motion.span
@@ -133,13 +131,7 @@ const Navbar = () => {
                                 className="md:hidden mt-3"
                             >
                                 <nav
-                                    className="rounded-2xl p-3"
-                                    style={{
-                                        background: "rgba(255,255,255,0.96)",
-                                        backdropFilter: "blur(24px)",
-                                        border: "1px solid rgba(0,0,0,0.08)",
-                                        boxShadow: "0 8px 32px rgba(0,0,0,0.1)",
-                                    }}
+                                    className="rounded-2xl p-3 bg-white/95 backdrop-blur-xl border border-black/5 shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
                                 >
                                     <ul className="flex flex-col gap-0.5">
                                         {navLinks.map((link) => (
@@ -155,17 +147,21 @@ const Navbar = () => {
                                         ))}
                                     </ul>
                                     <div className="mt-2 pt-2 border-t border-black/6">
-                                        <Link
-                                            href="/demo"
-                                            onClick={() => setMobileOpen(false)}
-                                            className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-[15px] font-semibold text-white transition-all duration-200"
-                                            style={{
-                                                background: "linear-gradient(135deg, #3B74FE 0%, #2B64FD 100%)",
-                                                boxShadow: "0 4px 16px rgba(43,100,253,0.3)",
-                                            }}
-                                        >
-                                            Try Now →
-                                        </Link>
+                                        <div className="relative group flex items-center justify-center w-full p-[2px] rounded-xl overflow-hidden bg-[linear-gradient(135deg,#3B74FE_0%,#2B64FD_100%)] shadow-[0_4px_16px_rgba(43,100,253,0.3)] transition-all duration-300">
+                                            <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                                                <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
+                                            </div>
+                                            <div className="absolute inset-0 flex items-center justify-center opacity-100">
+                                                <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
+                                            </div>
+                                            <Link
+                                                href="/demo"
+                                                onClick={() => setMobileOpen(false)}
+                                                className="relative z-10 flex w-full items-center justify-center gap-2 px-6 py-3 rounded-xl text-[15px] font-semibold text-white transition-all duration-200 bg-[linear-gradient(135deg,#3B74FE_0%,#2B64FD_100%)]"
+                                            >
+                                                Try Now →
+                                            </Link>
+                                        </div>
                                     </div>
                                 </nav>
                             </motion.div>
