@@ -70,6 +70,7 @@ const Navbar = () => {
                                         )}
                                         <Link
                                             href={link.href}
+                                            prefetch={false}
                                             onMouseEnter={() => setHoveredIndex(idx)}
                                             className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-brand-primary" : "text-gray-600 hover:text-gray-900"
                                                 }`}
@@ -142,6 +143,7 @@ const Navbar = () => {
                                             <li key={link.href}>
                                                 <Link
                                                     href={link.href}
+                                                    prefetch={false}
                                                     onClick={() => setMobileOpen(false)}
                                                     className="flex items-center px-4 py-3 rounded-xl text-[15px] font-medium text-gray-600 hover:text-gray-900 hover:bg-black/5 transition-all duration-150"
                                                 >

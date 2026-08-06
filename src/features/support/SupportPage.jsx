@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 import PageBackground from "@/components/PageBackground";
-import { Feature1Mockup, Feature2Mockup, Feature3Mockup, Feature4Mockup } from "./SupportMockups";
+import { Feature1Mockup, Feature2Mockup, Feature3Mockup, Feature4Mockup } from "@/components/mockups/SupportMockups";
 
 const SupportPage = () => {
     return (
