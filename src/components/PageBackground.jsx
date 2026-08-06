@@ -223,23 +223,7 @@ const PageBackground = ({ variant = "network" }) => {
         ctx.stroke();
       });
 
-      // Particles
-      pricingParticles.forEach((p) => {
-        p.y -= p.speed;
-        p.x += Math.sin(t * 0.02 + p.y * 0.01) * 0.5;
-        
-        if (p.y < -10) {
-          p.y = canvas.height + 10;
-          p.x = Math.random() * canvas.width;
-        }
-        
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        // Opacity
-        const fade = Math.min(1, Math.max(0, p.y / (canvas.height * 0.8)));
-        ctx.fillStyle = `rgba(43,100,253, ${p.opacity * fade})`; 
-        ctx.fill();
-      });
+      // Particles removed as requested
     }
 
     // --- Support Chat ---

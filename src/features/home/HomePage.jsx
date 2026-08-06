@@ -148,52 +148,52 @@ const HomePage = () => {
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
                         <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h2>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-8 sm:mt-10">
-                            <div
-                                className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl border border-brand-secondary/30 shadow-sm hover:shadow-[0_15px_40px_rgba(43,100,253,0.12)] transition-all duration-500 ease-out cursor-pointer overflow-hidden hover:-translate-y-2 group"
-                                style={{
-                                    backgroundImage: "url('/images/wave-bg-1.png')",
-                                    backgroundSize: "300% 100%",
-                                    backgroundPosition: "0% center"
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-white/85 z-0 transition-colors duration-500 group-hover:bg-white/60"></div>
-                                <div className="relative z-10 flex flex-col h-full">
-                                    <h2 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] leading-none mb-3">1</h2>
-                                    <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Sync chatquartz with Your Data</h2>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Automatically sync user details and plugin data, ensuring a smooth and streamlined setup process.</p>
+                        <div className="flex flex-col gap-16 md:gap-24 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-20">
+                            {/* Step 1: Image Left, Text Right */}
+                            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+                                <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
+                                    <div className="aspect-[16/10] w-full relative">
+                                        <img src="/images/step1.png" alt="Step 1 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                    </div>
+                                </div>
+                                <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
+                                    <div className="flex items-center gap-4 mb-3">
+                                        <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#2B64FD]/10 to-[#2B64FD]/5 text-[#2B64FD] text-xl font-extrabold shadow-sm border border-[#2B64FD]/10 flex-shrink-0">1</span>
+                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Train Your Chatbot Instantly</h2>
+                                    </div>
+                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Easily train chatQuartz by defining custom questions and exact answers. Anticipate common user queries and provide precise, tailored responses to ensure your chatbot handles specific scenarios flawlessly from day one.</p>
                                 </div>
                             </div>
 
-                            <div
-                                className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl border border-brand-secondary/30 shadow-sm hover:shadow-[0_15px_40px_rgba(43,100,253,0.12)] transition-all duration-500 ease-out cursor-pointer overflow-hidden hover:-translate-y-2 group"
-                                style={{
-                                    backgroundImage: "url('/images/wave-bg-1.png')",
-                                    backgroundSize: "300% 100%",
-                                    backgroundPosition: "50% center"
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-white/85 z-0 transition-colors duration-500 group-hover:bg-white/60"></div>
-                                <div className="relative z-10 flex flex-col h-full">
-                                    <h2 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] leading-none mb-3">2</h2>
-                                    <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">chatquartz Responds Using Your Content</h2>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">AI-driven chatbots handle customer queries with precision, leveraging your existing knowledge base.</p>
+                            {/* Step 2: Text Left, Image Right */}
+                            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
+                                <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
+                                    <div className="aspect-[16/10] w-full relative">
+                                        <img src="/images/step2.png" alt="Step 2 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                    </div>
+                                </div>
+                                <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
+                                    <div className="flex items-center gap-4 mb-3">
+                                        <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#2B64FD]/10 to-[#2B64FD]/5 text-[#2B64FD] text-xl font-extrabold shadow-sm border border-[#2B64FD]/10 flex-shrink-0">2</span>
+                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Monitor and Enhance Performance</h2>
+                                    </div>
+                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Gain deep insights into your customer interactions with comprehensive reporting. Track conversation volumes, user engagement, and support metrics over time to continuously refine and optimize your chatbot's performance.</p>
                                 </div>
                             </div>
 
-                            <div
-                                className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-2xl border border-brand-secondary/30 shadow-sm hover:shadow-[0_15px_40px_rgba(43,100,253,0.12)] transition-all duration-500 ease-out cursor-pointer overflow-hidden hover:-translate-y-2 group"
-                                style={{
-                                    backgroundImage: "url('/images/wave-bg-1.png')",
-                                    backgroundSize: "300% 100%",
-                                    backgroundPosition: "100% center"
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-white/85 z-0 transition-colors duration-500 group-hover:bg-white/60"></div>
-                                <div className="relative z-10 flex flex-col h-full">
-                                    <h2 className="text-[32px] sm:text-[40px] font-extrabold text-white [-webkit-text-stroke:2px_#000000] leading-none mb-3">3</h2>
-                                    <h2 className="text-[16px] sm:text-[18px] font-bold tracking-tight text-gray-900 mb-3">Track and Enhance Performance</h2>
-                                    <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed mt-auto">Monitor chatbot interactions and refine responses by adding new insights for continuous improvement.</p>
+                            {/* Step 3: Image Left, Text Right */}
+                            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+                                <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
+                                    <div className="aspect-[16/10] w-full relative">
+                                        <img src="/images/step3.png" alt="Step 3 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                    </div>
+                                </div>
+                                <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
+                                    <div className="flex items-center gap-4 mb-3">
+                                        <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#2B64FD]/10 to-[#2B64FD]/5 text-[#2B64FD] text-xl font-extrabold shadow-sm border border-[#2B64FD]/10 flex-shrink-0">3</span>
+                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Configure Your Chat Widget</h2>
+                                    </div>
+                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Tailor the chatbot experience to perfectly match your business needs. Easily customize widget behavior, manage offline availability, configure multi-language support, and control user permissions right from your settings dashboard.</p>
                                 </div>
                             </div>
                         </div>
