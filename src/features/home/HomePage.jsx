@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 import FutureShowcase from "@/components/features/FutureShowcase";
 import HomePageFAQ from "./HomePageFAQ";
+import { HeroNetworkCanvas } from "@/components/PageBackground";
 
 
 const HomePage = () => {
@@ -14,15 +15,7 @@ const HomePage = () => {
                 <Navbar />
                 {/* Section 1: Hero Section & Navigation */}
                 <div className="relative w-full min-h-screen bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
-                    <div
-                        className="absolute top-[128px] sm:top-[168px] md:top-[176px] right-[-30%] sm:right-[-10%] md:right-[-5%] w-[400px] sm:w-[650px] md:w-[850px] lg:w-[1050px] pointer-events-none z-0 select-none opacity-80 sm:opacity-95"
-                        style={{
-                            WebkitMaskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 55%, black 100%)",
-                            maskImage: "linear-gradient(to right, transparent 0%, transparent 15%, black 55%, black 100%)"
-                        }}
-                    >
-                        <img src="/hero-bg.png" alt="Hero Background Shape" className="w-full h-auto object-contain mix-blend-multiply" />
-                    </div>
+                    <HeroNetworkCanvas animated={true} />
 
                     <div className="relative z-10 flex flex-col items-center">
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] text-gray-900 mt-12 sm:mt-16 md:mt-24 lg:mt-48 mb-6 text-center tracking-tight px-4">

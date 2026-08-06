@@ -32,11 +32,11 @@ const Navbar = () => {
 
     return (
         <>
-            {/* h-0: header takes no space — fixes backdrop-filter compositing over animated elements */}
+            {/* Header */}
             <header className="sticky top-0 z-50 h-0 w-full">
                 <nav
                     className={`mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
-                        ? "translate-y-4 border-white/20 bg-white/30 backdrop-blur-[32px] backdrop-saturate-200 shadow-[0_8px_32px_rgba(43,100,253,0.1)]"
+                        ? "translate-y-4 border-white/50 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] shadow-[0_12px_40px_rgba(43,100,253,0.15)]"
                         : "translate-y-0 border-transparent bg-transparent shadow-none"
                         }`}
                 >
@@ -59,7 +59,7 @@ const Navbar = () => {
                             >
                                 {navLinks.map((link, idx) => (
                                     <li key={link.href} className="relative flex items-center">
-                                        {/* Sleek sliding underline on hover */}
+                                        {/* Active Indicator */}
                                         {hoveredIndex === idx && (
                                             <motion.div
                                                 layoutId="nav-indicator"
@@ -85,11 +85,11 @@ const Navbar = () => {
                         <div className="flex items-center gap-2.5">
                             {/* CTA */}
                             <div className="relative hidden sm:flex group items-center justify-center p-[2px] rounded-full overflow-hidden bg-brand-primary shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out cursor-pointer">
-                                {/* Blurred rotating glow (comet tail) */}
+                                {/* Glow Effect */}
                                 <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
                                 </div>
-                                {/* Sharp rotating core (comet head) */}
+                                {/* Core Effect */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-100">
                                     <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
                                 </div>
@@ -135,7 +135,7 @@ const Navbar = () => {
                                 className="md:hidden mt-3"
                             >
                                 <nav
-                                    className="rounded-2xl p-3 bg-white/30 backdrop-blur-[32px] backdrop-saturate-200 border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
+                                    className="rounded-2xl p-3 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] border border-white/40 shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
                                 >
                                     <ul className="flex flex-col gap-0.5">
                                         {navLinks.map((link) => (

@@ -6,6 +6,7 @@ const PageBackground = ({ variant = "network" }) => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
     const ctx = canvas.getContext("2d");
     let animationId;
     let frame = 0;
@@ -16,7 +17,7 @@ const PageBackground = ({ variant = "network" }) => {
       canvas.height = canvas.offsetHeight;
     }
 
-    // --- FEATURES: interconnected particle network (capabilities linking together) ---
+    // --- Features Network ---
     let particles = [];
     function initNetwork() {
       const count = Math.min(50, Math.floor((canvas.width * canvas.height) / 18000));
@@ -46,7 +47,7 @@ const PageBackground = ({ variant = "network" }) => {
     }
 
 
-    // --- MARKETING: Animated users/leads flowing into a chat widget (conversion funnel) ---
+    // --- Marketing Leads ---
     let leads = [];
     function initMarketing() {
       leads = Array.from({ length: 18 }, (_, i) => ({
@@ -62,7 +63,7 @@ const PageBackground = ({ variant = "network" }) => {
     }
     function drawMarketing() {
       const t = frame * 0.012;
-      // Draw a chat widget in the bottom-right corner
+      // Chat Widget
       const wx = canvas.width * 0.82, wy = canvas.height * 0.65;
       const ww = 160, wh = 90;
 
@@ -79,14 +80,14 @@ const PageBackground = ({ variant = "network" }) => {
       if (ctx.roundRect) {
         ctx.beginPath(); ctx.roundRect(wx, wy, ww, 28, [16,16,0,0]); ctx.fill();
       } else { ctx.fillRect(wx, wy, ww, 28); }
-      // Message bubbles inside widget
+      // Message Bubbles
       ctx.fillStyle = "rgba(43,100,253,0.4)";
       if (ctx.roundRect) {
         ctx.beginPath(); ctx.roundRect(wx + 8, wy + 36, 70, 14, 7); ctx.fill();
         ctx.fillStyle = "rgba(170,200,253,0.5)";
         ctx.beginPath(); ctx.roundRect(wx + ww - 78, wy + 58, 66, 14, 7); ctx.fill();
       }
-      // Pulsing ring around widget
+      // Pulsing Ring
       const pulse = Math.sin(t * 2) * 0.5 + 0.5;
       ctx.globalAlpha = pulse * 0.15;
       ctx.beginPath();
@@ -97,14 +98,14 @@ const PageBackground = ({ variant = "network" }) => {
       ctx.globalAlpha = 1;
       ctx.restore();
 
-      // Draw lead dots flowing toward the widget
+      // Leads
       leads.forEach((l) => {
-        // Drift toward the widget
+        // Target Position
         const targetX = wx + ww / 2, targetY = wy + wh / 2;
         const dx = targetX - l.x, dy = targetY - l.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < 30) {
-          // Reset - "converted" lead goes back to top
+          // Reset Lead
           l.x = Math.random() * canvas.width;
           l.y = -20;
           l.isConverted = Math.random() > 0.5;
@@ -114,14 +115,14 @@ const PageBackground = ({ variant = "network" }) => {
 
         const currentOpacity = l.opacity + Math.sin(frame * 0.03 + l.phase) * 0.1;
         ctx.save();
-        // Draw user avatar circle
+        // Avatar
         ctx.beginPath();
         ctx.arc(l.x, l.y, l.radius, 0, Math.PI * 2);
         ctx.fillStyle = l.isConverted
           ? `rgba(170,200,253,${Math.max(0, currentOpacity)})`
           : `rgba(43,100,253,${Math.max(0, currentOpacity)})`;
         ctx.fill();
-        // Small dot connection line to widget
+        // Connection Line
         if (dist < 180) {
           ctx.beginPath();
           ctx.moveTo(l.x, l.y);
@@ -136,38 +137,112 @@ const PageBackground = ({ variant = "network" }) => {
       });
     }
 
-    // --- PRICING: gently rising bars (growth / value climbing) ---
-    let bars = [];
+
+    // --- Pricing Curves ---
+    let curves = [];
+    let pricingParticles = [];
+    
     function initPricing() {
-      const barCount = Math.max(10, Math.floor(canvas.width / 100));
-      bars = Array.from({ length: barCount }, (_, i) => ({
-        x: (canvas.width / barCount) * i + (canvas.width / barCount) * 0.15,
-        baseHeight: 90 + Math.random() * 180,
-        phase: Math.random() * Math.PI * 2,
+      curves = [
+        { speed: 0.005, amp: 30, baseHeight: 0.75, color: '43, 100, 253' }, // brand-primary
+        { speed: 0.003, amp: 50, baseHeight: 0.85, color: '96, 165, 250' }, // blue-400
+        { speed: 0.002, amp: 70, baseHeight: 0.95, color: '170, 200, 253' } // light blue
+      ];
+      
+      const count = 30;
+      pricingParticles = Array.from({ length: count }, () => ({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        size: Math.random() * 2 + 1,
+        speed: Math.random() * 0.4 + 0.2,
+        opacity: Math.random() * 0.5 + 0.2
       }));
     }
+
     function drawPricing() {
-      const t = frame / 50;
-      const bottomY = canvas.height;
-      const barWidth = Math.min(42, (canvas.width / bars.length) * 0.6);
+      const t = frame;
+      
+      // Waves
+      curves.forEach((curve, index) => {
+        const yOffset = canvas.height * curve.baseHeight;
+        
+        ctx.beginPath();
+        ctx.moveTo(0, canvas.height); // Start Path
+        
+        let prevX = 0;
+        let prevY = yOffset + Math.sin(t * curve.speed) * curve.amp;
+        ctx.lineTo(prevX, prevY);
 
-      bars.forEach((b) => {
-        const h = b.baseHeight + Math.sin(t + b.phase) * 24;
-        const y = bottomY - h;
-        ctx.fillStyle = "rgba(43,100,253,0.3)";
-
-        if (ctx.roundRect) {
-          ctx.beginPath();
-          ctx.roundRect(b.x, y, barWidth, h, [10, 10, 0, 0]);
-          ctx.fill();
-        } else {
-          ctx.fillRect(b.x, y, barWidth, h);
+        const segments = 8;
+        for (let i = 1; i <= segments; i++) {
+          const x = (canvas.width / segments) * i;
+          // Curve Calculation
+          const growthOffset = (Math.pow(i / segments, 2.5)) * (canvas.height * 0.55); 
+          const wavePhase = i * 0.8 + (index * 2);
+          const y = yOffset - growthOffset + Math.sin(t * curve.speed + wavePhase) * curve.amp;
+          
+          const cpX1 = prevX + (x - prevX) / 2.5;
+          const cpX2 = prevX + (x - prevX) / 2;
+          ctx.bezierCurveTo(cpX1, prevY, cpX2, y, x, y);
+          
+          prevX = x;
+          prevY = y;
         }
+
+        ctx.lineTo(canvas.width, canvas.height);
+        ctx.closePath();
+
+        // Gradient Fill
+        const grad = ctx.createLinearGradient(0, canvas.height * 0.1, 0, canvas.height);
+        grad.addColorStop(0, `rgba(${curve.color}, 0.35)`);
+        grad.addColorStop(1, `rgba(${curve.color}, 0)`);
+        ctx.fillStyle = grad;
+        ctx.fill();
+
+        // Stroke
+        ctx.beginPath();
+        prevX = 0;
+        prevY = yOffset + Math.sin(t * curve.speed) * curve.amp;
+        ctx.moveTo(prevX, prevY);
+        
+        for (let i = 1; i <= segments; i++) {
+          const x = (canvas.width / segments) * i;
+          const growthOffset = (Math.pow(i / segments, 2.5)) * (canvas.height * 0.55); 
+          const wavePhase = i * 0.8 + (index * 2);
+          const y = yOffset - growthOffset + Math.sin(t * curve.speed + wavePhase) * curve.amp;
+          
+          const cpX1 = prevX + (x - prevX) / 2.5;
+          const cpX2 = prevX + (x - prevX) / 2;
+          ctx.bezierCurveTo(cpX1, prevY, cpX2, y, x, y);
+          
+          prevX = x;
+          prevY = y;
+        }
+        ctx.strokeStyle = `rgba(${curve.color}, 0.8)`;
+        ctx.lineWidth = 2.5;
+        ctx.stroke();
+      });
+
+      // Particles
+      pricingParticles.forEach((p) => {
+        p.y -= p.speed;
+        p.x += Math.sin(t * 0.02 + p.y * 0.01) * 0.5;
+        
+        if (p.y < -10) {
+          p.y = canvas.height + 10;
+          p.x = Math.random() * canvas.width;
+        }
+        
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        // Opacity
+        const fade = Math.min(1, Math.max(0, p.y / (canvas.height * 0.8)));
+        ctx.fillStyle = `rgba(43,100,253, ${p.opacity * fade})`; 
+        ctx.fill();
       });
     }
 
-
-    // --- SUPPORT: Live chat conversation threads appearing and fading ---
+    // --- Support Chat ---
     let threads = [];
     function initSupport() {
       threads = Array.from({ length: 7 }, (_, i) => ({
@@ -213,7 +288,7 @@ const PageBackground = ({ variant = "network" }) => {
           currentY += bubbleH + 8;
         }
 
-        // Typing indicator on last bubble (3 animated dots)
+        // Typing Indicator
         if (alpha > 0.3) {
           const dotY = currentY + 8;
           const dotX = thread.isAgent ? thread.x + 10 : thread.x - 40;
@@ -229,7 +304,6 @@ const PageBackground = ({ variant = "network" }) => {
         ctx.restore();
       });
     }
-
 
     function loop() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -269,3 +343,179 @@ const PageBackground = ({ variant = "network" }) => {
 };
 
 export default PageBackground;
+
+export function HeroNetworkCanvas({ animated = false }) {
+  const canvasRef = useRef(null);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const container = containerRef.current;
+    if (!canvas || !container) return;
+    
+    const ctx = canvas.getContext("2d");
+    let animationId;
+    let particles = [];
+    let time = 0;
+    let mouse = { x: 0, y: 0, targetX: 0, targetY: 0 };
+    let width = 0;
+    let height = 0;
+
+    function initParticles() {
+      const count = 95; 
+      particles = Array.from({ length: count }, (_, i) => {
+        return createParticle(true);
+      });
+    }
+
+    function createParticle(randomY = false) {
+      const x = width * Math.random();
+      const y = Math.random() * height;
+      const z = Math.random();
+
+      return {
+        id: Math.random(),
+        x,
+        y,
+        z,
+        baseX: x, 
+        baseY: y,
+        wiggleSpeed: 0.001 + Math.random() * 0.002,
+        wiggleAmp: 10 + Math.random() * 30,
+        radius: 1 + z * 3,
+        phase: Math.random() * Math.PI * 2,
+        isDataPacket: Math.random() > 0.85, 
+      };
+    }
+
+    function draw() {
+      if (width === 0 || height === 0) {
+        if (animated) animationId = requestAnimationFrame(draw);
+        return;
+      }
+      
+      time += 1;
+      ctx.clearRect(0, 0, width, height);
+
+      // Smooth mouse interpolation
+      mouse.x += (mouse.targetX - mouse.x) * 0.05;
+      mouse.y += (mouse.targetY - mouse.y) * 0.05;
+
+      particles.forEach((p, index) => {
+        p.x = p.baseX + Math.sin(time * p.wiggleSpeed + p.phase) * p.wiggleAmp;
+        p.y = p.baseY + Math.cos(time * p.wiggleSpeed + p.phase) * (p.wiggleAmp * 0.5);
+
+        const parallaxX = mouse.x * (p.z * 40);
+        const parallaxY = mouse.y * (p.z * 40);
+        
+        const finalX = p.x + parallaxX;
+        const finalY = p.y + parallaxY;
+
+        let connectionsDrawn = 0;
+        for (let j = index + 1; j < particles.length; j++) {
+          if (connectionsDrawn >= 2) break; 
+
+          const other = particles[j];
+          const otherFinalX = other.x + mouse.x * (other.z * 40);
+          const otherFinalY = other.y + mouse.y * (other.z * 40);
+
+          const dx = finalX - otherFinalX;
+          const dy = finalY - otherFinalY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          
+          const maxDist = 120 + (p.z * 80); 
+
+          if (dist < maxDist) {
+            connectionsDrawn++;
+            const distOpacity = 1 - (dist / maxDist);
+            const opacity = distOpacity * 0.7 * (p.z + 0.2);
+
+            ctx.beginPath();
+            ctx.moveTo(finalX, finalY);
+            ctx.quadraticCurveTo(
+              (finalX + otherFinalX) / 2, 
+              (finalY + otherFinalY) / 2 - 20, 
+              otherFinalX, 
+              otherFinalY
+            );
+            ctx.strokeStyle = `rgba(43,100,253,${opacity})`;
+            ctx.lineWidth = 1.0 + (p.z * 0.8);
+            ctx.stroke();
+          }
+        }
+
+        const glow = Math.sin(time * 0.03 + p.phase) * 0.5 + 0.5;
+        const alpha = (0.55 + (p.z * 0.5) + (glow * 0.3));
+
+        if (p.isDataPacket) {
+          const grad = ctx.createRadialGradient(finalX, finalY, 0, finalX, finalY, p.radius * 6);
+          grad.addColorStop(0, `rgba(43,100,253,${alpha * 0.55})`);
+          grad.addColorStop(1, "rgba(43,100,253,0)");
+          ctx.beginPath();
+          ctx.arc(finalX, finalY, p.radius * 6, 0, Math.PI * 2);
+          ctx.fillStyle = grad;
+          ctx.fill();
+        }
+
+        ctx.beginPath();
+        ctx.arc(finalX, finalY, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = p.isDataPacket 
+          ? `rgba(43,100,253,${alpha * 0.8})` 
+          : `rgba(96,165,250,${alpha * 0.85})`; 
+        ctx.fill();
+      });
+
+      if (animated) {
+        animationId = requestAnimationFrame(draw);
+      }
+    }
+
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        if (entry.target === container) {
+          const { width: w, height: h } = entry.contentRect;
+          if (w > 0 && h > 0) {
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = w * dpr;
+            canvas.height = h * dpr;
+            ctx.scale(dpr, dpr);
+            width = w;
+            height = h;
+            initParticles();
+          }
+        }
+      }
+    });
+    
+    resizeObserver.observe(container);
+    if (animated) draw();
+
+    const onMouseMove = (e) => {
+      mouse.targetX = (e.clientX / window.innerWidth) * 2 - 1;
+      mouse.targetY = (e.clientY / window.innerHeight) * 2 - 1;
+    };
+    window.addEventListener("mousemove", onMouseMove);
+
+    return () => {
+      cancelAnimationFrame(animationId);
+      resizeObserver.disconnect();
+      window.removeEventListener("mousemove", onMouseMove);
+    };
+  }, [animated]);
+
+  return (
+    <div ref={containerRef} className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden z-0">
+      <canvas
+        ref={canvasRef}
+        className="absolute inset-0 w-full h-full opacity-100"
+        style={{
+          // CSS Masks
+          maskImage: "radial-gradient(ellipse 55% 45% at 50% 45%, transparent 25%, black 65%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
+          WebkitMaskImage: "radial-gradient(ellipse 55% 45% at 50% 45%, transparent 25%, black 65%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
+          maskComposite: "intersect",
+          WebkitMaskComposite: "source-in",
+        }}
+      />
+    </div>
+  );
+}
