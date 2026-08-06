@@ -194,7 +194,7 @@ const PageBackground = ({ variant = "network" }) => {
 
         // Gradient Fill
         const grad = ctx.createLinearGradient(0, canvas.height * 0.1, 0, canvas.height);
-        grad.addColorStop(0, `rgba(${curve.color}, 0.35)`);
+        grad.addColorStop(0, `rgba(${curve.color}, 0.20)`);
         grad.addColorStop(1, `rgba(${curve.color}, 0)`);
         ctx.fillStyle = grad;
         ctx.fill();
@@ -218,7 +218,7 @@ const PageBackground = ({ variant = "network" }) => {
           prevX = x;
           prevY = y;
         }
-        ctx.strokeStyle = `rgba(${curve.color}, 0.8)`;
+        ctx.strokeStyle = `rgba(${curve.color}, 0.55)`;
         ctx.lineWidth = 2.5;
         ctx.stroke();
       });
@@ -362,7 +362,7 @@ export function HeroNetworkCanvas({ animated = false }) {
     let height = 0;
 
     function initParticles() {
-      const count = 95; 
+      const count = 75; 
       particles = Array.from({ length: count }, (_, i) => {
         return createParticle(true);
       });
