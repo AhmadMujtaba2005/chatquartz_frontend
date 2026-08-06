@@ -4,6 +4,7 @@
   --color-brand-primary: #2B64FD;
   --color-brand-secondary: #AAC8FD;
   --color-brand-primary-hover: #1E56F0;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
 }
 
 @keyframes fillProgress {
