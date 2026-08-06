@@ -43,7 +43,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between relative">
 
                         {/* Logo */}
-                        <Link href="/" className="flex-shrink-0 flex items-center">
+                        <Link href="/" prefetch={false} className="flex-shrink-0 flex items-center">
                             <img
                                 src="/logo.svg"
                                 alt="ChatQuartz Logo"
@@ -63,8 +63,8 @@ const Navbar = () => {
                                         {hoveredIndex === idx && (
                                             <motion.div
                                                 layoutId="nav-indicator"
-                                                className="absolute bottom-0 left-4 right-4 h-[2px] rounded-t-md bg-brand-primary"
-                                                style={{ boxShadow: "0 -2px 8px rgba(43,100,253,0.4)" }}
+                                                className="absolute bottom-0 left-4 right-4 h-[2px] rounded-t-md bg-[#1A36A8]"
+                                                style={{ boxShadow: "0 -2px 8px rgba(26,54,168,0.4)" }}
                                                 transition={{ type: "spring", stiffness: 500, damping: 35 }}
                                             />
                                         )}
@@ -72,7 +72,7 @@ const Navbar = () => {
                                             href={link.href}
                                             prefetch={false}
                                             onMouseEnter={() => setHoveredIndex(idx)}
-                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-brand-primary" : "text-gray-600 hover:text-gray-900"
+                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-[#1A36A8]" : "text-gray-600 hover:text-gray-900"
                                                 }`}
                                         >
                                             {link.label}
@@ -96,6 +96,7 @@ const Navbar = () => {
                                 </div>
                                 <Link
                                     href="/demo"
+                                    prefetch={false}
                                     className="relative z-10 flex items-center justify-center px-6 md:px-8 py-3 md:py-3.5 rounded-full bg-brand-primary group-hover:bg-brand-primary-hover text-white text-sm font-semibold transition-all duration-300 ease-out w-full"
                                 >
                                     <span className="relative z-10">Try Now</span>
@@ -162,6 +163,7 @@ const Navbar = () => {
                                             </div>
                                             <Link
                                                 href="/demo"
+                                                prefetch={false}
                                                 onClick={() => setMobileOpen(false)}
                                                 className="relative z-10 flex w-full items-center justify-center gap-2 px-6 py-3 rounded-xl text-[15px] font-semibold text-white transition-all duration-200 bg-[linear-gradient(135deg,#3B74FE_0%,var(--color-brand-primary)_100%)]"
                                             >

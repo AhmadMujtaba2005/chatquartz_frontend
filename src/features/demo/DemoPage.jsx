@@ -9,9 +9,9 @@ const DemoPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
-                    <div className="relative z-10">
-                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3 mt-10 sm:mt-16 md:mt-24 lg:mt-45">
+                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
+                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3">
                             Demo
                         </p>
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
@@ -27,7 +27,7 @@ const DemoPage = () => {
 
                 {/* Section 2: Demo Form */}
                 <RevealOnScroll>
-                    <div className="mt-16 sm:mt-24 md:mt-[120px] mb-20 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
+                    <div className="mt-16 sm:mt-24 md:mt-[30px] mb-20 max-w-[800px] mx-auto px-4 sm:px-6 w-full">
                         <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 p-6 sm:p-10 border border-brand-secondary/50 transition-all duration-500 hover:border-brand-primary/40 group overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <form action="" method="post" className="relative z-10 space-y-6">

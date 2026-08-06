@@ -11,7 +11,7 @@ const outfit = Outfit({
 const RootLayout = ({ children }) => {
   return (
     <html lang="en" className={`${outfit.variable}`}>
-      <body className="font-sans antialiased text-gray-900">
+      <body className="font-sans antialiased text-gray-900" suppressHydrationWarning>
         {children}
         <Analytics />
         <SpeedInsights />

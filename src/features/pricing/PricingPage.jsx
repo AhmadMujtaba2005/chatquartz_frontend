@@ -16,10 +16,10 @@ const PricingPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <PageBackground variant="pricing" />
-                    <div className="relative z-10 flex-grow flex flex-col items-center">
-                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3 mt-12 sm:mt-16 md:mt-24 lg:mt-48">Pricing</p>
+                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3">Pricing</p>
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
                             Sample <span className="font-bold text-brand-primary italic">Pricing</span> For Every Business
                         </h1>
@@ -32,7 +32,7 @@ const PricingPage = () => {
                 </div>
                 {/* Section 2: Pricing Cards */}
                 <RevealOnScroll>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 md:mt-[120px] mb-20">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 md:mt-[100px] mb-20">
                         {/* Starter Plan */}
                         <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 p-8 flex flex-col transition-all duration-500 hover:border-brand-primary/40 group">
                             <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>

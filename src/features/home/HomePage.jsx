@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 import FutureShowcase from "@/components/features/FutureShowcase";
 import HomePageFAQ from "./HomePageFAQ";
+import IntegrationsMarquee from "@/components/features/IntegrationsMarquee";
 import { HeroNetworkCanvas } from "@/components/PageBackground";
 
 
@@ -14,45 +15,53 @@ const HomePage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section & Navigation */}
-                <div className="relative w-full min-h-screen bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                <div className="relative w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <HeroNetworkCanvas animated={true} />
 
-                    <div className="relative z-10 flex flex-col items-center">
-                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] text-gray-900 mt-12 sm:mt-16 md:mt-24 lg:mt-48 mb-6 text-center tracking-tight px-4">
+                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] text-gray-900 mb-6 text-center tracking-tight px-4">
                             Skyrocket <br /> Your Growth with <br />
                             <span className="text-brand-primary italic font-bold">AI-Powered </span>
                             <span className="font-bold">Chatbots</span>
                         </h1>
                         <div className="max-w-3xl mx-auto px-6">
                             <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed">
-                                Boost leads, automate support, and increase revenue with AI-powered chatbots.
+                                Turn casual visitors into loyal customers. Automate your support, capture qualified leads instantly, and drive 24/7 revenue with intelligent conversational AI.
                             </p>
                         </div>
-                        <div className="flex flex-col sm:flex-row justify-center items-center my-8 sm:my-10 gap-4 sm:gap-5 px-6">
-                            {/* Enhanced Rotating border wrapper for "Try This" */}
-                            <div className="relative group flex items-center justify-center w-full sm:w-auto p-[2px] rounded-full overflow-hidden bg-brand-primary shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out">
-                                {/* Blurred rotating glow (comet tail) */}
-                                <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
-                                    <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
-                                </div>
+                        <div className="flex flex-col items-center my-8 sm:my-10 w-full">
+                            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 px-6 mb-3">
+                                {/* Enhanced Rotating border wrapper for "Try This" */}
+                                <div className="relative group flex items-center justify-center w-full sm:w-auto p-[2px] rounded-full overflow-hidden bg-brand-primary shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out">
+                                    {/* Blurred rotating glow (comet tail) */}
+                                    <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
+                                    </div>
 
-                                {/* Sharp rotating core (comet head) */}
-                                <div className="absolute inset-0 flex items-center justify-center opacity-100">
-                                    <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
-                                </div>
+                                    {/* Sharp rotating core (comet head) */}
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-100">
+                                        <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
+                                    </div>
 
-                                <Link href="/demo" className="relative z-10 flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary group-hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold transition-all duration-300 ease-out cursor-pointer">
-                                    <span>Try This</span>
-                                    <span className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
+                                    <Link href="/demo" prefetch={false} className="relative z-10 flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary group-hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold transition-all duration-300 ease-out cursor-pointer">
+                                        <span>Try This</span>
+                                        <span className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
+                                    </Link>
+                                </div>
+                                <Link href="/contactus" prefetch={false} className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 backdrop-blur-sm text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                                    Talk to an Expert
                                 </Link>
                             </div>
-                            <Link href="/contactus" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 backdrop-blur-sm text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
-                                Talk to an Expert
-                            </Link>
+                            <div className="flex items-center justify-center gap-6">
+                                <span className="flex items-center gap-1.5 text-[13px] text-gray-500">No credit card required</span>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+
+                <RevealOnScroll>
+                    <IntegrationsMarquee />
+                </RevealOnScroll>
                 <RevealOnScroll>
                     {/* Section 2: Features & Benefits Cards (Why ChatQuartz) */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
@@ -101,7 +110,6 @@ const HomePage = () => {
                     </div>
                 </RevealOnScroll>
 
-
                 <RevealOnScroll>
                     {/* Section 3: Mid-Page CTA Section */}
                     <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] px-5 py-12 sm:p-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
@@ -116,14 +124,13 @@ const HomePage = () => {
                         <div className="relative z-10 flex flex-col items-center">
                             <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-brand-primary">chatquartz</span> in Action</h2>
                             <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-6 sm:mb-8">See ChatQuartz handle a real conversation — no signup required!</p>
-                            <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <Link href="/demo" prefetch={false} className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Contact Sales</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                             </Link>
                         </div>
                     </div>
                 </RevealOnScroll>
-
 
                 <RevealOnScroll>
                     {/* Section 4: Future of Customer Support */}
@@ -137,7 +144,7 @@ const HomePage = () => {
                     <div className="flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-24 mt-16 sm:mt-24 md:mt-[120px]">
                         <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: Keeping You in Control</h2>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
-                        <Link href="/features" className="flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
+                        <Link href="/features" prefetch={false} className="flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
                             <span>Learn more</span>
                             <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                         </Link>
@@ -153,15 +160,15 @@ const HomePage = () => {
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
-                                        <img src="/images/step1.png" alt="Step 1 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                        <img src="/images/step.png" alt="Step 1 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
                                     <div className="flex items-center gap-4 mb-3">
                                         <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#2B64FD]/10 to-[#2B64FD]/5 text-[#2B64FD] text-xl font-extrabold shadow-sm border border-[#2B64FD]/10 flex-shrink-0">1</span>
-                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Train Your Chatbot Instantly</h2>
+                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Connect Your Channels</h2>
                                     </div>
-                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Easily train chatQuartz by defining custom questions and exact answers. Anticipate common user queries and provide precise, tailored responses to ensure your chatbot handles specific scenarios flawlessly from day one.</p>
+                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Link your website, WhatsApp, Instagram, or Messenger in seconds. Manage all incoming conversations from a single, centralized unified inbox.</p>
                                 </div>
                             </div>
 
@@ -169,15 +176,15 @@ const HomePage = () => {
                             <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
-                                        <img src="/images/step2.png" alt="Step 2 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                        <img src="/images/step1.png" alt="Step 2 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
                                     <div className="flex items-center gap-4 mb-3">
                                         <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#2B64FD]/10 to-[#2B64FD]/5 text-[#2B64FD] text-xl font-extrabold shadow-sm border border-[#2B64FD]/10 flex-shrink-0">2</span>
-                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Monitor and Enhance Performance</h2>
+                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Train Your AI Instantly</h2>
                                     </div>
-                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Gain deep insights into your customer interactions with comprehensive reporting. Track conversation volumes, user engagement, and support metrics over time to continuously refine and optimize your chatbot's performance.</p>
+                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Upload documents, link your website URLs, or add custom Q&As. The AI learns your business instantly to provide accurate, brand-aligned answers.</p>
                                 </div>
                             </div>
 
@@ -185,15 +192,31 @@ const HomePage = () => {
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
-                                        <img src="/images/step3.png" alt="Step 3 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                        <img src="/images/step2.png" alt="Step 3 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
                                     <div className="flex items-center gap-4 mb-3">
                                         <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#2B64FD]/10 to-[#2B64FD]/5 text-[#2B64FD] text-xl font-extrabold shadow-sm border border-[#2B64FD]/10 flex-shrink-0">3</span>
-                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Configure Your Chat Widget</h2>
+                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Automate & Capture Leads</h2>
                                     </div>
-                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Tailor the chatbot experience to perfectly match your business needs. Easily customize widget behavior, manage offline availability, configure multi-language support, and control user permissions right from your settings dashboard.</p>
+                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Let the bot handle 80% of routine questions. When visitors show interest, the AI automatically captures their contact details before handing off to humans.</p>
+                                </div>
+                            </div>
+
+                            {/* Step 4: Text Left, Image Right */}
+                            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
+                                <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
+                                    <div className="aspect-[16/10] w-full relative">
+                                        <img src="/images/step3.png" alt="Step 4 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                    </div>
+                                </div>
+                                <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
+                                    <div className="flex items-center gap-4 mb-3">
+                                        <span className="flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-[#2B64FD]/10 to-[#2B64FD]/5 text-[#2B64FD] text-xl font-extrabold shadow-sm border border-[#2B64FD]/10 flex-shrink-0">4</span>
+                                        <h2 className="text-[22px] sm:text-[26px] font-bold tracking-tight text-gray-900 leading-tight">Analyze & Optimize</h2>
+                                    </div>
+                                    <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Use built-in analytics to track conversation success, agent response times, and user satisfaction, continuously refining your strategy for better ROI.</p>
                                 </div>
                             </div>
                         </div>

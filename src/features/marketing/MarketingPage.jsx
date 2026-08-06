@@ -12,6 +12,7 @@ import FollowUpMockup from "@/components/mockups/FollowUpMockup";
 import SubscribeMockup from "@/components/mockups/SubscribeMockup";
 import FeatureShowcase from "@/components/features/FeatureShowcase";
 import PageBackground from "@/components/PageBackground";
+import { ProactiveChatIcon, MultiUserIcon, BookingSystemIcon } from "@/components/ui/icons/MarketingIcons";
 
 const MarketingPage = () => {
     return (
@@ -19,10 +20,11 @@ const MarketingPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
+                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <PageBackground variant="marketing" />
-                    <div className="relative z-10 flex-grow flex flex-col items-center">
-                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3 mt-12 sm:mt-16 md:mt-24 lg:mt-48">Marketing Strategy</p>
+
+                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3">Marketing Strategy</p>
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
                             Made Easy with <span className="font-bold text-brand-primary italic">Live Chat</span>
                         </h1>
@@ -34,7 +36,7 @@ const MarketingPage = () => {
                     </div>
                 </div>
                 {/* Section 2: Mockups Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[950px] mx-auto mt-16 sm:mt-24 md:mt-[120px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[950px] mx-auto mt-16 sm:mt-24 md:mt-[100px]">
                     <RevealOnScroll>
                         <div className="relative flex flex-col h-full p-6 sm:p-7 lg:p-8 rounded-[32px] border border-brand-secondary/50 bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 hover:-translate-y-2 cursor-pointer group overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
@@ -170,38 +172,19 @@ const MarketingPage = () => {
                         </svg>
 
                         <div className="flex flex-col items-center">
-                            <svg width="76" height="76" viewBox="-2 -2 28 28" fill="none" stroke="url(#theme-gradient)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mb-6 drop-shadow-sm transition-transform duration-300 hover:-translate-y-1">
-                                <path d="M7 8h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4l-5 4v-4H7a2 2 0 0 1-2-2v-3" />
-                                <path d="M2 5l3 3 5-5" />
-                            </svg>
+                            <ProactiveChatIcon className="mb-6 drop-shadow-sm transition-transform duration-300 hover:-translate-y-1" />
                             <h3 className="text-[20px] font-bold text-gray-900 mb-3 tracking-tight">Proactive Chat</h3>
                             <p className="text-[15px] text-gray-600 leading-relaxed max-w-sm">Actively Invite online visitors to chat in real-time, right from your admin dashboard.</p>
                         </div>
 
                         <div className="flex flex-col items-center">
-                            <svg width="76" height="76" viewBox="-2 -2 28 28" fill="none" stroke="url(#theme-gradient)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mb-6 drop-shadow-sm transition-transform duration-300 hover:-translate-y-1">
-                                <path d="M15 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                <circle cx="8" cy="7" r="4" />
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            </svg>
+                            <MultiUserIcon className="mb-6 drop-shadow-sm transition-transform duration-300 hover:-translate-y-1" />
                             <h3 className="text-[20px] font-bold text-gray-900 mb-3 tracking-tight">Multi-User Direct Messaging</h3>
                             <p className="text-[15px] text-gray-600 leading-relaxed max-w-sm">Handle multiple conversations at once — chat, email, or text — with a personal touch.</p>
                         </div>
 
                         <div className="flex flex-col items-center">
-                            <svg width="76" height="76" viewBox="-2 -2 28 28" fill="none" stroke="url(#theme-gradient)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="mb-6 drop-shadow-sm transition-transform duration-300 hover:-translate-y-1">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                                <line x1="16" y1="2" x2="16" y2="6" />
-                                <line x1="8" y1="2" x2="8" y2="6" />
-                                <line x1="3" y1="10" x2="21" y2="10" />
-                                <circle cx="8" cy="14" r="1.5" fill="url(#theme-gradient)" stroke="none" />
-                                <circle cx="12" cy="14" r="1.5" fill="url(#theme-gradient)" stroke="none" />
-                                <circle cx="16" cy="14" r="1.5" fill="url(#theme-gradient)" stroke="none" />
-                                <circle cx="8" cy="18" r="1.5" fill="url(#theme-gradient)" stroke="none" />
-                                <circle cx="12" cy="18" r="1.5" fill="url(#theme-gradient)" stroke="none" />
-                                <circle cx="16" cy="18" r="1.5" fill="url(#theme-gradient)" stroke="none" />
-                            </svg>
+                            <BookingSystemIcon className="mb-6 drop-shadow-sm transition-transform duration-300 hover:-translate-y-1" />
                             <h3 className="text-[20px] font-bold text-gray-900 mb-3 tracking-tight">Booking System Integration</h3>
                             <p className="text-[15px] text-gray-600 leading-relaxed max-w-sm">Let visitors book meetings directly from the chat widget via Calendly integration.</p>
                         </div>
@@ -220,7 +203,7 @@ const MarketingPage = () => {
 
                         <div className="relative z-10 flex flex-col items-center">
                             <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience the Power of <span className="italic text-brand-primary">Marketing</span> with Live Chat!</h2>
-                            <Link href="/demo" className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <Link href="/demo" prefetch={false} className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Start for free</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                             </Link>
