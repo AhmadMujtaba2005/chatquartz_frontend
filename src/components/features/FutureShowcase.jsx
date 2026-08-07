@@ -6,31 +6,31 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 const features = [
   {
     title: "Intelligent Automation At Scale",
-    description: "Handles unlimited queries autonomously, escalating complex issues to your team when needed.",
+    description: "Natural language AI handles inbound queries and automates repetitive tasks — with zero training overhead for your support team.",
     image: "/images/automation.png",
     duration: 4
   },
   {
     title: "Analytics That Drive Success",
-    description: "Real-time performance tracking to spot gaps and continuously improve responses.",
+    description: "Monitor resolution rates, response times, and satisfaction scores with dashboards built for action.",
     image: "/images/analytics.png",
     duration: 4
   },
   {
-    title: "A Multilingual Marvel",
-    description: "Auto-translated conversations in 19+ languages — no barriers, no limits.",
-    image: "/images/multilingual.png",
-    duration: 4
-  },
-  {
-    title: "Your Data, Your Strength",
-    description: "Sync your database or documents to turn your content into AI-driven insights.",
+    title: "Knowledge-Driven Responses",
+    description: "Sync your database or FAQs. chatquartz learns from your documents to deliver accurate, brand-consistent answers every time.",
     image: "/images/data.png",
     duration: 4
   },
   {
-    title: "Effortless Integration Across Platforms",
-    description: "Fits seamlessly into WordPress, WooCommerce, CRMs, and email — no hassle.",
+    title: "Customisable Chatflows",
+    description: "Build smart routing rules and conversation workflows tailored to your business — no engineering team required.",
+    image: "/images/smart-routing.png",
+    duration: 4
+  },
+  {
+    title: "Multi-Channel Deployment",
+    description: "Go live across your website, mobile apps, CRMs, and email from a single configuration — no hassle.",
     image: "/images/integration.png",
     duration: 4
   }

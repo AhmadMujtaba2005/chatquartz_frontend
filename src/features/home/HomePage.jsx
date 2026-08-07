@@ -52,8 +52,9 @@ const HomePage = () => {
                                     Talk to an Expert
                                 </Link>
                             </div>
-                            <div className="flex items-center justify-center gap-6">
-                                <span className="flex items-center gap-1.5 text-[13px] text-gray-500">No credit card required</span>
+                            <div className="flex items-center justify-center gap-4 sm:gap-6 flex-wrap">
+                                <span className="flex items-center gap-1.5 text-[13px] text-gray-500">✓ No credit card required</span>
+                                <span className="flex items-center gap-1.5 text-[13px] text-gray-500">✓ No setup fees</span>
                             </div>
                         </div>
                     </div>
@@ -67,7 +68,7 @@ const HomePage = () => {
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
                         <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Your AI Support Partner for Business Growth</h2>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 sm:px-6 text-center leading-relaxed">
-                            Check out why chatQuartz is the ultimate go-to solution for your business.
+                            Discover why leading businesses trust chatquartz to transform their customer experience.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-16">
                             <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-brand-primary/40 group overflow-hidden cursor-pointer">
@@ -112,7 +113,7 @@ const HomePage = () => {
 
                 <RevealOnScroll>
                     {/* Section 3: Mid-Page CTA Section */}
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[900px] w-[92%] mt-16 sm:mt-24 md:mt-[120px] px-5 py-12 sm:p-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[1024px] w-[90%] lg:w-[85%] mt-16 sm:mt-24 md:mt-[120px] px-5 py-12 sm:p-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
                         <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
@@ -123,8 +124,8 @@ const HomePage = () => {
 
                         <div className="relative z-10 flex flex-col items-center">
                             <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-brand-primary">chatquartz</span> in Action</h2>
-                            <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8 sm:mb-10">See ChatQuartz handle a real conversation — no signup required!</p>
-                            <Link href="/demo" prefetch={false} className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
+                            <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8 sm:mb-10">See chatquartz handle a real conversation — no signup required!</p>
+                            <Link href="/contactus" prefetch={false} className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Contact Sales</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                             </Link>
@@ -179,13 +180,13 @@ const HomePage = () => {
                     {/* Section 6: Get Started in Minutes */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
                         <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h2>
-                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
+                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">Go live in minutes — no code, no complexity, just results.</p>
                         <div className="flex flex-col gap-14 md:gap-20 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-16">
                             {/* Step 1: Image Left, Text Right */}
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
-                                        <img src="/images/step.png" alt="Step 1 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                        <img src="/images/step.png" alt="Step 1 Preview" loading="lazy" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
@@ -201,7 +202,7 @@ const HomePage = () => {
                             <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
-                                        <img src="/images/step1.png" alt="Step 2 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                        <img src="/images/step1.png" alt="Step 2 Preview" loading="lazy" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
@@ -217,7 +218,7 @@ const HomePage = () => {
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
-                                        <img src="/images/step2.png" alt="Step 3 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                        <img src="/images/step2.png" alt="Step 3 Preview" loading="lazy" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
@@ -233,7 +234,7 @@ const HomePage = () => {
                             <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
-                                        <img src="/images/step3.png" alt="Step 4 Preview" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
+                                        <img src="/images/step3.png" alt="Step 4 Preview" loading="lazy" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-[35%] flex flex-col items-start text-left">
@@ -306,7 +307,7 @@ const HomePage = () => {
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
-                    {/* Section 8: Footer */}
+                    {/* Section 9: Footer */}
                     <div className="w-full bg-gradient-to-t from-brand-secondary to-[#FFFFFF] mt-16 sm:mt-24 md:mt-[120px]">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
