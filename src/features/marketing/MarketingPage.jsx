@@ -23,7 +23,7 @@ const MarketingPage = () => {
                 <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <PageBackground variant="marketing" />
 
-                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                    <RevealOnScroll className="relative z-10 flex flex-col items-center w-full px-4">
                         <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3">Marketing Strategy</p>
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
                             Made Easy with <span className="font-bold text-brand-primary italic">Live Chat</span>
@@ -33,7 +33,7 @@ const MarketingPage = () => {
                                 Live chat adds a personal touch, driving deeper engagement, more sales, and higher revenue.
                             </p>
                         </div>
-                    </div>
+                    </RevealOnScroll>
                 </div>
                 {/* Section 2: Mockups Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[950px] mx-auto mt-16 sm:mt-24 md:mt-[100px]">

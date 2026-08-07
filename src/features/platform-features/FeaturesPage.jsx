@@ -23,7 +23,7 @@ const FeaturesPage = () => {
                 {/* Section 1: Hero Section */}
                 <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <PageBackground variant="network" />
-                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                    <RevealOnScroll className="relative z-10 flex flex-col items-center w-full px-4">
                         <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3">
                             Unleash the Power of
                         </p>
@@ -45,7 +45,7 @@ const FeaturesPage = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </RevealOnScroll>
                 </div>
                 {/* Section 2: Transforming Customer Experiences */}
                 <RevealOnScroll>

@@ -18,7 +18,7 @@ const PricingPage = () => {
                 {/* Section 1: Hero Section */}
                 <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <PageBackground variant="pricing" />
-                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                    <RevealOnScroll className="relative z-10 flex flex-col items-center w-full px-4">
                         <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3">Pricing</p>
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
                             Sample <span className="font-bold text-brand-primary italic">Pricing</span> For Every Business
@@ -28,7 +28,7 @@ const PricingPage = () => {
                                 An affordable messaging platform for support, marketing, and sales — one-time payment, no monthly fees, lifetime access.
                             </p>
                         </div>
-                    </div>
+                    </RevealOnScroll>
                 </div>
                 {/* Section 2: Pricing Cards */}
                 <RevealOnScroll>

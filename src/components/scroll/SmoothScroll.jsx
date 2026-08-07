@@ -10,9 +10,8 @@ function ScrollReset() {
 
     useEffect(() => {
         if (lenis) {
-            lenis.scrollTo(0, { immediate: true });
+            lenis.scrollTo(0, { immediate: false, duration: 1.2 });
         }
-        window.scrollTo(0, 0);
     }, [pathname, lenis]);
 
     return null;

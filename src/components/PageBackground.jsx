@@ -378,7 +378,7 @@ export function HeroNetworkCanvas({ animated = false }) {
         return;
       }
       
-      time += 1;
+      time += 0.4;
       ctx.clearRect(0, 0, width, height);
 
       // Smooth mouse interpolation

@@ -25,7 +25,7 @@ const features = [
   {
     title: "Customisable Chatflows",
     description: "Build smart routing rules and conversation workflows tailored to your business — no engineering team required.",
-    image: "/images/smart-routing.png",
+    image: "/images/chatflow-isometric.png",
     duration: 4
   },
   {

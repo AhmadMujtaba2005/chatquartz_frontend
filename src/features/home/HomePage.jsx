@@ -7,7 +7,7 @@ import FutureShowcase from "@/components/features/FutureShowcase";
 import HomePageFAQ from "./HomePageFAQ";
 import IntegrationsMarquee from "@/components/features/IntegrationsMarquee";
 import { HeroNetworkCanvas } from "@/components/PageBackground";
-
+import TypewriterEffect from "@/components/ui/TypewriterEffect";
 
 const HomePage = () => {
     return (
@@ -18,15 +18,22 @@ const HomePage = () => {
                 <div className="relative w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <HeroNetworkCanvas animated={true} />
 
-                    <div className="relative z-10 flex flex-col items-center w-full px-4">
+                    <RevealOnScroll className="relative z-10 flex flex-col items-center w-full px-4">
                         <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] text-gray-900 mb-6 text-center tracking-tight px-4">
                             Skyrocket <br /> Your Growth with <br />
                             <span className="text-brand-primary italic font-bold">AI-Powered </span>
                             <span className="font-bold">Chatbots</span>
                         </h1>
-                        <div className="max-w-3xl mx-auto px-6">
-                            <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed">
-                                Turn casual visitors into loyal customers. Automate your support, capture qualified leads instantly, and drive 24/7 revenue with intelligent conversational AI.
+                        <div className="max-w-3xl mx-auto px-6 h-[72px] sm:h-[48px] flex items-center justify-center">
+                            <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed m-0 w-full">
+                                <TypewriterEffect 
+                                    sentences={[
+                                        "Turn casual visitors into loyal customers.",
+                                        "Automate your support.",
+                                        "Capture qualified leads instantly.",
+                                        "Drive 24/7 revenue with intelligent conversational AI."
+                                    ]} 
+                                />
                             </p>
                         </div>
                         <div className="flex flex-col items-center my-8 sm:my-10 w-full">
@@ -57,7 +64,7 @@ const HomePage = () => {
                                 <span className="flex items-center gap-1.5 text-[13px] text-gray-500">✓ No setup fees</span>
                             </div>
                         </div>
-                    </div>
+                    </RevealOnScroll>
                 </div>
 
                 <RevealOnScroll>
@@ -176,13 +183,16 @@ const HomePage = () => {
                         </Link>
                     </div>
                 </RevealOnScroll>
-                <RevealOnScroll>
+                <div>
                     {/* Section 6: Get Started in Minutes */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
-                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h2>
-                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">Go live in minutes — no code, no complexity, just results.</p>
+                        <RevealOnScroll className="w-full flex flex-col items-center">
+                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h2>
+                            <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">Go live in minutes — no code, no complexity, just results.</p>
+                        </RevealOnScroll>
                         <div className="flex flex-col gap-14 md:gap-20 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-16">
                             {/* Step 1: Image Left, Text Right */}
+                            <RevealOnScroll>
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
@@ -198,8 +208,11 @@ const HomePage = () => {
                                 </div>
                             </div>
 
+                            </RevealOnScroll>
+
                             {/* Step 2: Text Left, Image Right */}
-                            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
+                            <RevealOnScroll>
+                                <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
                                         <img src="/images/step1.png" alt="Step 2 Preview" loading="lazy" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
@@ -214,8 +227,11 @@ const HomePage = () => {
                                 </div>
                             </div>
 
+                            </RevealOnScroll>
+
                             {/* Step 3: Image Left, Text Right */}
-                            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+                            <RevealOnScroll>
+                                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
                                         <img src="/images/step2.png" alt="Step 3 Preview" loading="lazy" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
@@ -230,8 +246,11 @@ const HomePage = () => {
                                 </div>
                             </div>
 
+                            </RevealOnScroll>
+
                             {/* Step 4: Text Left, Image Right */}
-                            <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
+                            <RevealOnScroll>
+                                <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
                                     <div className="aspect-[16/10] w-full relative">
                                         <img src="/images/step3.png" alt="Step 4 Preview" loading="lazy" className="absolute top-0 left-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-700 ease-out" />
@@ -244,10 +263,11 @@ const HomePage = () => {
                                     </div>
                                     <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed mb-6">Use built-in analytics to track conversation success, agent response times, and user satisfaction, continuously refining your strategy for better ROI.</p>
                                 </div>
-                            </div>
+                                </div>
+                            </RevealOnScroll>
                         </div>
                     </div>
-                </RevealOnScroll>
+                </div>
                 <RevealOnScroll>
                     {/* Section 7: Frequently Asked Questions */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
