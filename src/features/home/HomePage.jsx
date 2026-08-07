@@ -65,11 +65,11 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 2: Features & Benefits Cards (Why ChatQuartz) */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
-                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Your AI Support Partner for Business Growth</h2>
+                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Your AI Support Partner for Business Growth</h2>
                         <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 sm:px-6 text-center leading-relaxed">
                             Check out why chatQuartz is the ultimate go-to solution for your business.
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-8 sm:mt-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-16">
                             <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 flex flex-col h-full p-7 lg:p-8 transition-all duration-500 hover:border-brand-primary/40 group overflow-hidden cursor-pointer">
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <img src="/boost.png" alt="boost" className="h-16 w-16 object-contain rounded-lg mb-6 brightness-0" />
@@ -122,8 +122,8 @@ const HomePage = () => {
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-brand-primary">chatquartz</span> in Action</h2>
-                            <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-6 sm:mb-8">See ChatQuartz handle a real conversation — no signup required!</p>
+                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience <span className="italic text-brand-primary">chatquartz</span> in Action</h2>
+                            <p className="text-[13px] sm:text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8 sm:mb-10">See ChatQuartz handle a real conversation — no signup required!</p>
                             <Link href="/demo" prefetch={false} className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Contact Sales</span>
                                 <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
@@ -135,16 +135,41 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 4: Future of Customer Support */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
-                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-8 sm:mb-12 md:mb-16 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why chatquartz is the Future of Customer Support</h2>
+                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-10 sm:mb-14 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why chatquartz is the Future of Customer Support</h2>
                         <FutureShowcase />
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>
                     {/* Section 5: Effortless Human Takeover */}
-                    <div className="flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-24 mt-16 sm:mt-24 md:mt-[120px]">
-                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: Keeping You in Control</h2>
-                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
-                        <Link href="/features" prefetch={false} className="flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-7">
+                    <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
+                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Effortless Human Takeover: <span className="italic text-brand-primary">Keeping You in Control</span></h2>
+                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
+                        
+                        <div className="w-full max-w-[950px] mt-12 sm:mt-16 relative flex justify-center group px-4 sm:px-8">
+                            {/* Outer styled presentation container */}
+                            <div className="relative w-full rounded-[24px] sm:rounded-[32px] md:rounded-[40px] p-4 sm:p-8 md:p-10 lg:p-12 overflow-hidden bg-white/40 backdrop-blur-md border border-gray-200/60 shadow-sm transition-all duration-700">
+                                
+                                {/* Smooth, seamless background gradient (No harsh lines) */}
+                                <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-brand-primary/10 to-brand-primary/80 pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity duration-700"></div>
+                                
+                                {/* Intense glowing blur blob for that rich 3D ambient light */}
+                                <div className="absolute top-1/2 right-[5%] w-[70%] h-[150%] bg-brand-primary/50 rounded-full blur-[100px] sm:blur-[120px] -translate-y-1/2 pointer-events-none group-hover:bg-brand-primary/60 transition-colors duration-700"></div>
+                                <div className="absolute bottom-0 right-0 w-[40%] h-[50%] bg-purple-500/20 rounded-full blur-[80px] pointer-events-none mix-blend-overlay"></div>
+                                
+                                {/* Image container */}
+                                <div className="relative w-full transform transition-all duration-700 hover:scale-[1.02] hover:-translate-y-1.5 z-10">
+                                    <img 
+                                        src="/inbox.png" 
+                                        alt="Effortless Human Takeover Inbox UI" 
+                                        className="w-full h-auto object-cover rounded-[12px] sm:rounded-[20px] md:rounded-[24px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] border border-white/90 bg-white" 
+                                    />
+                                    {/* Subtle gloss overlay on the image */}
+                                    <div className="absolute inset-0 rounded-[12px] sm:rounded-[20px] md:rounded-[24px] bg-gradient-to-tr from-transparent via-white/5 to-white/20 pointer-events-none ring-1 ring-inset ring-black/5"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <Link href="/features" prefetch={false} className="group flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-white/85 hover:bg-white text-gray-700 hover:text-gray-950 border border-gray-200/80 hover:border-gray-300 text-base sm:text-lg font-semibold shadow-sm hover:shadow-md hover:shadow-gray-200 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-10 sm:mt-12">
                             <span>Learn more</span>
                             <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1.5 ml-2.5">→</span>
                         </Link>
@@ -153,9 +178,9 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 6: Get Started in Minutes */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
-                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h2>
-                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
-                        <div className="flex flex-col gap-16 md:gap-24 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-20">
+                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-4 sm:mb-5 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Get started with chatquartz in minutes</h2>
+                        <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">Setting up chatQuartz is quick and hassle-free. Follow these simple steps to integrate the chatbot and start transforming your customer support:</p>
+                        <div className="flex flex-col gap-14 md:gap-20 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-16">
                             {/* Step 1: Image Left, Text Right */}
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(43,100,253,0.08)] hover:shadow-[0_25px_60px_rgba(43,100,253,0.15)] transition-shadow duration-500 group bg-gray-50">
@@ -225,8 +250,59 @@ const HomePage = () => {
                 <RevealOnScroll>
                     {/* Section 7: Frequently Asked Questions */}
                     <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] px-4">
-                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Frequently Asked Questions</h2>
+                        <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-10 sm:mb-14 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Frequently Asked Questions</h2>
                         <HomePageFAQ />
+                    </div>
+                </RevealOnScroll>
+
+                <RevealOnScroll>
+                    {/* Section 8: Final CTA */}
+                    <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] w-full relative">
+                        <div className="relative w-full overflow-hidden bg-white/50 backdrop-blur-xl border-y border-brand-secondary/40 transition-all duration-700 group py-16 sm:py-24 md:py-28 flex flex-col items-center justify-center text-center px-4">
+                            {/* Decorative Premium Background Elements */}
+                            <div className="absolute inset-0 bg-gradient-to-b from-[#f8faff] to-transparent opacity-80 pointer-events-none"></div>
+                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[90%] max-w-[1200px] h-[70%] bg-brand-primary/10 blur-[120px] rounded-full pointer-events-none group-hover:bg-brand-primary/15 transition-colors duration-700"></div>
+
+                            {/* Crisp Overline */}
+                            <p className="relative z-10 text-[11px] sm:text-[12px] font-bold text-gray-400 tracking-[0.25em] uppercase mb-4 sm:mb-5">
+                                GET IN TOUCH WITH OUR EXPERTS
+                            </p>
+
+                            {/* Enhanced Main Heading */}
+                            <h2 className="relative z-10 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-extrabold text-gray-900 leading-[1.1] tracking-tight mb-5 max-w-3xl drop-shadow-sm">
+                                10x your customer support <br className="hidden sm:block" /> with <span className="italic text-brand-primary">chatquartz</span>
+                            </h2>
+
+                            {/* Refined Description Paragraph */}
+                            <p className="relative z-10 text-[14px] sm:text-[16px] text-gray-500 max-w-2xl leading-relaxed mb-8 sm:mb-10 font-medium">
+                                Contact our senior team to map your customer support challenges, identify quick automation wins, and define a seamless path forward for your business.
+                            </p>
+
+                            {/* Premium Single Button */}
+                            <div className="relative z-10 mb-6 sm:mb-8 flex justify-center w-full sm:w-auto">
+                                <div className="relative group flex items-center justify-center w-full sm:w-auto p-[2px] rounded-full overflow-hidden bg-brand-primary shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out">
+                                    {/* Blurred rotating glow (comet tail) */}
+                                    <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                                        <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
+                                    </div>
+
+                                    {/* Sharp rotating core (comet head) */}
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-100">
+                                        <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
+                                    </div>
+
+                                    <Link href="/contactus" prefetch={false} className="relative z-10 flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-3.5 md:py-4 rounded-full bg-brand-primary group-hover:bg-brand-primary-hover text-white text-[15px] sm:text-base font-semibold transition-all duration-300 ease-out cursor-pointer">
+                                        <span>Contact Us</span>
+                                        <span className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-1.5 ml-3">→</span>
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Footer Text Matching Reference */}
+                            <div className="relative z-10 flex items-center justify-center gap-3 text-[11px] sm:text-[12px] text-gray-400 font-mono tracking-wide">
+                                <span>+1 (972) 729-9747 &bull; sales@dataquartz.com</span>
+                            </div>
+                        </div>
                     </div>
                 </RevealOnScroll>
                 <RevealOnScroll>

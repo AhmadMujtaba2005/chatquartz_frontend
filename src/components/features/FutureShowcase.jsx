@@ -51,11 +51,11 @@ const FutureShowcase = () => {
   return (
     <div
       ref={containerRef}
-      className="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-6 md:gap-12 w-[94%] max-w-[1100px] mx-auto mt-8 group/container"
+      className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-[94%] max-w-[1100px] mx-auto group/container"
     >
 
       {/* Left Side: Features List */}
-      <div className="flex-1 flex flex-col justify-center gap-6 md:gap-8 px-4 py-6">
+      <div className="flex-1 flex flex-col justify-start gap-6 md:gap-8 px-4 py-2 md:py-6">
         {features.map((feature, idx) => {
           const isActive = activeIndex === idx && isInView;
           return (
@@ -96,7 +96,7 @@ const FutureShowcase = () => {
       </div>
 
       {/* Right Side: Image Panel */}
-      <div className="flex-1 relative flex items-center justify-center min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
+      <div className="flex-1 relative flex items-center justify-center min-h-[300px] sm:min-h-[350px] md:min-h-[400px] w-full">
         <AnimatePresence mode="wait">
           <motion.img
             key={activeIndex}

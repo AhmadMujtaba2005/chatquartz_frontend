@@ -192,12 +192,27 @@ const SupportPage = () => {
                         </div>
 
                         <RevealOnScroll>
-                        <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 p-8 md:p-12 flex flex-col transition-all duration-500 hover:border-brand-primary/40 text-center md:text-left group overflow-hidden">
+                        <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 p-8 md:p-12 transition-all duration-500 hover:border-brand-primary/40 group overflow-hidden flex flex-col md:flex-row items-center gap-8 md:gap-12">
                             <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-                            <h3 className="relative z-10 text-[22px] font-bold mb-3 text-gray-900">Smart Agent Routing</h3>
-                            <p className="relative z-10 text-[15px] text-gray-600 leading-relaxed max-w-4xl mx-auto md:mx-0">
-                                Collect valuable insights through user reviews and internal agent notes for seamless collaboration. Offer uninterrupted support with custom offline banners and integrated ticketing systems. Optimize response times using real-time queue updates, equitable routing, or user-preferred agent selection. Elevate your customer support experience with features built for satisfaction and success.
-                            </p>
+                            
+                            <div className="flex-1 text-center md:text-left relative z-10">
+                                <h3 className="text-[22px] sm:text-[28px] font-bold mb-4 text-gray-900">Smart Agent Routing</h3>
+                                <p className="text-[15px] sm:text-[16px] text-gray-600 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                                    Collect valuable insights through user reviews and internal agent notes for seamless collaboration. Offer uninterrupted support with custom offline banners and integrated ticketing systems. Optimize response times using real-time queue updates, equitable routing, or user-preferred agent selection. Elevate your customer support experience with features built for satisfaction and success.
+                                </p>
+                            </div>
+
+                            <div className="flex-1 relative z-10 flex justify-center items-center w-full mt-8 md:mt-0">
+                                <div className="relative w-full max-w-[450px] md:max-w-[550px] lg:max-w-[650px] flex items-center justify-center">
+                                    {/* Soft ambient glow behind image */}
+                                    <div className="absolute inset-0 bg-brand-primary/10 blur-[60px] rounded-full transform group-hover:scale-110 transition-transform duration-700"></div>
+                                    <img 
+                                        src="/images/smart-routing.png" 
+                                        alt="Smart Agent Routing" 
+                                        className="relative z-10 w-full h-auto object-contain transform group-hover:scale-[1.03] group-hover:-translate-y-2 transition-all duration-500 drop-shadow-[0_20px_40px_rgba(43,100,253,0.15)]"
+                                    />
+                                </div>
+                            </div>
                         </div>
                         </RevealOnScroll>
                     </div>
