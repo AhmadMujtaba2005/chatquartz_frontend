@@ -78,7 +78,7 @@ const FeatureShowcase = () => {
       </div>
 
       {/* ── Right detail panel ── */}
-      <div className="flex-1 bg-gradient-to-br from-[#F4F7FF] to-white text-gray-900 relative overflow-hidden min-h-[320px] sm:min-h-[280px]">
+      <div className="flex-1 bg-gradient-to-br from-[#FAF5FF] to-white text-gray-900 relative overflow-hidden min-h-[320px] sm:min-h-[280px]">
         {/* Ambient glow */}
         <div className="absolute -top-32 -right-32 w-96 h-96 bg-brand-primary rounded-full blur-[200px] opacity-10 pointer-events-none" />
 

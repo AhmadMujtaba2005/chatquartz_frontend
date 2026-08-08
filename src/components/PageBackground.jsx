@@ -32,7 +32,7 @@ const PageBackground = ({ variant = "network" }) => {
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
         ctx.beginPath(); ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(43,100,253,0.7)"; ctx.fill();
+        ctx.fillStyle = "rgba(124,58,237,0.7)"; ctx.fill();
       });
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
@@ -40,7 +40,7 @@ const PageBackground = ({ variant = "network" }) => {
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 130) {
             ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(43,100,253,${(1 - dist / 130) * 0.4})`; ctx.lineWidth = 1.5; ctx.stroke();
+            ctx.strokeStyle = `rgba(124,58,237,${(1 - dist / 130) * 0.4})`; ctx.lineWidth = 1.5; ctx.stroke();
           }
         }
       }
@@ -70,21 +70,21 @@ const PageBackground = ({ variant = "network" }) => {
       // Widget background
       ctx.save();
       ctx.globalAlpha = 0.18;
-      ctx.fillStyle = "#2B64FD";
+      ctx.fillStyle = "#7C3AED";
       if (ctx.roundRect) {
         ctx.beginPath(); ctx.roundRect(wx, wy, ww, wh, 16); ctx.fill();
       } else { ctx.fillRect(wx, wy, ww, wh); }
       ctx.globalAlpha = 1;
       // Widget header bar
-      ctx.fillStyle = "rgba(43,100,253,0.55)";
+      ctx.fillStyle = "rgba(124,58,237,0.55)";
       if (ctx.roundRect) {
         ctx.beginPath(); ctx.roundRect(wx, wy, ww, 28, [16,16,0,0]); ctx.fill();
       } else { ctx.fillRect(wx, wy, ww, 28); }
       // Message Bubbles
-      ctx.fillStyle = "rgba(43,100,253,0.4)";
+      ctx.fillStyle = "rgba(124,58,237,0.4)";
       if (ctx.roundRect) {
         ctx.beginPath(); ctx.roundRect(wx + 8, wy + 36, 70, 14, 7); ctx.fill();
-        ctx.fillStyle = "rgba(170,200,253,0.5)";
+        ctx.fillStyle = "rgba(196,181,253,0.5)";
         ctx.beginPath(); ctx.roundRect(wx + ww - 78, wy + 58, 66, 14, 7); ctx.fill();
       }
       // Pulsing Ring
@@ -92,7 +92,7 @@ const PageBackground = ({ variant = "network" }) => {
       ctx.globalAlpha = pulse * 0.15;
       ctx.beginPath();
       ctx.arc(wx + ww / 2, wy + wh / 2, (ww / 2 + 20) + pulse * 10, 0, Math.PI * 2);
-      ctx.strokeStyle = "#2B64FD";
+      ctx.strokeStyle = "#7C3AED";
       ctx.lineWidth = 2;
       ctx.stroke();
       ctx.globalAlpha = 1;
@@ -119,8 +119,8 @@ const PageBackground = ({ variant = "network" }) => {
         ctx.beginPath();
         ctx.arc(l.x, l.y, l.radius, 0, Math.PI * 2);
         ctx.fillStyle = l.isConverted
-          ? `rgba(170,200,253,${Math.max(0, currentOpacity)})`
-          : `rgba(43,100,253,${Math.max(0, currentOpacity)})`;
+          ? `rgba(196,181,253,${Math.max(0, currentOpacity)})`
+          : `rgba(124,58,237,${Math.max(0, currentOpacity)})`;
         ctx.fill();
         // Connection Line
         if (dist < 180) {
@@ -128,8 +128,8 @@ const PageBackground = ({ variant = "network" }) => {
           ctx.moveTo(l.x, l.y);
           ctx.lineTo(targetX, targetY);
           ctx.strokeStyle = l.isConverted
-            ? `rgba(170,200,253,${(1 - dist / 180) * 0.18})`
-            : `rgba(43,100,253,${(1 - dist / 180) * 0.12})`;
+            ? `rgba(196,181,253,${(1 - dist / 180) * 0.18})`
+            : `rgba(124,58,237,${(1 - dist / 180) * 0.12})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
@@ -144,9 +144,9 @@ const PageBackground = ({ variant = "network" }) => {
     
     function initPricing() {
       curves = [
-        { speed: 0.005, amp: 30, baseHeight: 0.75, color: '43, 100, 253' }, // brand-primary
-        { speed: 0.003, amp: 50, baseHeight: 0.85, color: '96, 165, 250' }, // blue-400
-        { speed: 0.002, amp: 70, baseHeight: 0.95, color: '170, 200, 253' } // light blue
+        { speed: 0.005, amp: 30, baseHeight: 0.75, color: '124, 58, 237' }, // brand-primary purple
+        { speed: 0.003, amp: 50, baseHeight: 0.85, color: '167, 139, 250' }, // violet-400
+        { speed: 0.002, amp: 70, baseHeight: 0.95, color: '196, 181, 253' } // light violet
       ];
       
       const count = 30;
@@ -254,8 +254,8 @@ const PageBackground = ({ variant = "network" }) => {
           const bubbleX = isRight ? thread.x : thread.x - bubbleW + 20;
           const bubbleH = 22;
           const bubbleColor = isRight
-            ? `rgba(43,100,253,${alpha * 0.85})`
-            : `rgba(170,200,253,${alpha * 0.65})`;
+            ? `rgba(124,58,237,${alpha * 0.85})`
+            : `rgba(196,181,253,${alpha * 0.65})`;
 
           ctx.fillStyle = bubbleColor;
           if (ctx.roundRect) {
@@ -281,7 +281,7 @@ const PageBackground = ({ variant = "network" }) => {
             const dotAlpha = alpha * (0.4 + dotPulse * 0.3);
             ctx.beginPath();
             ctx.arc(dotX + d * 10, dotY + dotPulse * 2, 3, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(43,100,253,${Math.max(0, dotAlpha)})`;
+            ctx.fillStyle = `rgba(124,58,237,${Math.max(0, dotAlpha)})`;
             ctx.fill();
           }
         }
@@ -422,7 +422,7 @@ export function HeroNetworkCanvas({ animated = false }) {
               otherFinalX, 
               otherFinalY
             );
-            ctx.strokeStyle = `rgba(43,100,253,${opacity})`;
+            ctx.strokeStyle = `rgba(124,58,237,${opacity})`;
             ctx.lineWidth = 1.0 + (p.z * 0.8);
             ctx.stroke();
           }
@@ -433,8 +433,8 @@ export function HeroNetworkCanvas({ animated = false }) {
 
         if (p.isDataPacket) {
           const grad = ctx.createRadialGradient(finalX, finalY, 0, finalX, finalY, p.radius * 6);
-          grad.addColorStop(0, `rgba(43,100,253,${alpha * 0.55})`);
-          grad.addColorStop(1, "rgba(43,100,253,0)");
+          grad.addColorStop(0, `rgba(124,58,237,${alpha * 0.55})`);
+          grad.addColorStop(1, "rgba(124,58,237,0)");
           ctx.beginPath();
           ctx.arc(finalX, finalY, p.radius * 6, 0, Math.PI * 2);
           ctx.fillStyle = grad;
@@ -444,8 +444,8 @@ export function HeroNetworkCanvas({ animated = false }) {
         ctx.beginPath();
         ctx.arc(finalX, finalY, p.radius, 0, Math.PI * 2);
         ctx.fillStyle = p.isDataPacket 
-          ? `rgba(43,100,253,${alpha * 0.8})` 
-          : `rgba(96,165,250,${alpha * 0.85})`; 
+          ? `rgba(124,58,237,${alpha * 0.8})` 
+          : `rgba(167,139,250,${alpha * 0.85})`;
         ctx.fill();
       });
 

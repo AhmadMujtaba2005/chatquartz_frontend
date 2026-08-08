@@ -9,8 +9,14 @@ const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [scrolled, setScrolled] = useState(false);
+    const [pastHero, setPastHero] = useState(false);
 
-    useLenis(({ scroll }) => setScrolled(scroll > 20));
+    useLenis(({ scroll }) => {
+        setScrolled(scroll > 20);
+        if (typeof window !== 'undefined') {
+            setPastHero(scroll > window.innerHeight - 80);
+        }
+    });
 
     useEffect(() => {
         if (mobileOpen) {
@@ -24,6 +30,7 @@ const Navbar = () => {
     }, [mobileOpen]);
 
     const navLinks = [
+        { href: "/", label: "Home" },
         { href: "/pricing", label: "Pricing" },
         { href: "/marketing", label: "Marketing" },
         { href: "/features", label: "Features" },
@@ -36,7 +43,7 @@ const Navbar = () => {
             <header className="sticky top-0 z-50 h-0 w-full">
                 <nav
                     className={`mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
-                        ? "translate-y-4 border-white/50 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] shadow-[0_12px_40px_rgba(43,100,253,0.15)]"
+                        ? "translate-y-4 border-white/50 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] shadow-[0_12px_40px_rgba(124,58,237,0.15)]"
                         : "translate-y-0 border-transparent bg-transparent shadow-none"
                         }`}
                 >
@@ -44,10 +51,18 @@ const Navbar = () => {
 
                         {/* Logo */}
                         <Link href="/" prefetch={false} className="flex-shrink-0 flex items-center">
-                            <img
-                                src="/logo.svg"
-                                alt="ChatQuartz Logo"
-                                className="h-8 sm:h-9 w-auto brightness-0 block"
+                            <div 
+                                className="h-8 sm:h-9 aspect-[387/242] bg-gradient-to-r from-[#8B5CF6] to-[#C084FC]"
+                                style={{
+                                    maskImage: 'url(/logo.svg)',
+                                    WebkitMaskImage: 'url(/logo.svg)',
+                                    maskSize: 'contain',
+                                    WebkitMaskSize: 'contain',
+                                    maskRepeat: 'no-repeat',
+                                    WebkitMaskRepeat: 'no-repeat',
+                                    maskPosition: 'left center',
+                                    WebkitMaskPosition: 'left center'
+                                }}
                             />
                         </Link>
 
@@ -64,7 +79,7 @@ const Navbar = () => {
                                             <motion.div
                                                 layoutId="nav-indicator"
                                                 className="absolute bottom-0 left-4 right-4 h-[2px] rounded-t-md bg-brand-primary"
-                                                style={{ boxShadow: "0 -2px 8px rgba(43,100,253,0.4)" }}
+                                                style={{ boxShadow: "0 -2px 8px rgba(124,58,237,0.4)" }}
                                                 transition={{ type: "spring", stiffness: 500, damping: 35 }}
                                             />
                                         )}
@@ -72,7 +87,7 @@ const Navbar = () => {
                                             href={link.href}
                                             prefetch={false}
                                             onMouseEnter={() => setHoveredIndex(idx)}
-                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-brand-primary" : "text-gray-600 hover:text-brand-primary"
+                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-brand-primary" : pastHero ? "text-gray-600 hover:text-brand-primary" : "text-purple-100 hover:text-white"
                                                 }`}
                                         >
                                             {link.label}
@@ -107,20 +122,20 @@ const Navbar = () => {
                             {/* Hamburger */}
                             <button
                                 onClick={() => setMobileOpen(!mobileOpen)}
-                                className="md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 hover:bg-black/10 border border-black/10 bg-black/5"
+                                className={`md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 border ${pastHero ? "hover:bg-black/10 border-black/10 bg-black/5" : "hover:bg-white/20 border-white/20 bg-white/10"}`}
                                 aria-label="Toggle navigation menu"
                             >
                                 <motion.span
                                     animate={{ rotate: mobileOpen ? 45 : 0, y: mobileOpen ? 4 : 0 }}
-                                    className="block w-4 h-[1.5px] bg-gray-700 rounded-full origin-center"
+                                    className={`block w-4 h-[1.5px] rounded-full origin-center ${pastHero ? "bg-gray-700" : "bg-white"}`}
                                 />
                                 <motion.span
                                     animate={{ opacity: mobileOpen ? 0 : 1 }}
-                                    className="block w-4 h-[1.5px] bg-gray-700 rounded-full mt-1"
+                                    className={`block w-4 h-[1.5px] rounded-full mt-1 ${pastHero ? "bg-gray-700" : "bg-white"}`}
                                 />
                                 <motion.span
                                     animate={{ rotate: mobileOpen ? -45 : 0, y: mobileOpen ? -6 : 0 }}
-                                    className="block w-4 h-[1.5px] bg-gray-700 rounded-full mt-1 origin-center"
+                                    className={`block w-4 h-[1.5px] rounded-full mt-1 origin-center ${pastHero ? "bg-gray-700" : "bg-white"}`}
                                 />
                             </button>
                         </div>
@@ -154,7 +169,7 @@ const Navbar = () => {
                                         ))}
                                     </ul>
                                     <div className="mt-2 pt-2 border-t border-black/6">
-                                        <div className="relative group flex items-center justify-center w-full p-[2px] rounded-xl overflow-hidden bg-[linear-gradient(135deg,#3B74FE_0%,var(--color-brand-primary)_100%)] shadow-[0_4px_16px_rgba(43,100,253,0.3)] transition-all duration-300">
+                                        <div className="relative group flex items-center justify-center w-full p-[2px] rounded-xl overflow-hidden bg-[linear-gradient(135deg,#8B5CF6_0%,var(--color-brand-primary)_100%)] shadow-[0_4px_16px_rgba(124,58,237,0.3)] transition-all duration-300">
                                             <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                                                 <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_20%,rgba(255,255,255,0.8)_45%,#ffffff_50%,transparent_50%,transparent_70%,rgba(255,255,255,0.8)_95%,#ffffff_100%)]"></div>
                                             </div>
@@ -165,7 +180,7 @@ const Navbar = () => {
                                                 href="/demo"
                                                 prefetch={false}
                                                 onClick={() => setMobileOpen(false)}
-                                                className="relative z-10 flex w-full items-center justify-center gap-2 px-6 py-3 rounded-xl text-[15px] font-semibold text-white transition-all duration-200 bg-[linear-gradient(135deg,#3B74FE_0%,var(--color-brand-primary)_100%)]"
+                                                className="relative z-10 flex w-full items-center justify-center gap-2 px-6 py-3 rounded-xl text-[15px] font-semibold text-white transition-all duration-200 bg-[linear-gradient(135deg,#8B5CF6_0%,var(--color-brand-primary)_100%)]"
                                             >
                                                 Try Now →
                                             </Link>

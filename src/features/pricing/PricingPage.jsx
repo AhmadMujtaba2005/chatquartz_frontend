@@ -16,15 +16,15 @@ const PricingPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
+                <div className="relative w-full bg-gradient-to-b from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
                     <PageBackground variant="pricing" />
                     <RevealOnScroll className="relative z-10 flex flex-col items-center w-full px-4">
-                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-gray-800 mb-3">Pricing</p>
-                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-gray-900">
+                        <p className="text-[16px] sm:text-[18px] md:text-[20px] font-medium text-center text-purple-200 mb-3">Pricing</p>
+                        <h1 className="text-[36px] sm:text-[48px] md:text-[56px] leading-[1.1] mb-6 text-center tracking-tight text-white">
                             Sample <span className="font-bold text-brand-primary italic">Pricing</span> For Every Business
                         </h1>
                         <div className="max-w-3xl mx-auto px-6">
-                            <p className="text-[15px] sm:text-[16px] text-gray-600 text-center leading-relaxed">
+                            <p className="text-[15px] sm:text-[16px] text-purple-200 text-center leading-relaxed">
                                 An affordable messaging platform for support, marketing, and sales — one-time payment, no monthly fees, lifetime access.
                             </p>
                         </div>
@@ -34,7 +34,7 @@ const PricingPage = () => {
                 <RevealOnScroll>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-[1200px] mx-auto w-[94%] mt-16 sm:mt-24 md:mt-[100px] mb-20">
                         {/* Starter Plan */}
-                        <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 p-8 flex flex-col transition-all duration-500 hover:border-brand-primary/40 group">
+                        <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] hover:-translate-y-2 p-8 flex flex-col transition-all duration-500 hover:border-brand-primary/40 group">
                             <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <h2 className="relative z-10 text-[24px] font-bold mb-1 text-gray-900">Starter Plan</h2>
                             <p className="relative z-10 text-[14px] text-gray-600 mb-6">Get started with AI-powered conversations</p>
@@ -56,7 +56,7 @@ const PricingPage = () => {
                         </div>
 
                         {/* Professional Plan */}
-                        <div className="relative bg-white/70 backdrop-blur-md rounded-[32px] border-2 border-brand-primary/80 shadow-[0_8px_30px_rgb(43,100,253,0.15)] hover:shadow-[0_20px_50px_rgb(43,100,253,0.25)] hover:-translate-y-2 p-8 flex flex-col transition-all duration-500 mt-4 md:mt-0 group">
+                        <div className="relative bg-white/70 backdrop-blur-md rounded-[32px] border-2 border-brand-primary/80 shadow-[0_8px_30px_rgb(124,58,237,0.15)] hover:shadow-[0_20px_50px_rgb(124,58,237,0.25)] hover:-translate-y-2 p-8 flex flex-col transition-all duration-500 mt-4 md:mt-0 group">
                             <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-brand-primary text-white px-5 py-1.5 rounded-full text-[12px] font-bold tracking-widest uppercase shadow-md z-20">Most Popular</div>
                             <h2 className="relative z-10 text-[24px] font-bold mb-1 text-gray-900">Professional Plan</h2>
@@ -81,7 +81,7 @@ const PricingPage = () => {
                         </div>
 
                         {/* Enterprise Plan */}
-                        <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] hover:-translate-y-2 p-8 flex flex-col transition-all duration-500 hover:border-brand-primary/40 group">
+                        <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] hover:-translate-y-2 p-8 flex flex-col transition-all duration-500 hover:border-brand-primary/40 group">
                             <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <h2 className="relative z-10 text-[24px] font-bold mb-1 text-gray-900">Enterprise Plan</h2>
                             <p className="relative z-10 text-[14px] text-gray-600 mb-6">Fully customized AI for your business at scale</p>
@@ -107,7 +107,7 @@ const PricingPage = () => {
                 </RevealOnScroll>
                 {/* Section 3: Footer */}
                 <RevealOnScroll>
-                    <div className="w-full bg-gradient-to-t from-brand-secondary to-[#FFFFFF] mt-24">
+                    <div className="w-full bg-gradient-to-t from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] mt-16 sm:mt-24 md:mt-[120px]">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
                         </div>

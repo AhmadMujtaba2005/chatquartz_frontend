@@ -79,7 +79,7 @@ const HomePageFAQ = () => {
                     className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-60 opacity-100 border-t border-gray-100" : "max-h-0 opacity-0"
                         }`}
                 >
-                    <div className="px-5 py-4 sm:px-6 text-sm sm:text-[13px] leading-relaxed text-gray-600 bg-[#F6F9FE]/70">
+                    <div className="px-5 py-4 sm:px-6 text-sm sm:text-[13px] leading-relaxed text-gray-600 bg-purple-50/50">
                         {item.answer}
                     </div>
                 </div>

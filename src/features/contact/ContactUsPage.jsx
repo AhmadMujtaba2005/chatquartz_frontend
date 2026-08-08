@@ -71,7 +71,7 @@ const ContactUsPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Main Content Area */}
-                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] min-h-screen pt-[120px] sm:pt-[140px] pb-[80px] overflow-x-hidden">
+                <div className="relative w-full bg-gradient-to-b from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] min-h-screen pt-[120px] sm:pt-[140px] pb-[80px] overflow-x-hidden">
                     <div className="max-w-[1200px] mx-auto px-6 w-full flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
                         {/* Left Column */}
                         <div className="w-full lg:w-[45%] flex flex-col justify-start">
@@ -83,29 +83,29 @@ const ContactUsPage = () => {
                                 Contact chatquartz
                             </div>
                             
-                            <h1 className="text-[52px] sm:text-[64px] lg:text-[76px] leading-[1.05] font-extrabold tracking-tighter text-gray-900 mb-6 flex flex-col">
+                            <h1 className="text-[52px] sm:text-[64px] lg:text-[76px] leading-[1.05] font-extrabold tracking-tighter text-white mb-6 flex flex-col">
                                 <span>Let's elevate</span>
                                 <span>your customer</span>
                                 <span className="italic text-brand-primary">experience.</span>
                             </h1>
                             
-                            <p className="text-[16px] sm:text-[18px] text-gray-600 leading-relaxed mb-12">
+                            <p className="text-[16px] sm:text-[18px] text-purple-200 leading-relaxed mb-12">
                                 Have a question about deploying intelligent AI agents or customising chatflows for your business? We're here to help you transform your customer support.
                             </p>
 
                             <div className="flex flex-col w-full max-w-[440px]">
                                 {/* Phone Row */}
-                                <div className="flex items-center justify-between py-6 group border-t border-white/80">
-                                    <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.2em] text-gray-500 uppercase group-hover:text-brand-primary transition-colors">Phone</span>
-                                    <a href="tel:+19727299747" className="text-[15px] sm:text-[16px] font-medium text-gray-900 group-hover:text-brand-primary transition-colors">
+                                <div className="flex items-center justify-between py-6 group border-t border-white/20">
+                                    <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.2em] text-purple-300 uppercase group-hover:text-brand-primary transition-colors">Phone</span>
+                                    <a href="tel:+19727299747" className="text-[15px] sm:text-[16px] font-medium text-white group-hover:text-brand-primary transition-colors">
                                         +1 (972) 729-9747
                                     </a>
                                 </div>
 
                                 {/* Email Row */}
-                                <div className="flex items-center justify-between py-6 group border-t border-b border-white/80">
-                                    <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.2em] text-gray-500 uppercase group-hover:text-brand-primary transition-colors">Email</span>
-                                    <a href="mailto:sales@dataquartz.com" className="text-[15px] sm:text-[16px] font-medium text-gray-900 group-hover:text-brand-primary transition-colors">
+                                <div className="flex items-center justify-between py-6 group border-t border-b border-white/20">
+                                    <span className="text-[11px] sm:text-[12px] font-bold tracking-[0.2em] text-purple-300 uppercase group-hover:text-brand-primary transition-colors">Email</span>
+                                    <a href="mailto:sales@dataquartz.com" className="text-[15px] sm:text-[16px] font-medium text-white group-hover:text-brand-primary transition-colors">
                                         sales@dataquartz.com
                                     </a>
                                 </div>
@@ -116,7 +116,7 @@ const ContactUsPage = () => {
                         {/* Right Column (Form Card) */}
                         <div className="w-full lg:w-[55%] relative">
                             <RevealOnScroll>
-                                <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(43,100,253,0.15)] p-8 sm:p-10 border border-brand-secondary/50 transition-all duration-500 hover:border-brand-primary/40 group overflow-hidden">
+                                <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] p-8 sm:p-10 border border-brand-secondary/50 transition-all duration-500 hover:border-brand-primary/40 group overflow-hidden">
                                     <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                     
                                     <form onSubmit={handleSubmit} noValidate className="relative z-10 space-y-5">
@@ -172,13 +172,11 @@ const ContactUsPage = () => {
                 </div>
 
                 {/* Section 3: Footer */}
-                <RevealOnScroll>
-                    <div className="w-full bg-gradient-to-t from-brand-secondary to-[#FFFFFF] mt-24">
-                        <div className="max-w-[1440px] mx-auto">
-                            <Footer />
-                        </div>
+                <div className="w-full bg-gradient-to-t from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6]">
+                    <div className="max-w-[1440px] mx-auto">
+                        <Footer />
                     </div>
-                </RevealOnScroll>
+                </div>
             </SmoothScroll>
         </div>
     );

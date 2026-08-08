@@ -9,9 +9,9 @@ const TermsOfUsePage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pb-8 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
-                    <div className="relative z-10">
-                        <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-black mt-6 sm:mt-8 mb-4 text-center tracking-tight">Terms Of Use</h1>
+                <div className="relative w-full bg-gradient-to-b from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
+                    <div className="relative z-10 w-full flex flex-col items-center justify-center">
+                        <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-white mb-4 text-center tracking-tight">Terms Of Use</h1>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@ const TermsOfUsePage = () => {
 
                 {/* Section 3: Footer */}
                 <RevealOnScroll>
-                    <div className="w-full bg-gradient-to-t from-brand-secondary to-[#FFFFFF] mt-24">
+                    <div className="w-full bg-gradient-to-t from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] mt-16 sm:mt-24 md:mt-[120px]">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
                         </div>

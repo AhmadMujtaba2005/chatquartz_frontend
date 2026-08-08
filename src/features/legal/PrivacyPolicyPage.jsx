@@ -9,12 +9,12 @@ const PrivacyPolicyPage = () => {
             <SmoothScroll>
                 <Navbar />
                 {/* Section 1: Hero Section */}
-                <div className="relative w-full bg-gradient-to-b from-brand-secondary to-[#FFFFFF] pb-12 sm:pb-20 pt-[64px] sm:pt-[88px] md:pt-[112px] overflow-x-hidden">
-                    <div className="relative z-10">
-                        <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-black mt-6 sm:mt-8 mb-6 text-center tracking-tight">
+                <div className="relative w-full bg-gradient-to-b from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] min-h-screen flex flex-col justify-center items-center pt-[64px] sm:pt-[88px] md:pt-[112px] pb-[64px] sm:pb-[88px] md:pb-[112px] overflow-x-hidden">
+                    <div className="relative z-10 w-full flex flex-col items-center justify-center">
+                        <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-white mb-6 text-center tracking-tight">
                             Privacy Policy
                         </h1>
-                        <div className="max-w-4xl px-6 mx-auto text-center space-y-5 text-[14px] text-gray-700 leading-relaxed font-medium">
+                        <div className="max-w-4xl px-6 mx-auto text-center space-y-5 text-[14px] text-purple-200 leading-relaxed font-medium">
                             <p>
                                 This Privacy Policy explains what information we collect about you and why, what we do with that information, how we share it, and how we handle the personal information created, inputted, submitted, posted, transmitted, stored or displayed by you, your Agents and End-Users when accessing and using our Services.
                             </p>
@@ -310,7 +310,7 @@ const PrivacyPolicyPage = () => {
 
                 {/* Section 3: Footer */}
                 <RevealOnScroll>
-                    <div className="w-full bg-gradient-to-t from-brand-secondary to-[#FFFFFF] mt-24">
+                    <div className="w-full bg-gradient-to-t from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] mt-16 sm:mt-24 md:mt-[120px]">
                         <div className="max-w-[1440px] mx-auto">
                             <Footer />
                         </div>
