@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 import PageBackground from "@/components/PageBackground";
+import { ChartBarIcon, ChatAlt2Icon, LightningBoltIcon, LightBulbIcon, UsersIcon, ChartPieIcon, EmojiHappyIcon, TrendingUpIcon } from "@/components/ui/Icons";
 
 const SectionHeader = ({ title }) => (
     <RevealOnScroll>
@@ -65,7 +66,7 @@ const FeaturesPage = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="relative z-10 flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                                        <ChartBarIcon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[20px] font-bold text-gray-900">Elevate Performance with Powerful Tools</h3>
                                 </div>
@@ -85,7 +86,7 @@ const FeaturesPage = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="relative z-10 flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                                        <ChatAlt2Icon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[20px] font-bold text-gray-900">Omnichannel Integrations</h3>
                                 </div>
@@ -115,7 +116,7 @@ const FeaturesPage = () => {
                                 </div>
                                 <div className="relative z-10 flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                                        <LightningBoltIcon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[20px] font-bold text-gray-900">AI-Powered Conversations</h3>
                                 </div>
@@ -135,7 +136,7 @@ const FeaturesPage = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="relative z-10 flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                                        <LightBulbIcon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[20px] font-bold text-gray-900">AI-Enhanced Training &amp; Adaptability</h3>
                                 </div>
@@ -159,7 +160,7 @@ const FeaturesPage = () => {
                             <div className="relative z-10 flex flex-col gap-4 md:w-1/2">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/15 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                        <UsersIcon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[22px] font-bold text-gray-900">Human-in-the-Loop Handoff</h3>
                                 </div>
@@ -188,7 +189,7 @@ const FeaturesPage = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="relative z-10 flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path strokeLinecap="round" strokeLinejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
+                                        <ChartPieIcon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[20px] font-bold text-gray-900">Analytics That Drive Success</h3>
                                 </div>
@@ -207,7 +208,7 @@ const FeaturesPage = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="relative z-10 flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        <EmojiHappyIcon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[20px] font-bold text-gray-900">Effortless and User-Friendly</h3>
                                 </div>
@@ -230,7 +231,7 @@ const FeaturesPage = () => {
                             <div className="relative z-10 flex flex-col gap-4 md:w-1/2">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/15 flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                                        <TrendingUpIcon className="w-5 h-5 text-brand-primary" />
                                     </div>
                                     <h3 className="text-[18px] sm:text-[22px] font-bold text-gray-900">Automated Lead Capture</h3>
                                 </div>
