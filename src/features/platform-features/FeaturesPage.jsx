@@ -74,6 +74,9 @@ const FeaturesPage = () => {
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><div><span className="text-[14px] font-semibold text-gray-800">Content Training: </span><span className="text-[14px] text-gray-600">Supports automatic AI training from uploaded documents and website scraping.</span></div></li>
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><div><span className="text-[14px] font-semibold text-gray-800">WooCommerce Integration: </span><span className="text-[14px] text-gray-600">Connects directly with WooCommerce to provide instant product data.</span></div></li>
                                 </ul>
+                                <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
+                                    <img src="/images/features-performance.png" alt="Elevate Performance" className="w-full h-full object-contain drop-shadow-2xl scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 pointer-events-none" />
+                                </div>
                             </div>
                         </RevealOnScroll>
 
@@ -94,6 +97,9 @@ const FeaturesPage = () => {
                                 <div className="relative z-10 flex flex-wrap gap-2 mt-1">
                                     {["WhatsApp", "Instagram", "Telegram", "Messenger"].map(ch => (<span key={ch} className="text-[11px] font-semibold px-3 py-1 rounded-full bg-brand-primary/10 text-brand-primary border border-brand-primary/20">{ch}</span>))}
                                 </div>
+                                <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
+                                    <img src="/images/features-omnichannel.png" alt="Omnichannel Integrations" className="w-full h-full object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
+                                </div>
                             </div>
                         </RevealOnScroll>
                     </div>
@@ -104,6 +110,9 @@ const FeaturesPage = () => {
                         <RevealOnScroll>
                             <div className="relative rounded-[28px] border border-brand-secondary/50 bg-white/60 backdrop-blur-md p-7 sm:p-8 flex flex-col gap-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.12)] hover:border-brand-primary/40 transition-all duration-500 group overflow-hidden h-full">
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                                <div className="absolute top-6 right-6 z-20">
+                                    <span className="inline-flex items-center gap-2 text-[12px] sm:text-[13px] font-semibold text-brand-primary bg-brand-primary/10 border border-brand-primary/20 rounded-full px-3 py-1.5"><span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-500 animate-pulse"></span>Live 24 / 7</span>
+                                </div>
                                 <div className="relative z-10 flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
                                         <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
@@ -115,8 +124,8 @@ const FeaturesPage = () => {
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Generates contextual, human-like responses automatically.</span></li>
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Requires zero technical setup or coding knowledge to configure.</span></li>
                                 </ul>
-                                <div className="relative z-10 mt-auto pt-2">
-                                    <span className="inline-flex items-center gap-2 text-[13px] font-semibold text-brand-primary bg-brand-primary/10 border border-brand-primary/20 rounded-full px-4 py-1.5"><span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>Live 24 / 7</span>
+                                <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
+                                    <img src="/images/features-automation.png" alt="AI-Powered Conversations" className="w-full h-full object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         </RevealOnScroll>
@@ -135,6 +144,9 @@ const FeaturesPage = () => {
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Automatically generates response variations for enriched chatbot knowledge.</span></li>
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Provides native multi-language translation and understanding via Google AI.</span></li>
                                 </ul>
+                                <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
+                                    <img src="/images/features-training.png" alt="AI-Enhanced Training & Adaptability" className="w-full h-full object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
+                                </div>
                             </div>
                         </RevealOnScroll>
                     </div>
@@ -142,23 +154,28 @@ const FeaturesPage = () => {
                     {/* Category: Human Handoff full-width */}
                     <SectionHeader title="Agent Collaboration" />
                     <RevealOnScroll>
-                        <div className="relative rounded-[28px] border border-brand-secondary/50 bg-white/60 backdrop-blur-md p-7 sm:p-10 flex flex-col md:flex-row gap-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.12)] hover:border-brand-primary/40 transition-all duration-500 group overflow-hidden">
-                            <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        <div className="relative rounded-[28px] border border-brand-primary/30 bg-gradient-to-br from-brand-primary/5 via-white/60 to-brand-secondary/10 backdrop-blur-md px-8 py-6 sm:px-10 sm:py-8 flex flex-col md:flex-row items-center gap-8 shadow-[0_8px_30px_rgb(124,58,237,0.08)] hover:shadow-[0_20px_50px_rgb(124,58,237,0.18)] hover:border-brand-primary/50 transition-all duration-500 group overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-secondary/8 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div className="relative z-10 flex flex-col gap-4 md:w-1/2">
                                 <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-2xl bg-brand-primary/10 flex items-center justify-center flex-shrink-0">
+                                    <div className="w-10 h-10 rounded-2xl bg-brand-primary/15 flex items-center justify-center flex-shrink-0">
                                         <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                     </div>
-                                    <h3 className="text-[18px] sm:text-[20px] font-bold text-gray-900">Human-in-the-Loop Handoff</h3>
+                                    <h3 className="text-[18px] sm:text-[22px] font-bold text-gray-900">Human-in-the-Loop Handoff</h3>
                                 </div>
                                 <ul className="flex flex-col gap-3.5">
-                                    <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Operates autonomously to handle tier-1 support queries.</span></li>
-                                    <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Supports seamless conversation transfer to human agents with full context preservation.</span></li>
-                                    <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Triggers customizable routing alerts to specific teams or agents.</span></li>
+                                    <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Operates autonomously to handle tier-1 support queries.</span></li>
+                                    <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Supports seamless conversation transfer to human agents with full context preservation.</span></li>
+                                    <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Triggers customizable routing alerts to specific teams or agents.</span></li>
                                 </ul>
                             </div>
-                            <div className="relative z-10 md:w-1/2 flex flex-wrap gap-3 content-start items-start pt-2">
-                                {[{ label: "Bot Handles Routine", color: "bg-green-50 border-green-200 text-green-700" }, { label: "Escalates When Needed", color: "bg-amber-50 border-amber-200 text-amber-700" }, { label: "Agent Notified Instantly", color: "bg-blue-50 border-blue-200 text-blue-700" }, { label: "Seamless Continuity", color: "bg-purple-50 border-purple-200 text-purple-700" }].map(item => (<span key={item.label} className={`text-[12px] font-semibold px-4 py-2 rounded-full border ${item.color}`}>{item.label}</span>))}
+                            <div className="relative z-10 md:w-1/2 flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-6 pt-6 md:pt-0">
+                                <img src="/images/features-handoff.png" alt="Human-in-the-Loop Handoff" className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
+                                <div className="flex flex-col gap-3 w-full max-w-[260px] relative z-10">
+                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Routine Queries</span><span className="text-[15px] font-bold text-green-600">Bot Managed</span></div>
+                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Complex Issues</span><span className="text-[15px] font-bold text-amber-600">Escalated</span></div>
+                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Agent Handover</span><span className="text-[15px] font-bold text-brand-primary">Seamless</span></div>
+                                </div>
                             </div>
                         </div>
                     </RevealOnScroll>
@@ -179,6 +196,9 @@ const FeaturesPage = () => {
                                 <ul className="relative z-10 flex flex-col gap-3.5">
                                     {[{ label: "Workflow Automation", desc: "Automatically processes repetitive inquiries and categorizes tickets." }, { label: "High Deflection Rate", desc: "Capable of autonomously resolving up to 30% of standard requests." }, { label: "Always-On Availability", desc: "Functions 24/7 without downtime or concurrency limits." }, { label: "Sub-Second Response Times", desc: "Delivers answers instantaneously to users." }].map(item => (<li key={item.label} className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><div><span className="text-[14px] font-semibold text-gray-800">{item.label}: </span><span className="text-[14px] text-gray-600">{item.desc}</span></div></li>))}
                                 </ul>
+                                <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
+                                    <img src="/images/features-analytics.png" alt="Analytics That Drive Success" className="w-full h-full object-contain drop-shadow-2xl scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 pointer-events-none" />
+                                </div>
                             </div>
                         </RevealOnScroll>
 
@@ -193,8 +213,11 @@ const FeaturesPage = () => {
                                 </div>
                                 <p className="relative z-10 text-[14px] text-gray-600 leading-relaxed">No-Code Configuration: Train the underlying OpenAI model directly from web URLs or Dialogflow configurations.</p>
                                 <ul className="relative z-10 flex flex-col gap-3">
-                                    {["Video tutorials", "Step-by-step guides", "Help articles"].map(item => (<li key={item} className="flex items-center gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">{item}</span></li>))}
+                                    {["Step-by-step guides", "Help articles"].map(item => (<li key={item} className="flex items-center gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">{item}</span></li>))}
                                 </ul>
+                                <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
+                                    <img src="/images/features-effortless.png" alt="Effortless and User-Friendly" className="w-full h-full object-contain drop-shadow-2xl mix-blend-multiply scale-[1.45] group-hover:-translate-y-2 group-hover:scale-[1.5] transition-all duration-500 pointer-events-none" />
+                                </div>
                             </div>
                         </RevealOnScroll>
                     </div>
@@ -202,7 +225,7 @@ const FeaturesPage = () => {
                     {/* Category: Lead Conversion accent card */}
                     <SectionHeader title="Conversion Strategies" />
                     <RevealOnScroll>
-                        <div className="relative rounded-[28px] border border-brand-primary/30 bg-gradient-to-br from-brand-primary/5 via-white/60 to-brand-secondary/10 backdrop-blur-md p-8 sm:p-10 flex flex-col md:flex-row items-center gap-8 shadow-[0_8px_30px_rgb(124,58,237,0.08)] hover:shadow-[0_20px_50px_rgb(124,58,237,0.18)] hover:border-brand-primary/50 transition-all duration-500 group overflow-hidden mb-8">
+                        <div className="relative rounded-[28px] border border-brand-primary/30 bg-gradient-to-br from-brand-primary/5 via-white/60 to-brand-secondary/10 backdrop-blur-md px-8 py-6 sm:px-10 sm:py-8 flex flex-col md:flex-row items-center gap-8 shadow-[0_8px_30px_rgb(124,58,237,0.08)] hover:shadow-[0_20px_50px_rgb(124,58,237,0.18)] hover:border-brand-primary/50 transition-all duration-500 group overflow-hidden mb-8">
                             <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/8 via-transparent to-brand-secondary/8 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                             <div className="relative z-10 flex flex-col gap-4 md:w-1/2">
                                 <div className="flex items-center gap-3">
@@ -217,8 +240,9 @@ const FeaturesPage = () => {
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Syncs captured lead data directly to external CRMs and marketing platforms.</span></li>
                                 </ul>
                             </div>
-                            <div className="relative z-10 md:w-1/2 flex flex-col items-center md:items-end gap-4">
-                                <div className="flex flex-col gap-3 w-full max-w-[260px]">
+                            <div className="relative z-10 md:w-1/2 flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-6 pt-6 md:pt-0">
+                                <img src="/images/features-lead-capture.png" alt="Automated Lead Capture" className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
+                                <div className="flex flex-col gap-3 w-full max-w-[260px] relative z-10">
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Lead Capture</span><span className="text-[15px] font-bold text-green-600">Automatic</span></div>
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Response Time</span><span className="text-[15px] font-bold text-brand-primary">Instant</span></div>
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Availability</span><span className="text-[15px] font-bold text-purple-600">24 / 7</span></div>
@@ -230,7 +254,7 @@ const FeaturesPage = () => {
 
                 {/* Section 3: CTA Section */}
                 <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[1024px] w-[90%] lg:w-[85%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-6 py-12 sm:p-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
+                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[1024px] w-[90%] lg:w-[85%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-6 py-10 sm:py-12 sm:px-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
                         <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                         <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
                             <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
