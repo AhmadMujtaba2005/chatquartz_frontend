@@ -219,9 +219,9 @@ const FeaturesPage = () => {
                             </div>
                             <div className="relative z-10 md:w-1/2 flex flex-col items-center md:items-end gap-4">
                                 <div className="flex flex-col gap-3 w-full max-w-[260px]">
-                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Conversion Rate</span><span className="text-[16px] font-bold text-green-600">+42%</span></div>
-                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Response Time</span><span className="text-[16px] font-bold text-brand-primary">&lt; 1s</span></div>
-                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Leads Qualified</span><span className="text-[16px] font-bold text-purple-600">24 / 7</span></div>
+                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Lead Capture</span><span className="text-[15px] font-bold text-green-600">Automatic</span></div>
+                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Response Time</span><span className="text-[15px] font-bold text-brand-primary">Instant</span></div>
+                                    <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Availability</span><span className="text-[15px] font-bold text-purple-600">24 / 7</span></div>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +240,7 @@ const FeaturesPage = () => {
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center">
-                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Why Choose <span className="text-brand-primary italic">chatquartz</span>!</h2>
+                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience the Power of <span className="italic text-brand-primary">AI</span> with chatquartz</h2>
                             <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Trusted AI, powered by OpenAI and Google&apos;s Dialogflow — smart, scalable conversations that simplify support and marketing.</p>
                             <Link href="/demo" prefetch={false} className="group/btn flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
                                 <span>Start for free</span>
