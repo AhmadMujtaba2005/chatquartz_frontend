@@ -1,9 +1,12 @@
+import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 import PageBackground from "@/components/PageBackground";
+import GlobalCTA from "@/components/ui/GlobalCTA";
 import { ChartBarIcon, ChatAlt2Icon, LightningBoltIcon, LightBulbIcon, UsersIcon, ChartPieIcon, EmojiHappyIcon, TrendingUpIcon } from "@/components/ui/Icons";
 
 const SectionHeader = ({ title }) => (
@@ -76,7 +79,7 @@ const FeaturesPage = () => {
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><div><span className="text-[14px] font-semibold text-gray-800">WooCommerce Integration: </span><span className="text-[14px] text-gray-600">Connects directly with WooCommerce to provide instant product data.</span></div></li>
                                 </ul>
                                 <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
-                                    <img src="/images/features-performance.png" alt="Elevate Performance" className="w-full h-full object-contain drop-shadow-2xl scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 pointer-events-none" />
+                                    <Image src="/images/features-performance.png" alt="Elevate Performance" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain drop-shadow-2xl scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         </RevealOnScroll>
@@ -99,7 +102,7 @@ const FeaturesPage = () => {
                                     {["WhatsApp", "Instagram", "Telegram", "Messenger"].map(ch => (<span key={ch} className="text-[11px] font-semibold px-3 py-1 rounded-full bg-brand-primary/10 text-brand-primary border border-brand-primary/20">{ch}</span>))}
                                 </div>
                                 <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
-                                    <img src="/images/features-omnichannel.png" alt="Omnichannel Integrations" className="w-full h-full object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
+                                    <Image src="/images/features-omnichannel.png" alt="Omnichannel Integrations" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         </RevealOnScroll>
@@ -126,7 +129,7 @@ const FeaturesPage = () => {
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Requires zero technical setup or coding knowledge to configure.</span></li>
                                 </ul>
                                 <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
-                                    <img src="/images/features-automation.png" alt="AI-Powered Conversations" className="w-full h-full object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
+                                    <Image src="/images/features-automation.png" alt="AI-Powered Conversations" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         </RevealOnScroll>
@@ -146,7 +149,7 @@ const FeaturesPage = () => {
                                     <li className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">Provides native multi-language translation and understanding via Google AI.</span></li>
                                 </ul>
                                 <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
-                                    <img src="/images/features-training.png" alt="AI-Enhanced Training & Adaptability" className="w-full h-full object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
+                                    <Image src="/images/features-training.png" alt="AI-Enhanced Training & Adaptability" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain drop-shadow-2xl scale-[1.25] group-hover:-translate-y-2 group-hover:scale-[1.3] transition-all duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         </RevealOnScroll>
@@ -171,7 +174,7 @@ const FeaturesPage = () => {
                                 </ul>
                             </div>
                             <div className="relative z-10 md:w-1/2 flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-6 pt-6 md:pt-0">
-                                <img src="/images/features-handoff.png" alt="Human-in-the-Loop Handoff" className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
+                                <Image src="/images/features-handoff.png" alt="Human-in-the-Loop Handoff" width={280} height={280} className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
                                 <div className="flex flex-col gap-3 w-full max-w-[260px] relative z-10">
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Routine Queries</span><span className="text-[15px] font-bold text-green-600">Bot Managed</span></div>
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Complex Issues</span><span className="text-[15px] font-bold text-amber-600">Escalated</span></div>
@@ -198,7 +201,7 @@ const FeaturesPage = () => {
                                     {[{ label: "Workflow Automation", desc: "Automatically processes repetitive inquiries and categorizes tickets." }, { label: "High Deflection Rate", desc: "Capable of autonomously resolving up to 30% of standard requests." }, { label: "Always-On Availability", desc: "Functions 24/7 without downtime or concurrency limits." }, { label: "Sub-Second Response Times", desc: "Delivers answers instantaneously to users." }].map(item => (<li key={item.label} className="flex items-start gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0 mt-0.5"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><div><span className="text-[14px] font-semibold text-gray-800">{item.label}: </span><span className="text-[14px] text-gray-600">{item.desc}</span></div></li>))}
                                 </ul>
                                 <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
-                                    <img src="/images/features-analytics.png" alt="Analytics That Drive Success" className="w-full h-full object-contain drop-shadow-2xl scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 pointer-events-none" />
+                                    <Image src="/images/features-analytics.png" alt="Analytics That Drive Success" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain drop-shadow-2xl scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         </RevealOnScroll>
@@ -217,7 +220,7 @@ const FeaturesPage = () => {
                                     {["Step-by-step guides", "Help articles"].map(item => (<li key={item} className="flex items-center gap-3"><div className="w-5 h-5 rounded-full bg-brand-primary/15 flex items-center justify-center flex-shrink-0"><div className="w-1.5 h-1.5 rounded-full bg-brand-primary"></div></div><span className="text-[14px] text-gray-600">{item}</span></li>))}
                                 </ul>
                                 <div className="mt-auto relative z-10 flex items-center justify-center w-full h-[180px] sm:h-[220px]">
-                                    <img src="/images/features-effortless.png" alt="Effortless and User-Friendly" className="w-full h-full object-contain drop-shadow-2xl mix-blend-multiply scale-[1.45] group-hover:-translate-y-2 group-hover:scale-[1.5] transition-all duration-500 pointer-events-none" />
+                                    <Image src="/images/features-effortless.png" alt="Effortless and User-Friendly" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain drop-shadow-2xl mix-blend-multiply scale-[1.45] group-hover:-translate-y-2 group-hover:scale-[1.5] transition-all duration-500 pointer-events-none" />
                                 </div>
                             </div>
                         </RevealOnScroll>
@@ -242,7 +245,7 @@ const FeaturesPage = () => {
                                 </ul>
                             </div>
                             <div className="relative z-10 md:w-1/2 flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-6 pt-6 md:pt-0">
-                                <img src="/images/features-lead-capture.png" alt="Automated Lead Capture" className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
+                                <Image src="/images/features-lead-capture.png" alt="Automated Lead Capture" width={280} height={280} className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
                                 <div className="flex flex-col gap-3 w-full max-w-[260px] relative z-10">
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Lead Capture</span><span className="text-[15px] font-bold text-green-600">Automatic</span></div>
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Response Time</span><span className="text-[15px] font-bold text-brand-primary">Instant</span></div>
@@ -254,29 +257,10 @@ const FeaturesPage = () => {
                 </div>
 
                 {/* Section 3: CTA Section */}
-                <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[1024px] w-[90%] lg:w-[85%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-6 py-10 sm:py-12 sm:px-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
-                        <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-                        <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
-                            <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="absolute -bottom-24 -left-24 sm:-bottom-32 sm:-left-32 w-[350px] sm:w-[460px] pointer-events-none z-0 select-none opacity-30 mix-blend-multiply rotate-180">
-                            <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
-                        </div>
-
-                        <div className="relative z-10 flex flex-col items-center">
-                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience the Power of <span className="italic text-brand-primary">AI</span> with chatquartz</h2>
-                            <p className="text-[14px] text-gray-600 max-w-3xl px-4 text-center leading-relaxed mb-8">Trusted AI, powered by OpenAI and Google&apos;s Dialogflow — smart, scalable conversations that simplify support and marketing.</p>
-                            <Link href="/demo" prefetch={false} className="group/btn flex items-center justify-center px-10 sm:px-12 py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer">
-                                <span>Start for free</span>
-                                <span className="inline-block transition-transform duration-200 ease-out group-hover/btn:translate-x-1.5 ml-2.5">→</span>
-                            </Link>
-                            <div className="flex items-center justify-center gap-6 mt-4">
-                                <span className="flex items-center gap-1.5 text-[13px] text-gray-500">No credit card required</span>
-                            </div>
-                        </div>
-                    </div>
-                </RevealOnScroll>
+                <GlobalCTA 
+                    title={<>Experience the Power of <span className="italic text-brand-primary">AI</span> with chatquartz</>}
+                    description="Trusted AI, powered by OpenAI and Google's Dialogflow — smart, scalable conversations that simplify support and marketing."
+                />
 
                 {/* Section 4: Footer */}
                 <RevealOnScroll>

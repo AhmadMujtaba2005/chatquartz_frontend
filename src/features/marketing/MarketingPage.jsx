@@ -12,6 +12,7 @@ import FollowUpMockup from "@/components/mockups/FollowUpMockup";
 import SubscribeMockup from "@/components/mockups/SubscribeMockup";
 import FeatureShowcase from "@/components/features/FeatureShowcase";
 import PageBackground from "@/components/PageBackground";
+import GlobalCTA from "@/components/ui/GlobalCTA";
 import { ProactiveChatIcon, MultiUserIcon, BookingSystemIcon } from "@/components/ui/icons/MarketingIcons";
 
 const MarketingPage = () => {
@@ -191,25 +192,15 @@ const MarketingPage = () => {
                     </div>
                 </RevealOnScroll>
                 {/* Section 5: CTA Section */}
-                <RevealOnScroll>
-                    <div className="relative overflow-hidden flex flex-col items-center justify-center mx-auto max-w-[1024px] w-[90%] lg:w-[85%] mt-16 sm:mt-24 md:mt-[120px] mb-20 px-5 py-12 sm:p-16 border border-brand-secondary/50 rounded-[32px] bg-white/60 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] hover:border-brand-primary/40 transition-all duration-500 group">
-                        <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-                        <div className="absolute -top-24 -right-24 sm:-top-32 sm:-right-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-40 mix-blend-multiply">
-                            <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
-                        </div>
-                        <div className="absolute -bottom-24 -left-24 sm:-bottom-32 sm:-left-32 w-[250px] sm:w-[350px] md:w-[480px] pointer-events-none z-0 select-none opacity-30 mix-blend-multiply rotate-180">
-                            <img src="/hero-bg.png" alt="CTA Background Shape" className="w-full h-auto object-contain" />
-                        </div>
-
-                        <div className="relative z-10 flex flex-col items-center">
-                            <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Experience the Power of <span className="italic text-brand-primary">Marketing</span> with chatquartz</h2>
-                            <Link href="/contactus" prefetch={false} className="group/btn flex items-center justify-center w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3.5 sm:py-4 rounded-full bg-brand-primary hover:bg-brand-primary-hover text-white text-base sm:text-lg font-semibold shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 ease-out cursor-pointer mt-4">
-                                <span>Get Started</span>
-                                <span className="inline-block transition-transform duration-200 ease-out group-hover/btn:translate-x-1.5 ml-2.5">→</span>
-                            </Link>
-                        </div>
-                    </div>
-                </RevealOnScroll>
+                <GlobalCTA 
+                    title={<>Experience the Power of <span className="italic text-brand-primary">Marketing</span> with chatquartz</>}
+                    buttonText="Get Started"
+                    buttonLink="/contactus"
+                    containerClassName="mt-16 sm:mt-24 md:mt-[120px] mb-20 px-5 py-12 sm:p-16"
+                    bgImageClassName="w-[250px] sm:w-[350px] md:w-[480px]"
+                    description={null}
+                    bottomText={null}
+                />
                 {/* Section 6: Footer */}
                 <RevealOnScroll>
                     <div className="w-full bg-gradient-to-t from-[#0F0A1F] via-[#1E0B4A] to-[#5B21B6] mt-16 sm:mt-24 md:mt-[120px]">
