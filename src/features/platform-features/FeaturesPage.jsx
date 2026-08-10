@@ -174,7 +174,7 @@ const FeaturesPage = () => {
                                 </ul>
                             </div>
                             <div className="relative z-10 md:w-1/2 flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-6 pt-6 md:pt-0">
-                                <Image src="/images/features-handoff.png" alt="Human-in-the-Loop Handoff" width={280} height={280} className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
+                                <Image src="/images/features-handoff.png" alt="Human-in-the-Loop Handoff" width={280} height={280} className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 md:-ml-8" />
                                 <div className="flex flex-col gap-3 w-full max-w-[260px] relative z-10">
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Routine Queries</span><span className="text-[15px] font-bold text-green-600">Bot Managed</span></div>
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Complex Issues</span><span className="text-[15px] font-bold text-amber-600">Escalated</span></div>
@@ -245,7 +245,7 @@ const FeaturesPage = () => {
                                 </ul>
                             </div>
                             <div className="relative z-10 md:w-1/2 flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-6 pt-6 md:pt-0">
-                                <Image src="/images/features-lead-capture.png" alt="Automated Lead Capture" width={280} height={280} className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 -ml-8" />
+                                <Image src="/images/features-lead-capture.png" alt="Automated Lead Capture" width={280} height={280} className="w-[240px] sm:w-[280px] h-[240px] sm:h-[280px] object-contain drop-shadow-2xl mix-blend-multiply scale-[1.15] group-hover:-translate-y-2 group-hover:scale-[1.2] transition-all duration-500 shrink-0 md:-ml-8" />
                                 <div className="flex flex-col gap-3 w-full max-w-[260px] relative z-10">
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Lead Capture</span><span className="text-[15px] font-bold text-green-600">Automatic</span></div>
                                     <div className="flex items-center justify-between bg-white/80 border border-brand-secondary/50 rounded-2xl px-5 py-3.5 shadow-sm"><span className="text-[13px] font-medium text-gray-600">Response Time</span><span className="text-[15px] font-bold text-brand-primary">Instant</span></div>

@@ -42,9 +42,9 @@ const Navbar = () => {
             {/* Header */}
             <header className="sticky top-0 z-50 h-0 w-full">
                 <nav
-                    className={`mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
+                    className={`group/nav mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
                         ? "translate-y-4 border-white/50 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] shadow-[0_12px_40px_rgba(124,58,237,0.15)]"
-                        : "translate-y-0 border-transparent bg-transparent shadow-none"
+                        : "translate-y-0 border-transparent bg-transparent shadow-none hover:border-white/50 hover:bg-white/30 hover:backdrop-blur-[48px] hover:backdrop-saturate-[200%] hover:shadow-[0_12px_40px_rgba(124,58,237,0.15)]"
                         }`}
                 >
                     <div className="flex items-center justify-between relative">
@@ -87,7 +87,7 @@ const Navbar = () => {
                                             href={link.href}
                                             prefetch={false}
                                             onMouseEnter={() => setHoveredIndex(idx)}
-                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-brand-primary" : pastHero ? "text-gray-600 hover:text-brand-primary" : "text-purple-100 hover:text-white"
+                                            className={`relative z-10 flex items-center px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all duration-200 whitespace-nowrap select-none hover:-translate-y-[1px] ${hoveredIndex === idx ? "text-brand-primary" : pastHero ? "text-gray-600 hover:text-brand-primary" : "text-purple-100 hover:text-white hover:!text-brand-primary"
                                                 }`}
                                         >
                                             {link.label}
@@ -122,20 +122,20 @@ const Navbar = () => {
                             {/* Hamburger */}
                             <button
                                 onClick={() => setMobileOpen(!mobileOpen)}
-                                className={`md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 border ${pastHero ? "hover:bg-black/10 border-black/10 bg-black/5" : "hover:bg-white/20 border-white/20 bg-white/10"}`}
+                                className={`md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 border ${pastHero ? "hover:bg-black/10 border-black/10 bg-black/5" : "hover:bg-white/20 border-white/20 bg-white/10 group-hover/nav:hover:bg-black/10 group-hover/nav:border-black/10 group-hover/nav:bg-black/5"}`}
                                 aria-label="Toggle navigation menu"
                             >
                                 <motion.span
                                     animate={{ rotate: mobileOpen ? 45 : 0, y: mobileOpen ? 4 : 0 }}
-                                    className={`block w-4 h-[1.5px] rounded-full origin-center ${pastHero ? "bg-gray-700" : "bg-white"}`}
+                                    className={`block w-4 h-[1.5px] rounded-full origin-center ${pastHero ? "bg-gray-700" : "bg-white group-hover/nav:bg-gray-700"}`}
                                 />
                                 <motion.span
                                     animate={{ opacity: mobileOpen ? 0 : 1 }}
-                                    className={`block w-4 h-[1.5px] rounded-full mt-1 ${pastHero ? "bg-gray-700" : "bg-white"}`}
+                                    className={`block w-4 h-[1.5px] rounded-full mt-1 ${pastHero ? "bg-gray-700" : "bg-white group-hover/nav:bg-gray-700"}`}
                                 />
                                 <motion.span
                                     animate={{ rotate: mobileOpen ? -45 : 0, y: mobileOpen ? -6 : 0 }}
-                                    className={`block w-4 h-[1.5px] rounded-full mt-1 origin-center ${pastHero ? "bg-gray-700" : "bg-white"}`}
+                                    className={`block w-4 h-[1.5px] rounded-full mt-1 origin-center ${pastHero ? "bg-gray-700" : "bg-white group-hover/nav:bg-gray-700"}`}
                                 />
                             </button>
                         </div>
@@ -152,7 +152,7 @@ const Navbar = () => {
                                 className="md:hidden mt-3"
                             >
                                 <nav
-                                    className="rounded-2xl p-3 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] border border-white/40 shadow-[0_12px_40px_rgba(0,0,0,0.1)]"
+                                    className={`rounded-2xl p-3 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] border border-white/40 shadow-[0_12px_40px_rgba(0,0,0,0.1)]`}
                                 >
                                     <ul className="flex flex-col gap-0.5">
                                         {navLinks.map((link) => (
@@ -161,7 +161,7 @@ const Navbar = () => {
                                                     href={link.href}
                                                     prefetch={false}
                                                     onClick={() => setMobileOpen(false)}
-                                                    className="flex items-center px-4 py-3 rounded-xl text-[15px] font-medium text-gray-600 hover:text-gray-900 hover:bg-black/5 transition-all duration-150"
+                                                    className={`flex items-center px-4 py-3 rounded-xl text-[15px] font-medium transition-all duration-150 ${pastHero ? "text-gray-600 hover:text-gray-900 hover:bg-black/5" : "text-white hover:bg-white/10"}`}
                                                 >
                                                     {link.label}
                                                 </Link>
