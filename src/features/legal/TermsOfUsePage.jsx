@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
+import ScrollDownIndicator from "@/components/ui/ScrollDownIndicator";
 
 const TermsOfUsePage = () => {
     return (
@@ -13,6 +14,8 @@ const TermsOfUsePage = () => {
                     <div className="relative z-10 w-full flex flex-col items-center justify-center">
                         <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-white mb-4 text-center tracking-tight">Terms Of Use</h1>
                     </div>
+                    {/* Scroll Down Indicator */}
+                    <ScrollDownIndicator />
                 </div>
 
                 {/* Section 2: Terms of Use Content */}

@@ -2,6 +2,7 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import RevealOnScroll from "@/components/scroll/RevealOnScroll";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
+import ScrollDownIndicator from "@/components/ui/ScrollDownIndicator";
 
 const PrivacyPolicyPage = () => {
     return (
@@ -31,6 +32,8 @@ const PrivacyPolicyPage = () => {
                             </p>
                         </div>
                     </div>
+                    {/* Scroll Down Indicator */}
+                    <ScrollDownIndicator />
                 </div>
 
                 {/* Section 2: Policy Content */}

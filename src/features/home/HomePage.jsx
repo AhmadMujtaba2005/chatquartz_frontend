@@ -10,6 +10,7 @@ import HomePageFAQ from "./HomePageFAQ";
 import IntegrationsMarquee from "@/components/features/IntegrationsMarquee";
 import { HeroNetworkCanvas } from "@/components/PageBackground";
 import TypewriterEffect from "@/components/ui/TypewriterEffect";
+import ScrollDownIndicator from "@/components/ui/ScrollDownIndicator";
 
 const HomePage = () => {
     return (
@@ -67,6 +68,7 @@ const HomePage = () => {
                             </div>
                         </div>
                     </RevealOnScroll>
+                    <ScrollDownIndicator />
                 </div>
 
                 <RevealOnScroll>
