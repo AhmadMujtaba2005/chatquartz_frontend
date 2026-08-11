@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// Hardcoded recipient email for all contact form submissions
+// Recipient email
 const SALES_EMAIL = 'sales@dataquartz.com';
 
-// Fallback sender email (must be verified in Resend, or use onboarding@resend.dev for testing)
+// Sender email
 const SENDER_EMAIL = 'onboarding@resend.dev';
 
 let resend;
@@ -22,15 +22,13 @@ export async function POST(request) {
         const body = await request.json();
         const { name, company, title, email, phone, message, _honey } = body;
 
-        // 1. Honeypot check (Spam Protection)
-        // If the hidden honeypot field is filled out, silently reject it as spam
+        // Honeypot check
         if (_honey) {
             console.warn('Spam detected via honeypot field');
-            // Return 200 so the bot thinks it succeeded, but we drop the email
             return NextResponse.json({ success: true }, { status: 200 });
         }
 
-        // 2. Server-side validation
+        // Server-side validation
         if (!name || !email || !message) {
             return NextResponse.json(
                 { error: 'Missing required fields: Full Name, Work Email, or Message' },
@@ -46,12 +44,11 @@ export async function POST(request) {
             );
         }
 
-        // 3. Construct the dynamic subject
+        // Construct the dynamic subject
         const companyStr = company ? ` (${company})` : '';
         const subject = `New Contact Request from ${name}${companyStr}`;
 
-        // 4. Construct the email body
-        // We fall back to "—" if an optional field is missing.
+        // Construct the email body
         const htmlBody = `
             <h2>New Contact Form Submission</h2>
             <p><strong>Full Name:</strong> ${name}</p>
@@ -63,7 +60,7 @@ export async function POST(request) {
             <p style="white-space: pre-wrap;">${message}</p>
         `;
 
-        // 5. Send the email using Resend
+        // Send the email using Resend
         const { data, error } = await resend.emails.send({
             from: SENDER_EMAIL,
             to: SALES_EMAIL,
