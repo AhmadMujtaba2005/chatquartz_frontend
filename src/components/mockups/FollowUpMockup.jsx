@@ -10,6 +10,8 @@ const FollowUpMockup = () => {
         <div className="flex items-center gap-2 bg-white rounded-lg border border-gray-200 p-1 pl-3 shadow-sm">
           <input
             type="email"
+            id="mockup-email"
+            name="mockup-email"
             placeholder="Your email..."
             className="flex-1 bg-transparent text-[12px] outline-none text-gray-800 placeholder-gray-400"
             disabled
