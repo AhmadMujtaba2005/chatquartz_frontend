@@ -8,7 +8,7 @@ const PopupMockup = () => {
         <div className="flex-1 mt-0.5">
           <p className="font-semibold text-gray-800 text-[13px] leading-none">Chris Greyson</p>
           <p className="text-gray-500 mt-2 text-[12px] leading-relaxed">
-            I'm online. I see you're interested in our product — happy to help you get started!
+            I&apos;m online. I see you&apos;re interested in our product — happy to help you get started!
           </p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScroll from "@/components/scroll/SmoothScroll";
@@ -107,9 +107,9 @@ const SupportPage = () => {
                                 <div className="hidden md:block absolute top-[60px] left-8 right-8 h-[2px] bg-gradient-to-r from-brand-primary/20 via-brand-primary/40 to-brand-primary/20 -translate-y-1/2 z-0"></div>
                                 {/* Mobile Connecting Line */}
                                 <div className="block md:hidden absolute left-1/2 top-8 bottom-8 w-[2px] bg-gradient-to-b from-brand-primary/20 via-brand-primary/40 to-brand-primary/20 -translate-x-1/2 z-0"></div>
-                                
+
                                 <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-0">
-                                    
+
                                     {/* Node 1 */}
                                     <div className="flex flex-col items-center gap-3 group/node w-24">
                                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-gray-100 shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex items-center justify-center text-gray-500 group-hover/node:border-brand-primary/50 group-hover/node:text-brand-primary group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.15)] transition-all duration-300 transform group-hover/node:-translate-y-1">
@@ -131,7 +131,7 @@ const SupportPage = () => {
                                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-primary/30 shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex items-center justify-center text-brand-primary group-hover/node:border-brand-primary group-hover/node:text-brand-primary group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.2)] transition-all duration-300 transform group-hover/node:-translate-y-1">
                                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>
                                         </div>
-                                        <span className="text-[12px] font-bold text-gray-700 text-center leading-tight">Human<br/>Takeover</span>
+                                        <span className="text-[12px] font-bold text-gray-700 text-center leading-tight">Human<br />Takeover</span>
                                     </div>
 
                                     {/* Node 4 */}
@@ -139,7 +139,7 @@ const SupportPage = () => {
                                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-primary/40 shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex items-center justify-center text-brand-primary group-hover/node:border-brand-primary group-hover/node:text-brand-primary group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.2)] transition-all duration-300 transform group-hover/node:-translate-y-1">
                                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
                                         </div>
-                                        <span className="text-[12px] font-bold text-gray-700 text-center leading-tight">Agent<br/>Assigned</span>
+                                        <span className="text-[12px] font-bold text-gray-700 text-center leading-tight">Agent<br />Assigned</span>
                                     </div>
 
                                     {/* Node 5 */}
@@ -164,27 +164,27 @@ const SupportPage = () => {
 
                                         {/* Messenger */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-[7px] sm:p-2">
-                                            <img src="/icons/messenger.svg" alt="Messenger" className="w-full h-full object-contain" />
+                                            <Image src="/icons/messenger.svg" alt="Messenger" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
                                         {/* WhatsApp */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-1.5 sm:p-[7px]">
-                                            <img src="/icons/whatsapp.svg" alt="WhatsApp" className="w-full h-full object-contain" />
+                                            <Image src="/icons/whatsapp.svg" alt="WhatsApp" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
                                         {/* Chat Bubbles */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-[5px] sm:p-1.5">
-                                            <img src="/icons/chat.svg" alt="Chat" className="w-full h-full object-contain" />
+                                            <Image src="/icons/chat.svg" alt="Chat" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
                                         {/* Gmail */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-2 sm:p-2.5">
-                                            <img src="/icons/gmail.svg" alt="Gmail" className="w-full h-full object-contain" />
+                                            <Image src="/icons/gmail.svg" alt="Gmail" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
                                         {/* Slack */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-2 sm:p-2.5">
-                                            <img src="/icons/slack.svg" alt="Slack" className="w-full h-full object-contain" />
+                                            <Image src="/icons/slack.svg" alt="Slack" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
                                     </div>
@@ -263,7 +263,7 @@ const SupportPage = () => {
 
                 </div>
                 {/* Section 3: CTA Section */}
-                <GlobalCTA 
+                <GlobalCTA
                     title={<>Experience the Power of <span className="italic text-brand-primary">Support</span> with chatquartz</>}
                     buttonText="Get Started"
                     buttonLink="/contactus"

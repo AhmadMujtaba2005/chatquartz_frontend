@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Search, User, Clock, Trash, Paperclip, Smile } from "lucide-react";
 
 export const Feature1Mockup = () => (
@@ -10,21 +11,20 @@ export const Feature1Mockup = () => (
             </div>
             <div className="flex-1 overflow-hidden p-1.5 space-y-1">
                 {[
-                    {n: "User #1646", d: "19/07/26", m: "can i get a discount i cant pay...", active: true, ch: "whatsapp"},
-                    {n: "User #97536", d: "15/07/26", m: "House of Wellness ka address...", active: false, ch: "messenger"},
-                    {n: "User #82357", d: "24/06/26", m: "book my session with dr yasir", active: false, ch: "email"},
-                    {n: "User #85890", d: "24/06/26", m: "I need an urgent session...", active: false, ch: "instagram"},
+                    { n: "User #1646", d: "19/07/26", m: "can i get a discount i cant pay...", active: true, ch: "whatsapp" },
+                    { n: "User #97536", d: "15/07/26", m: "House of Wellness ka address...", active: false, ch: "messenger" },
+                    { n: "User #82357", d: "24/06/26", m: "book my session with dr yasir", active: false, ch: "email" },
+                    { n: "User #85890", d: "24/06/26", m: "I need an urgent session...", active: false, ch: "instagram" },
                 ].map((c, i) => (
                     <div key={i} className={`p-1.5 rounded flex gap-1.5 items-start ${c.active ? 'bg-[#FAF5FF] border-l-2 border-[#7C3AED]' : 'border-l-2 border-transparent hover:bg-gray-50/50 cursor-pointer'}`}>
                         <div className="relative h-5 w-5 mt-0.5">
                             <div className="h-full w-full rounded-full bg-gray-200 flex-shrink-0 flex items-center justify-center text-gray-500">
                                 <User className="w-3 h-3" />
                             </div>
-                            <div className={`absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full border-[1.5px] border-white flex items-center justify-center ${
-                                c.ch === 'whatsapp' ? 'bg-green-500' : 
-                                c.ch === 'messenger' ? 'bg-blue-500' : 
-                                c.ch === 'instagram' ? 'bg-pink-500' : 'bg-gray-600'
-                            }`}></div>
+                            <div className={`absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full border-[1.5px] border-white flex items-center justify-center ${c.ch === 'whatsapp' ? 'bg-green-500' :
+                                    c.ch === 'messenger' ? 'bg-blue-500' :
+                                        c.ch === 'instagram' ? 'bg-pink-500' : 'bg-gray-600'
+                                }`}></div>
                         </div>
                         <div className="min-w-0 flex-1">
                             <div className="flex justify-between items-center mb-[2px]">
@@ -113,7 +113,7 @@ export const Feature2Mockup = () => (
                 </div>
                 <div className="flex-1 overflow-hidden space-y-1.5">
                     <div className="bg-white p-2 rounded-lg border border-gray-100 shadow-sm border-l-2 border-l-[#7C3AED]">
-                        <h4 className="text-[7px] font-bold text-gray-800 mb-1">What's new with Dialogflow?</h4>
+                        <h4 className="text-[7px] font-bold text-gray-800 mb-1">What&apos;s new with Dialogflow?</h4>
                         <p className="text-[6px] text-gray-500 line-clamp-2 leading-relaxed">Dialogflow API V2 is the new iteration replacing V1...</p>
                     </div>
                     <div className="bg-white p-2 rounded-lg border border-gray-100 shadow-sm border-l-2 border-l-transparent">
@@ -125,7 +125,7 @@ export const Feature2Mockup = () => (
         </div>
         {/* Floating chat bubble icon */}
         <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-[#7C3AED] rounded-full shadow-lg flex items-center justify-center z-10 cursor-pointer hover:bg-[#6D28D9] transition-colors hover:scale-110">
-            <img src="/logo.svg" alt="chatQuartz" className="w-5 h-5 object-contain brightness-0 invert" />
+            <Image src="/logo.svg" alt="chatQuartz" width={20} height={20} className="w-5 h-5 object-contain brightness-0 invert" />
         </div>
     </div>
 );
@@ -140,10 +140,10 @@ export const Feature3Mockup = () => (
             </div>
             <div className="flex-1 overflow-hidden p-1.5 space-y-1">
                 {[
-                    {n: "User #1646", d: "19/07/26", m: "can i get a discount i cant pay...", active: true},
-                    {n: "User #97536", d: "15/07/26", m: "House of Wellness ka address...", active: false},
-                    {n: "User #82357", d: "24/06/26", m: "book my session with dr yasir", active: false},
-                    {n: "User #85890", d: "24/06/26", m: "I need an urgent session...", active: false},
+                    { n: "User #1646", d: "19/07/26", m: "can i get a discount i cant pay...", active: true },
+                    { n: "User #97536", d: "15/07/26", m: "House of Wellness ka address...", active: false },
+                    { n: "User #82357", d: "24/06/26", m: "book my session with dr yasir", active: false },
+                    { n: "User #85890", d: "24/06/26", m: "I need an urgent session...", active: false },
                 ].map((c, i) => (
                     <div key={i} className={`p-1.5 rounded flex gap-1.5 items-start ${c.active ? 'bg-[#FAF5FF] border-l-2 border-[#7C3AED]' : 'border-l-2 border-transparent hover:bg-gray-50/50 cursor-pointer'}`}>
                         <div className="h-5 w-5 rounded-full bg-gray-200 flex-shrink-0 flex items-center justify-center text-gray-500 mt-0.5">
@@ -204,9 +204,9 @@ export const Feature3Mockup = () => (
                 </div>
                 <div className="flex flex-col gap-1 pt-1">
                     {[
-                        {k: "hello", v: "Hello how are you?"},
-                        {k: "link", v: "Here is the payment link"},
-                        {k: "bye", v: "Thank you for reaching out!"}
+                        { k: "hello", v: "Hello how are you?" },
+                        { k: "link", v: "Here is the payment link" },
+                        { k: "bye", v: "Thank you for reaching out!" }
                     ].map(r => (
                         <div key={r.k} className="flex gap-1.5 items-center p-1 rounded bg-gray-50 hover:bg-[#FAF5FF] cursor-pointer group/item transition-colors">
                             <span className="text-[#7C3AED] font-mono font-bold text-[5px] bg-white border border-[#E9D5FF] px-1 rounded">/{r.k}</span>
@@ -255,7 +255,7 @@ export const Feature4Mockup = () => (
                 Add user
             </div>
         </div>
-        
+
         {/* Tabs */}
         <div className="px-3 border-b border-gray-100 flex gap-3 text-[7px] font-medium text-gray-500 overflow-hidden">
             <span className="py-1.5 border-b-2 border-transparent">All (12)</span>
@@ -280,7 +280,7 @@ export const Feature4Mockup = () => (
                 <span className="text-[6px] font-medium text-gray-600">ADMIN</span>
                 <span className="text-[6px] font-medium text-green-600 flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>Online</span>
             </div>
-            
+
             <div className="px-3 py-2 border-b border-gray-50 grid grid-cols-[1.5fr_1fr_1fr] gap-2 items-center hover:bg-gray-50 cursor-pointer transition-colors">
                 <div className="flex items-center gap-1.5 overflow-hidden">
                     <div className="w-4 h-4 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-[6px] font-bold flex-shrink-0">S</div>

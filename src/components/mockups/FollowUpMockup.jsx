@@ -6,11 +6,11 @@ const FollowUpMockup = () => {
         <span className="text-white text-[13px] font-medium leading-none mt-0.5">Leave a message</span>
       </div>
       <div className="p-4 flex flex-col gap-3">
-        <p className="text-[12px] text-gray-500 leading-relaxed">We're currently offline. Leave your email and we'll get back to you.</p>
+        <p className="text-[12px] text-gray-500 leading-relaxed">We&apos;re currently offline. Leave your email and we&apos;ll get back to you.</p>
         <div className="flex items-center gap-2 bg-white rounded-lg border border-gray-200 p-1 pl-3 shadow-sm">
-          <input 
-            type="email" 
-            placeholder="Your email..." 
+          <input
+            type="email"
+            placeholder="Your email..."
             className="flex-1 bg-transparent text-[12px] outline-none text-gray-800 placeholder-gray-400"
             disabled
           />

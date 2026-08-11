@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FaFacebook, FaXTwitter, FaLinkedin, FaInstagram, FaThreads } from "react-icons/fa6";
 import { SiMailchimp } from "react-icons/si";
 import { Mail, RefreshCcw, Sparkles, LayoutGrid } from "lucide-react";
@@ -13,7 +12,7 @@ import SubscribeMockup from "@/components/mockups/SubscribeMockup";
 import FeatureShowcase from "@/components/features/FeatureShowcase";
 import PageBackground from "@/components/PageBackground";
 import GlobalCTA from "@/components/ui/GlobalCTA";
-import { ProactiveChatIcon, MultiUserIcon, BookingSystemIcon } from "@/components/ui/icons/MarketingIcons";
+import { ProactiveChatIcon, MultiUserIcon, BookingSystemIcon } from "@/components/ui/MarketingIcons";
 
 const MarketingPage = () => {
     return (
@@ -91,7 +90,7 @@ const MarketingPage = () => {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto w-[94%] mt-10">
                             {/* Card 1: Social Share */}
-                            <div className="relative bg-white rounded-3xl border border-gray-100 shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-brand-primary/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
+                            <div className="relative rounded-[32px] border border-gray-100 bg-white shadow-[0_8px_40px_rgb(0,0,0,0.06)] p-8 flex flex-col items-center text-center hover:border-brand-primary/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)] overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/60 via-transparent to-pink-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 <div className="relative z-10 flex flex-col items-center gap-3 mb-6 mt-4">
                                     <div className="flex gap-3">
@@ -192,7 +191,7 @@ const MarketingPage = () => {
                     </div>
                 </RevealOnScroll>
                 {/* Section 5: CTA Section */}
-                <GlobalCTA 
+                <GlobalCTA
                     title={<>Experience the Power of <span className="italic text-brand-primary">Marketing</span> with chatquartz</>}
                     buttonText="Get Started"
                     buttonLink="/contactus"
