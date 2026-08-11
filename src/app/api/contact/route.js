@@ -5,7 +5,6 @@ import { Resend } from 'resend';
 const SALES_EMAIL = 'sales@dataquartz.com';
 
 // Fallback sender email (must be verified in Resend, or use onboarding@resend.dev for testing)
-// TODO: Update this to 'Contact <contact@dataquartz.com>' once dataquartz.com is verified in Resend.
 const SENDER_EMAIL = 'onboarding@resend.dev';
 
 let resend;
