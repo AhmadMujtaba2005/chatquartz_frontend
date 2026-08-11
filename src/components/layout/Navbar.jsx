@@ -42,9 +42,9 @@ const Navbar = () => {
             {/* Header */}
             <header className="sticky top-0 z-50 h-0 w-full">
                 <nav
-                    className={`group/nav mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
+                    className={`mx-auto w-[calc(100%-2rem)] md:w-[calc(100%-4rem)] xl:w-full max-w-7xl px-5 sm:px-8 md:px-10 py-3 sm:py-3.5 transition-all duration-500 ease-out rounded-2xl border ${scrolled
                         ? "translate-y-4 border-white/50 bg-white/30 backdrop-blur-[48px] backdrop-saturate-[200%] shadow-[0_12px_40px_rgba(124,58,237,0.15)]"
-                        : "translate-y-0 border-transparent bg-transparent shadow-none hover:border-white/50 hover:bg-white/30 hover:backdrop-blur-[48px] hover:backdrop-saturate-[200%] hover:shadow-[0_12px_40px_rgba(124,58,237,0.15)]"
+                        : "translate-y-0 border-transparent bg-transparent shadow-none"
                         }`}
                 >
                     <div className="flex items-center justify-between relative">
@@ -122,20 +122,20 @@ const Navbar = () => {
                             {/* Hamburger */}
                             <button
                                 onClick={() => setMobileOpen(!mobileOpen)}
-                                className={`md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 border ${pastHero ? "hover:bg-black/10 border-black/10 bg-black/5" : "hover:bg-white/20 border-white/20 bg-white/10 group-hover/nav:hover:bg-black/10 group-hover/nav:border-black/10 group-hover/nav:bg-black/5"}`}
+                                className={`md:hidden flex flex-col items-center justify-center w-9 h-9 rounded-xl cursor-pointer transition-colors duration-200 border ${pastHero ? "hover:bg-black/10 border-black/10 bg-black/5" : "hover:bg-white/20 border-white/20 bg-white/10"}`}
                                 aria-label="Toggle navigation menu"
                             >
                                 <motion.span
                                     animate={{ rotate: mobileOpen ? 45 : 0, y: mobileOpen ? 4 : 0 }}
-                                    className={`block w-4 h-[1.5px] rounded-full origin-center ${pastHero ? "bg-gray-700" : "bg-white group-hover/nav:bg-gray-700"}`}
+                                    className={`block w-4 h-[1.5px] rounded-full origin-center ${pastHero ? "bg-gray-700" : "bg-white"}`}
                                 />
                                 <motion.span
                                     animate={{ opacity: mobileOpen ? 0 : 1 }}
-                                    className={`block w-4 h-[1.5px] rounded-full mt-1 ${pastHero ? "bg-gray-700" : "bg-white group-hover/nav:bg-gray-700"}`}
+                                    className={`block w-4 h-[1.5px] rounded-full mt-1 ${pastHero ? "bg-gray-700" : "bg-white"}`}
                                 />
                                 <motion.span
                                     animate={{ rotate: mobileOpen ? -45 : 0, y: mobileOpen ? -6 : 0 }}
-                                    className={`block w-4 h-[1.5px] rounded-full mt-1 origin-center ${pastHero ? "bg-gray-700" : "bg-white group-hover/nav:bg-gray-700"}`}
+                                    className={`block w-4 h-[1.5px] rounded-full mt-1 origin-center ${pastHero ? "bg-gray-700" : "bg-white"}`}
                                 />
                             </button>
                         </div>
