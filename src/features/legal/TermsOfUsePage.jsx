@@ -14,7 +14,6 @@ const TermsOfUsePage = () => {
                     <div className="relative z-10 w-full flex flex-col items-center justify-center">
                         <h1 className="text-[32px] sm:text-[40px] font-bold leading-tight text-white mb-4 text-center tracking-tight">Terms Of Use</h1>
                     </div>
-                    {/* Scroll Down Indicator */}
                     <ScrollDownIndicator />
                 </div>
 

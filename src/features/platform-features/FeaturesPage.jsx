@@ -255,7 +255,7 @@ const FeaturesPage = () => {
                 </div>
 
                 {/* Section 3: CTA Section */}
-                <GlobalCTA 
+                <GlobalCTA
                     title={<>Experience the Power of <span className="italic text-brand-primary">AI</span> with chatquartz</>}
                     description="Trusted AI, powered by OpenAI and Google's Dialogflow — smart, scalable conversations that simplify support and marketing."
                 />

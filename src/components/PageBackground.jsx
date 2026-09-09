@@ -63,11 +63,9 @@ const PageBackground = ({ variant = "network" }) => {
     }
     function drawMarketing() {
       const t = frame * 0.012;
-      // Chat Widget
       const wx = canvas.width * 0.82, wy = canvas.height * 0.65;
       const ww = 160, wh = 90;
 
-      // Widget background
       ctx.save();
       ctx.globalAlpha = 0.18;
       ctx.fillStyle = "#7C3AED";
@@ -75,19 +73,16 @@ const PageBackground = ({ variant = "network" }) => {
         ctx.beginPath(); ctx.roundRect(wx, wy, ww, wh, 16); ctx.fill();
       } else { ctx.fillRect(wx, wy, ww, wh); }
       ctx.globalAlpha = 1;
-      // Widget header bar
       ctx.fillStyle = "rgba(124,58,237,0.55)";
       if (ctx.roundRect) {
         ctx.beginPath(); ctx.roundRect(wx, wy, ww, 28, [16,16,0,0]); ctx.fill();
       } else { ctx.fillRect(wx, wy, ww, 28); }
-      // Message Bubbles
       ctx.fillStyle = "rgba(124,58,237,0.4)";
       if (ctx.roundRect) {
         ctx.beginPath(); ctx.roundRect(wx + 8, wy + 36, 70, 14, 7); ctx.fill();
         ctx.fillStyle = "rgba(196,181,253,0.5)";
         ctx.beginPath(); ctx.roundRect(wx + ww - 78, wy + 58, 66, 14, 7); ctx.fill();
       }
-      // Pulsing Ring
       const pulse = Math.sin(t * 2) * 0.5 + 0.5;
       ctx.globalAlpha = pulse * 0.15;
       ctx.beginPath();
@@ -98,14 +93,12 @@ const PageBackground = ({ variant = "network" }) => {
       ctx.globalAlpha = 1;
       ctx.restore();
 
-      // Leads
       leads.forEach((l) => {
         // Target Position
         const targetX = wx + ww / 2, targetY = wy + wh / 2;
         const dx = targetX - l.x, dy = targetY - l.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < 30) {
-          // Reset Lead
           l.x = Math.random() * canvas.width;
           l.y = -20;
           l.isConverted = Math.random() > 0.5;
@@ -115,14 +108,12 @@ const PageBackground = ({ variant = "network" }) => {
 
         const currentOpacity = l.opacity + Math.sin(frame * 0.03 + l.phase) * 0.1;
         ctx.save();
-        // Avatar
         ctx.beginPath();
         ctx.arc(l.x, l.y, l.radius, 0, Math.PI * 2);
         ctx.fillStyle = l.isConverted
           ? `rgba(196,181,253,${Math.max(0, currentOpacity)})`
           : `rgba(124,58,237,${Math.max(0, currentOpacity)})`;
         ctx.fill();
-        // Connection Line
         if (dist < 180) {
           ctx.beginPath();
           ctx.moveTo(l.x, l.y);
@@ -144,9 +135,9 @@ const PageBackground = ({ variant = "network" }) => {
     
     function initPricing() {
       curves = [
-        { speed: 0.005, amp: 30, baseHeight: 0.75, color: '124, 58, 237' }, // brand-primary purple
-        { speed: 0.003, amp: 50, baseHeight: 0.85, color: '167, 139, 250' }, // violet-400
-        { speed: 0.002, amp: 70, baseHeight: 0.95, color: '196, 181, 253' } // light violet
+        { speed: 0.005, amp: 30, baseHeight: 0.75, color: '124, 58, 237' },
+        { speed: 0.003, amp: 50, baseHeight: 0.85, color: '167, 139, 250' },
+        { speed: 0.002, amp: 70, baseHeight: 0.95, color: '196, 181, 253' }
       ];
       
       const count = 30;
@@ -162,12 +153,11 @@ const PageBackground = ({ variant = "network" }) => {
     function drawPricing() {
       const t = frame;
       
-      // Waves
       curves.forEach((curve, index) => {
         const yOffset = canvas.height * curve.baseHeight;
         
         ctx.beginPath();
-        ctx.moveTo(0, canvas.height); // Start Path
+        ctx.moveTo(0, canvas.height);
         
         let prevX = 0;
         let prevY = yOffset + Math.sin(t * curve.speed) * curve.amp;
@@ -176,7 +166,6 @@ const PageBackground = ({ variant = "network" }) => {
         const segments = 8;
         for (let i = 1; i <= segments; i++) {
           const x = (canvas.width / segments) * i;
-          // Curve Calculation
           const growthOffset = (Math.pow(i / segments, 2.5)) * (canvas.height * 0.55); 
           const wavePhase = i * 0.8 + (index * 2);
           const y = yOffset - growthOffset + Math.sin(t * curve.speed + wavePhase) * curve.amp;
@@ -192,14 +181,12 @@ const PageBackground = ({ variant = "network" }) => {
         ctx.lineTo(canvas.width, canvas.height);
         ctx.closePath();
 
-        // Gradient Fill
         const grad = ctx.createLinearGradient(0, canvas.height * 0.1, 0, canvas.height);
         grad.addColorStop(0, `rgba(${curve.color}, 0.20)`);
         grad.addColorStop(1, `rgba(${curve.color}, 0)`);
         ctx.fillStyle = grad;
         ctx.fill();
 
-        // Stroke
         ctx.beginPath();
         prevX = 0;
         prevY = yOffset + Math.sin(t * curve.speed) * curve.amp;
@@ -222,8 +209,6 @@ const PageBackground = ({ variant = "network" }) => {
         ctx.lineWidth = 2.5;
         ctx.stroke();
       });
-
-      // Particles removed as requested
     }
 
     // --- Support Chat ---
@@ -263,7 +248,6 @@ const PageBackground = ({ variant = "network" }) => {
           } else {
             ctx.fillRect(bubbleX, currentY, bubbleW, bubbleH);
           }
-          // Text lines
           ctx.fillStyle = `rgba(255,255,255,${alpha * 0.6})`;
           ctx.fillRect(bubbleX + 8, currentY + 7, bubbleW * 0.55, 5);
           ctx.fillStyle = `rgba(255,255,255,${alpha * 0.35})`;
@@ -272,7 +256,6 @@ const PageBackground = ({ variant = "network" }) => {
           currentY += bubbleH + 8;
         }
 
-        // Typing Indicator
         if (alpha > 0.3) {
           const dotY = currentY + 8;
           const dotX = thread.isAgent ? thread.x + 10 : thread.x - 40;
@@ -381,7 +364,6 @@ export function HeroNetworkCanvas({ animated = false }) {
       time += 0.4;
       ctx.clearRect(0, 0, width, height);
 
-      // Smooth mouse interpolation
       mouse.x += (mouse.targetX - mouse.x) * 0.05;
       mouse.y += (mouse.targetY - mouse.y) * 0.05;
 
@@ -493,7 +475,6 @@ export function HeroNetworkCanvas({ animated = false }) {
         ref={canvasRef}
         className="absolute inset-0 w-full h-full opacity-100"
         style={{
-          // CSS Masks
           maskImage: "radial-gradient(ellipse 55% 45% at 50% 45%, transparent 25%, black 65%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
           WebkitMaskImage: "radial-gradient(ellipse 55% 45% at 50% 45%, transparent 25%, black 65%), linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)",
           maskComposite: "intersect",

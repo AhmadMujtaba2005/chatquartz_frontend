@@ -41,14 +41,11 @@ const HomePage = () => {
                         </div>
                         <div className="flex flex-col items-center my-8 sm:my-10 w-full">
                             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-5 px-6 mb-3">
-                                {/* Enhanced Rotating border wrapper for "Try This" */}
                                 <div className="relative group flex items-center justify-center w-full sm:w-auto p-[2px] rounded-full overflow-hidden bg-brand-primary shadow-md hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out">
-                                    {/* Blurred rotating glow (comet tail) */}
                                     <div className="absolute inset-0 flex items-center justify-center blur-[4px] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
                                     </div>
 
-                                    {/* Sharp rotating core (comet head) */}
                                     <div className="absolute inset-0 flex items-center justify-center opacity-100">
                                         <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
                                     </div>
@@ -149,10 +146,8 @@ const HomePage = () => {
                         <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">chatquartz ensures seamless AI-human teamwork by alerting agents for unresolved queries, blending AI efficiency with human empathy for exceptional support.</p>
 
                     <div className="w-full max-w-[950px] mt-12 sm:mt-16 relative flex justify-center group px-4 sm:px-8">
-                        {/* Outer styled presentation container */}
                         <div className="relative w-full rounded-[24px] sm:rounded-[32px] md:rounded-[40px] p-4 sm:p-8 md:p-10 lg:p-12 overflow-hidden bg-white/40 backdrop-blur-md border border-gray-200/60 shadow-sm transition-all duration-700">
 
-                            {/* Smooth, seamless background gradient (No harsh lines) */}
                             <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-brand-primary/10 to-brand-primary/80 pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity duration-700"></div>
 
                             {/* Intense glowing blur blob for that rich 3D ambient light */}
@@ -168,7 +163,6 @@ const HomePage = () => {
                                     height={800}
                                     className="w-full h-auto object-cover rounded-[12px] sm:rounded-[20px] md:rounded-[24px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] border border-white/90 bg-white hue-rotate-[45deg]"
                                 />
-                                {/* Subtle gloss overlay on the image */}
                                 <div className="absolute inset-0 rounded-[12px] sm:rounded-[20px] md:rounded-[24px] bg-gradient-to-tr from-transparent via-white/5 to-white/20 pointer-events-none ring-1 ring-inset ring-black/5"></div>
                             </div>
                         </div>
@@ -188,7 +182,6 @@ const HomePage = () => {
                         <p className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed text-center px-2 max-w-3xl">Go live in minutes — no code, no complexity, just results.</p>
                     </RevealOnScroll>
                     <div className="flex flex-col gap-14 md:gap-20 w-[95%] max-w-[1150px] mx-auto mt-12 sm:mt-16">
-                        {/* Step 1: Image Left, Text Right */}
                         <RevealOnScroll>
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(124,58,237,0.08)] hover:shadow-[0_25px_60px_rgba(124,58,237,0.15)] transition-shadow duration-500 group bg-gray-50">
@@ -207,7 +200,6 @@ const HomePage = () => {
 
                         </RevealOnScroll>
 
-                        {/* Step 2: Text Left, Image Right */}
                         <RevealOnScroll>
                             <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(124,58,237,0.08)] hover:shadow-[0_25px_60px_rgba(124,58,237,0.15)] transition-shadow duration-500 group bg-gray-50">
@@ -226,7 +218,6 @@ const HomePage = () => {
 
                         </RevealOnScroll>
 
-                        {/* Step 3: Image Left, Text Right */}
                         <RevealOnScroll>
                             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(124,58,237,0.08)] hover:shadow-[0_25px_60px_rgba(124,58,237,0.15)] transition-shadow duration-500 group bg-gray-50">
@@ -245,7 +236,6 @@ const HomePage = () => {
 
                         </RevealOnScroll>
 
-                        {/* Step 4: Text Left, Image Right */}
                         <RevealOnScroll>
                             <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                                 <div className="w-full lg:w-[65%] relative rounded-2xl overflow-hidden border border-gray-200 shadow-[0_20px_50px_rgba(124,58,237,0.08)] hover:shadow-[0_25px_60px_rgba(124,58,237,0.15)] transition-shadow duration-500 group bg-gray-50">
@@ -277,25 +267,20 @@ const HomePage = () => {
                 {/* Section 8: Final CTA */}
                 <div className="flex flex-col items-center mt-16 sm:mt-24 md:mt-[120px] w-full relative px-4 sm:px-6">
                     <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden rounded-[32px] sm:rounded-[40px] bg-gradient-to-b from-[#0F0A1F] via-[#1E0B4A] to-[#2E1065] border border-purple-500/20 shadow-2xl transition-all duration-700 group py-16 sm:py-24 md:py-28 flex flex-col items-center justify-center text-center px-4">
-                        {/* Decorative Premium Background Elements */}
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[90%] max-w-[1200px] h-[70%] bg-purple-400/30 blur-[140px] rounded-full pointer-events-none group-hover:bg-purple-400/40 transition-colors duration-700"></div>
 
-                        {/* Crisp Overline */}
                         <p className="relative z-10 text-[11px] sm:text-[12px] font-bold text-purple-300 tracking-[0.25em] uppercase mb-4 sm:mb-5">
                             GET IN TOUCH WITH OUR EXPERTS
                         </p>
 
-                        {/* Enhanced Main Heading */}
                         <h2 className="relative z-10 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] font-extrabold text-white leading-[1.1] tracking-tight mb-5 max-w-3xl drop-shadow-sm">
                             10x your customer support <br className="hidden sm:block" /> with <span className="italic text-brand-primary">chatquartz</span>
                         </h2>
 
-                        {/* Refined Description Paragraph */}
                         <p className="relative z-10 text-[14px] sm:text-[16px] text-purple-200 max-w-2xl leading-relaxed mb-8 sm:mb-10 font-medium">
                             Contact our senior team to map your customer support challenges, identify quick automation wins, and define a seamless path forward for your business.
                         </p>
 
-                        {/* Premium Single Button */}
                         <div className="relative z-10 mb-6 sm:mb-8 flex justify-center w-full sm:w-auto">
                             <div className="relative group/btn flex items-center justify-center w-full sm:w-auto p-[2px] rounded-full overflow-hidden bg-brand-primary shadow-md hover:shadow-xl hover:shadow-brand-primary/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 ease-out">
                                 {/* Blurred rotating glow (comet tail) */}
@@ -303,7 +288,6 @@ const HomePage = () => {
                                     <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
                                 </div>
 
-                                {/* Sharp rotating core (comet head) */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-100">
                                     <div className="w-[300%] h-[300%] animate-[spin_2.5s_linear_infinite]" style={{ background: "conic-gradient(from 0deg, transparent 20%, rgba(255,255,255,0.8) 45%, #ffffff 50%, transparent 50%, transparent 70%, rgba(255,255,255,0.8) 95%, #ffffff 100%)" }}></div>
                                 </div>
@@ -315,7 +299,6 @@ const HomePage = () => {
                             </div>
                         </div>
 
-                        {/* Footer Text Matching Reference */}
                         <div className="relative z-10 flex items-center justify-center gap-3 text-[11px] sm:text-[12px] text-purple-300 font-mono tracking-wide">
                             <span>+1 (972) 729-9747 &bull; sales@dataquartz.com</span>
                         </div>

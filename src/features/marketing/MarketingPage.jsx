@@ -161,7 +161,6 @@ const MarketingPage = () => {
                     <h2 className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[40px] leading-tight text-black mb-3 text-center bg-gradient-to-r from-gray-600 via-black to-gray-600 bg-clip-text text-transparent">Real-Time Connections</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1200px] mx-auto w-[94%] mt-12 text-center px-4 relative">
-                        {/* Shared Gradient Definition */}
                         <svg width="0" height="0" className="absolute">
                             <defs>
                                 <linearGradient id="theme-gradient" x1="0%" y1="0%" x2="100%" y2="100%">

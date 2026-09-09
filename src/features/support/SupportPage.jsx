@@ -31,7 +31,6 @@ const SupportPage = () => {
                 {/* Section 2: Support Features */}
                 <div className="max-w-[1024px] mx-auto w-[90%] lg:w-[85%] mt-16 sm:mt-24 md:mt-[60px] flex flex-col gap-10 md:gap-12 mb-20">
 
-                    {/* Feature 1 */}
                     <RevealOnScroll>
                         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                             <div className="w-full lg:w-[60%] relative flex items-center justify-center min-h-[300px] sm:min-h-[400px] group p-4">
@@ -46,7 +45,6 @@ const SupportPage = () => {
                         </div>
                     </RevealOnScroll>
 
-                    {/* Feature 2 */}
                     <RevealOnScroll>
                         <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                             <div className="w-full lg:w-[60%] relative flex items-center justify-center min-h-[300px] sm:min-h-[400px] group p-4">
@@ -61,7 +59,6 @@ const SupportPage = () => {
                         </div>
                     </RevealOnScroll>
 
-                    {/* Feature 3 */}
                     <RevealOnScroll>
                         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                             <div className="w-full lg:w-[60%] relative flex items-center justify-center min-h-[300px] sm:min-h-[400px] group p-4">
@@ -76,7 +73,6 @@ const SupportPage = () => {
                         </div>
                     </RevealOnScroll>
 
-                    {/* Feature 4 */}
                     <RevealOnScroll>
                         <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-16">
                             <div className="w-full lg:w-[60%] relative flex items-center justify-center min-h-[300px] sm:min-h-[400px] group p-4">
@@ -103,14 +99,11 @@ const SupportPage = () => {
                             </div>
 
                             <div className="relative w-full max-w-[800px] mx-auto py-8">
-                                {/* Desktop Connecting Line */}
                                 <div className="hidden md:block absolute top-[60px] left-8 right-8 h-[2px] bg-gradient-to-r from-brand-primary/20 via-brand-primary/40 to-brand-primary/20 -translate-y-1/2 z-0"></div>
-                                {/* Mobile Connecting Line */}
                                 <div className="block md:hidden absolute left-1/2 top-8 bottom-8 w-[2px] bg-gradient-to-b from-brand-primary/20 via-brand-primary/40 to-brand-primary/20 -translate-x-1/2 z-0"></div>
 
                                 <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-0">
 
-                                    {/* Node 1 */}
                                     <div className="flex flex-col items-center gap-3 group/node w-24">
                                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-gray-100 shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex items-center justify-center text-gray-500 group-hover/node:border-brand-primary/50 group-hover/node:text-brand-primary group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.15)] transition-all duration-300 transform group-hover/node:-translate-y-1">
                                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
@@ -118,7 +111,6 @@ const SupportPage = () => {
                                         <span className="text-[12px] font-bold text-gray-700 text-center">Incoming</span>
                                     </div>
 
-                                    {/* Node 2 */}
                                     <div className="flex flex-col items-center gap-3 group/node w-24">
                                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-primary/20 shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex items-center justify-center text-brand-primary group-hover/node:border-brand-primary group-hover/node:text-brand-primary group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.2)] transition-all duration-300 transform group-hover/node:-translate-y-1">
                                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
@@ -126,7 +118,6 @@ const SupportPage = () => {
                                         <span className="text-[12px] font-bold text-gray-700 text-center">AI Match</span>
                                     </div>
 
-                                    {/* Node 3 */}
                                     <div className="flex flex-col items-center gap-3 group/node w-24">
                                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-primary/30 shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex items-center justify-center text-brand-primary group-hover/node:border-brand-primary group-hover/node:text-brand-primary group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.2)] transition-all duration-300 transform group-hover/node:-translate-y-1">
                                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>
@@ -134,7 +125,6 @@ const SupportPage = () => {
                                         <span className="text-[12px] font-bold text-gray-700 text-center leading-tight">Human<br />Takeover</span>
                                     </div>
 
-                                    {/* Node 4 */}
                                     <div className="flex flex-col items-center gap-3 group/node w-24">
                                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-primary/40 shadow-[0_4px_12px_rgba(0,0,0,0.05)] flex items-center justify-center text-brand-primary group-hover/node:border-brand-primary group-hover/node:text-brand-primary group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.2)] transition-all duration-300 transform group-hover/node:-translate-y-1">
                                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
@@ -142,7 +132,6 @@ const SupportPage = () => {
                                         <span className="text-[12px] font-bold text-gray-700 text-center leading-tight">Agent<br />Assigned</span>
                                     </div>
 
-                                    {/* Node 5 */}
                                     <div className="flex flex-col items-center gap-3 group/node w-24">
                                         <div className="w-14 h-14 rounded-2xl bg-brand-primary border-2 border-brand-primary shadow-[0_4px_12px_rgba(124,58,237,0.3)] flex items-center justify-center text-white group-hover/node:shadow-[0_8px_20px_rgba(124,58,237,0.4)] transition-all duration-300 transform group-hover/node:-translate-y-1">
                                             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
@@ -162,27 +151,22 @@ const SupportPage = () => {
                                 <div className="w-full h-36 bg-[#FAF5FF] rounded-xl mb-5 flex items-center justify-center overflow-hidden">
                                     <div className="flex items-center justify-center gap-2 sm:gap-3">
 
-                                        {/* Messenger */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-[7px] sm:p-2">
                                             <Image src="/icons/messenger.svg" alt="Messenger" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
-                                        {/* WhatsApp */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-1.5 sm:p-[7px]">
                                             <Image src="/icons/whatsapp.svg" alt="WhatsApp" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
-                                        {/* Chat Bubbles */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-[5px] sm:p-1.5">
                                             <Image src="/icons/chat.svg" alt="Chat" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
-                                        {/* Gmail */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-2 sm:p-2.5">
                                             <Image src="/icons/gmail.svg" alt="Gmail" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
 
-                                        {/* Slack */}
                                         <div className="w-9 h-9 sm:w-11 sm:h-11 bg-white rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer flex-shrink-0 p-2 sm:p-2.5">
                                             <Image src="/icons/slack.svg" alt="Slack" width={28} height={28} className="w-full h-full object-contain" />
                                         </div>
@@ -198,13 +182,9 @@ const SupportPage = () => {
                             <div className="relative bg-white/60 backdrop-blur-md rounded-[32px] border border-brand-secondary/50 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_15px_40px_rgb(124,58,237,0.15)] hover:-translate-y-2 p-6 flex flex-col items-center text-center transition-all duration-500 hover:border-brand-primary/40 group overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="w-full h-36 bg-[#FAF5FF] rounded-xl mb-5 flex items-center justify-center overflow-hidden">
-                                    {/* Central Dialogflow Icon */}
                                     <svg className="w-[52px] h-[52px] z-10 flex-shrink-0 drop-shadow-[0_8px_16px_rgba(245,124,0,0.4)] hover:scale-105 transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        {/* Top Face */}
                                         <path d="M12 2.5 L21 7.5 L12 12.5 L3 7.5 Z" fill="#FFB74D" />
-                                        {/* Right Face */}
                                         <path d="M12 12.5 L21 7.5 L21 17.5 L12 22.5 Z" fill="#E65100" />
-                                        {/* Left Face with Tail */}
                                         <path d="M12 12.5 L12 22.5 L8 20.28 L8 24 L3 17.5 L3 7.5 Z" fill="#F57C00" />
                                     </svg>
                                 </div>
@@ -218,7 +198,6 @@ const SupportPage = () => {
                                 <div className="absolute inset-0 bg-gradient-to-br from-brand-secondary/10 via-transparent to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                                 <div className="w-full h-36 bg-[#FAF5FF] rounded-xl mb-5 flex items-center justify-center overflow-hidden px-4">
                                     <div className="grid grid-cols-2 gap-3 w-full max-w-[240px]">
-                                        {/* Spain */}
                                         <div className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm border border-gray-100 hover:-translate-y-0.5 transition-transform cursor-pointer">
                                             <div className="w-6 h-6 rounded-full overflow-hidden flex flex-col flex-shrink-0">
                                                 <div className="h-[30%] bg-[#AA151B]"></div>
@@ -227,7 +206,6 @@ const SupportPage = () => {
                                             </div>
                                             <span className="text-[10px] font-bold text-gray-700">¡Hola!</span>
                                         </div>
-                                        {/* France */}
                                         <div className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm border border-gray-100 hover:-translate-y-0.5 transition-transform cursor-pointer">
                                             <div className="w-6 h-6 rounded-full overflow-hidden flex flex-shrink-0">
                                                 <div className="w-1/3 bg-[#002395]"></div>
@@ -236,14 +214,12 @@ const SupportPage = () => {
                                             </div>
                                             <span className="text-[10px] font-bold text-gray-700">Bonjour!</span>
                                         </div>
-                                        {/* Japan */}
                                         <div className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm border border-gray-100 hover:-translate-y-0.5 transition-transform cursor-pointer">
                                             <div className="w-6 h-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 flex-shrink-0">
                                                 <div className="w-2.5 h-2.5 rounded-full bg-[#BC002D]"></div>
                                             </div>
                                             <span className="text-[10px] font-bold text-[#7C3AED]">こんにちは</span>
                                         </div>
-                                        {/* Germany */}
                                         <div className="flex items-center gap-2 bg-white p-2 rounded-lg shadow-sm border border-gray-100 hover:-translate-y-0.5 transition-transform cursor-pointer">
                                             <div className="w-6 h-6 rounded-full overflow-hidden flex flex-col flex-shrink-0">
                                                 <div className="h-1/3 bg-black"></div>

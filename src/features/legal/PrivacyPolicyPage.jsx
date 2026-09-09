@@ -32,7 +32,6 @@ const PrivacyPolicyPage = () => {
                             </p>
                         </div>
                     </div>
-                    {/* Scroll Down Indicator */}
                     <ScrollDownIndicator />
                 </div>
 
@@ -294,7 +293,6 @@ const PrivacyPolicyPage = () => {
                         </section>
                     </RevealOnScroll>
 
-                    {/* Section 7: Contact Information */}
                     <RevealOnScroll>
                         <section className="bg-white border border-gray-200/80 rounded-2xl p-8 sm:p-10 shadow-sm hover:shadow-md transition-all duration-200">
                             <h2 className="text-[20px] sm:text-[24px] font-bold text-gray-900 mb-4 flex items-center gap-3">
